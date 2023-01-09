@@ -13,13 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('grupo', function (Blueprint $table) {
-            $table->engine = 'InnoDB';
-            $table->bigInteger('IDGrupo')->autoIncrement();
-            $table->string('Nombre', 30);
-            $table->primary('IDGrupo');
+        Schema::create('profesor', function (Blueprint $table) {
+            $table->unsignedBigInteger('IDUsuario');
+            $table->foreign('IDUsuario')->references('id')->on('usuario')->onDelete('cascade');
+            //$table->primary('IDUsuario');
 
-
+            $table->timestamps();
         });
     }
 
@@ -30,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('grupo');
+        Schema::dropIfExists('profesor');
     }
 };

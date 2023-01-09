@@ -14,13 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('comentario', function (Blueprint $table) {
-            $table->engine = 'InnoDB';
-            $table->bigInteger('IDComentario')->autoIncrement();
-            $table->bigInteger('IDUsuario');
+            $table->id();
             $table->string('TXTComentario', 500);
-            $table->foreign('IDUsuario')->references('IDUsuario')->on('usuario');
-            $table->primary('IDComentario');
-
+            $table->unsignedBigInteger('IDUsuario');
+            $table->foreign('IDUsuario')->references('id')->on('usuario')->onDelete('cascade');
+            $table->timestamps();
         });
     }
 

@@ -14,12 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('prueba_base', function (Blueprint $table) {
-            $table->engine = 'InnoDB';
-            $table->bigInteger('IDUsuario')->autoIncrement();
+            $table->id();
             $table->string('Titulo', 50);
             $table->string('Enunciado', 300);
-            $table->primary('IDUsuario');
-
+            $table->timestamps();
         });
     }
 

@@ -14,12 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('partida', function (Blueprint $table) {
-            $table->engine = 'InnoDB';
-            $table->bigInteger('IDPrueba')->unsigned();
-            $table->bigInteger('IDUsuario')->unsigned();
-            $table->primary(['IDUsuario','IDPrueba']);
-            $table->foreign('IDPrueba')->references('IDPrueba')->on('prueba_base');
-            $table->foreign('IDUsuario')->references('IDUsuario')->on('usuario');
+            $table->unsignedBigInteger('IDPrueba');
+            $table->foreign('IDPrueba')->references('id')->on('prueba_base')->onDelete('cascade');
+            $table->unsignedBigInteger('IDUsuario');
+            $table->foreign('IDUsuario')->references('id')->on('usuario')->onDelete('cascade');
+            $table->primary(array('IDPrueba', 'IDUsuario'));
+
+            $table->timestamps();
         });
     }
 

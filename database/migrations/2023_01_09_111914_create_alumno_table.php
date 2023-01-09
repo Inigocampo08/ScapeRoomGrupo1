@@ -14,13 +14,12 @@ return new class extends Migration
     public function up()
     {
         Schema::create('alumno', function (Blueprint $table) {
-            $table->engine = 'InnoDB';
-            $table->bigInteger('IDUsuario')->autoIncrement();
-            $table->bigInteger('IDGrupo');
-            //$table->primary(['IDUsuario','IDGrupo']);
-            $table->foreign('IDUsuario')->references('IDUsuario')->on('usuario');
-            $table->foreign('IDGrupo')->references('IDGrupo')->on('grupo');
-            
+            $table->unsignedBigInteger('IDUsuario');
+            $table->foreign('IDUsuario')->references('id')->on('usuario')->onDelete('cascade');
+            $table->unsignedBigInteger('IDGrupo');
+            $table->foreign('IDGrupo')->references('id')->on('grupo')->onDelete('cascade');
+            $table->primary(array('IDUsuario', 'IDGrupo'));
+            $table->timestamps();
         });
     }
 

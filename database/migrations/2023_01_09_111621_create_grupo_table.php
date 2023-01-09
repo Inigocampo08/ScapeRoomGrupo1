@@ -13,12 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('profesor', function (Blueprint $table) {
-            $table->engine = 'InnoDB';
-            $table->bigInteger('IDUsuario')->autoIncrement();
-            $table->foreign('IDUsuario')->references('IDUsuario')->on('usuario');
-            $table->primary('IDUsuario');
-
+        Schema::create('grupo', function (Blueprint $table) {
+            $table->id();
+            $table->string('Nombre', 30);
+            $table->timestamps();
         });
     }
 
@@ -29,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profesor');
+        Schema::dropIfExists('grupo');
     }
 };
