@@ -20,6 +20,8 @@ Route::view('/ventanaEstadisticas','ventanaEstadisticas');
 
 Route::view('/menuPrincipal','menuPrincipal');
 
+Route::view('/header','header');
+
 // Route::get('/menuPrincipal', function(){
 //     return 'menuPrincipal';
 // });

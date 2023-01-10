@@ -1,0 +1,1 @@
+<div class="col-md-2 col-sm-3 col-6 offset-md-5 " style= height: 40px; ><h2 id=""><a style="color:#1be600; list-style:none; text-decoration:none; " href="">PUNTUACION</a></h2></div>   
