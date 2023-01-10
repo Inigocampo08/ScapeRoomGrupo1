@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/','login');
+Route::view('/','menuPrincipal');
 
 Route::view('/register','register');
 
