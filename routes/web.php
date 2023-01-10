@@ -24,4 +24,4 @@ Route::view('/header','header');
 //     return 'menuPrincipal';
 // });
 
-Route::view('/areaPersonal','areaPersonal');
+Route::view('/areaPersonal','areaPersonal')->name('areaPersonal');
