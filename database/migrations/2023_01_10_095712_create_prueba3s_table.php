@@ -13,13 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('partida', function (Blueprint $table) {
+        Schema::create('prueba3', function (Blueprint $table) {
             $table->unsignedBigInteger('IDPrueba');
+	        $table->string('Palabra', 200);
             $table->foreign('IDPrueba')->references('id')->on('prueba_base')->onDelete('cascade');
-            $table->unsignedBigInteger('IDUsuario');
-            $table->foreign('IDUsuario')->references('id')->on('usuario')->onDelete('cascade');
-            $table->primary(array('IDPrueba', 'IDUsuario'));
-
+            $table->bigIncrements('IDPruebaPregunta');
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('partida');
+        Schema::dropIfExists('prueba3s');
     }
 };

@@ -15,9 +15,11 @@ return new class extends Migration
     {
         Schema::create('profesor', function (Blueprint $table) {
             $table->unsignedBigInteger('IDUsuario');
+            $table->unsignedBigInteger('IDGrupo');
             $table->foreign('IDUsuario')->references('id')->on('usuario')->onDelete('cascade');
-            //$table->primary('IDUsuario');
-
+            $table->foreign('IDGrupo')->references('id')->on('grupo')->onDelete('cascade');
+            $table->unique(['IDUsuario', 'IDGrupo']);
+            $table->bigIncrements('IDUsuarioGrupoP');
             $table->timestamps();
         });
     }
@@ -29,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profesor');
+        Schema::dropIfExists('profesors');
     }
 };
