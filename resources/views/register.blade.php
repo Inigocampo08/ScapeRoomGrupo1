@@ -12,10 +12,10 @@
     <div class="container-fluid">
         <div class="row" style="background-color:green; height:100px">
             <div class="col-3 col-sm-3 col-lg-2">
-                <img src="../public/img/Logo.jpg">
+                <img src="/ScapeRoomGrupo1/public/img/Logo.jpg">
             </div>
             <div class="col-3 col-sm-3 col-lg-2 offset-8">
-            <img src="../public/img/avatar.jpg">
+            <img src="/ScapeRoomGrupo1/public/img/Logo.jpg">
             </div>
 
         </div>
