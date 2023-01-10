@@ -1,1 +1,21 @@
-<div class="col-md-2 col-sm-3 col-6 offset-md-5 " style= height: 40px; ><h2 id=""><a style="color:#1be600; list-style:none; text-decoration:none; " href="">PUNTUACION</a></h2></div>   
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid" style="background-color: gray; text-align: center; color:greenyellow" >
+
+    
+      <div id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a  class="nav-link"  href="{{ route('ventanaEstadisticas')}}">Estadisticas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('ventanaPuntuacion')}}">Puntuacion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('ventanaGrupos')}}">Grupos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
