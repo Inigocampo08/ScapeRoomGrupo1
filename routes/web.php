@@ -2,21 +2,19 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/','menuPrincipal');
+Route::view('/','menuPrincipal')->name('home');
 
-Route::view('/register','register');
+Route::view('/register','register')->name('register');
 
-Route::view('/login','login');
+Route::view('/login','login')->name('login');
 
-Route::view('/header','header');
+Route::view('/ventanaPuntuacion','ventanaPuntuacion')->name('ventanaPuntuacion');
 
-Route::view('/ventanaPuntuacion','ventanaPuntuacion');
+Route::view('/ventanaPrueba','ventanaPrueba')->name('ventanaPrueba');
 
-Route::view('/ventanaPrueba','ventanaPrueba');
+Route::view('/ventanaGrupos','ventanaGrupos')->name('ventanaGrupos');
 
-Route::view('/ventanaGrupos','ventanaGrupos');
-
-Route::view('/ventanaEstadisticas','ventanaEstadisticas');
+Route::view('/ventanaEstadisticas','ventanaEstadisticas')->name('ventanaEstadisticas');
 
 Route::view('/menuPrincipal','menuPrincipal');
 

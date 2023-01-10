@@ -14,7 +14,7 @@
     <x-layouts.header />
     <x-layouts.nav />
 
-{{ $slot }}
+    <x-layouts.footer />
 
 
 <!-- count particles -->
