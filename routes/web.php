@@ -18,10 +18,10 @@ Route::view('/ventanaGrupos','ventanaGrupos');
 
 Route::view('/ventanaEstadisticas','ventanaEstadisticas');
 
-// Route::view('/menuPrincipal','menuPrincipal');
+Route::view('/menuPrincipal','menuPrincipal');
 
-Route::get('/menuPrincipal', function(){
-    return 'menuPrincipal';
-});
+// Route::get('/menuPrincipal', function(){
+//     return 'menuPrincipal';
+// });
 
 Route::view('/areaPersonal','areaPersonal');
