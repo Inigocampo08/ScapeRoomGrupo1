@@ -13,11 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('comentario', function (Blueprint $table) {
+        Schema::create('prueba2', function (Blueprint $table) {
             $table->id();
-            $table->string('TXTComentario', 500);
-            $table->unsignedBigInteger('IDUsuario');
-            $table->foreign('IDUsuario')->references('id')->on('usuario')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -29,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('comentario');
+        Schema::dropIfExists('prueba2s');
     }
 };
