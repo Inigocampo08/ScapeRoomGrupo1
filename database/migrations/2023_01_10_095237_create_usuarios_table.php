@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('Apellidos', 30);
             $table->string('Email', 50);
             $table->string('Imagen', 30);
+            $table->string('Contraseña', 30);
+
             $table->timestamps();
         });
     }
