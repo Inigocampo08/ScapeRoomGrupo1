@@ -16,11 +16,12 @@ a{
     color: white;
     display: flex;
 }
+
 </style>
 
 <footer>
 <div  class="container-fluid">
-    <div class="row" style="background-color:	#252525; height:80px;">
+    <div class="row" style="background-color:	#252525; height:40px;">
         <div class="col-xl-4 col-sm-3 col-6" style= height: 220px; >
             <p class="fs-6">©2023 por Venenum</p>
          </div>   
