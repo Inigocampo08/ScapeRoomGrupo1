@@ -30,7 +30,7 @@
                     </button>
                 </div>
              </div>
-        
+    </div>   
         <x-layouts.footer />
 
 
