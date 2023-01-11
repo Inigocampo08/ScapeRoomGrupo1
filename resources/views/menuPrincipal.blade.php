@@ -16,6 +16,7 @@
     
 
     <x-layouts.header />
+<<<<<<< HEAD
     <x-layouts.fondo>
     <div class="contenedor">
 
@@ -26,6 +27,11 @@
             
         </div>
     </x-layouts.fondo>
+=======
+ 
+    
+
+>>>>>>> 628d00247d2054c531b9e5e4f645209bdb51c86c
     <x-layouts.footer />
 
 
