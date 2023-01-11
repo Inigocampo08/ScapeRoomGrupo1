@@ -13,6 +13,7 @@
 <body>
     <x-layouts.header />
     <x-layouts.nav />
+    <x-layouts.fondo />
 
     <x-layouts.footer />
 

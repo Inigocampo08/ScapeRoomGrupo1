@@ -1,9 +1,7 @@
 *{
-
     margin: 0;
     padding: 0;
-
-}
+  }
 
 
 #particles-js{
@@ -15,6 +13,8 @@
     padding: 0;
     z-index: -1;
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
-
 }
