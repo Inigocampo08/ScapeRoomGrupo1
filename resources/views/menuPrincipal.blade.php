@@ -18,22 +18,18 @@
 
         <div id="particles-js">
         
-            <div class="row">
-                <div class="col-xl-12  "style="height: 100px;">
-                    <h1>Hiola</h1>
-                </div>
-                <div class="offset-md-3 col-md-4  text-center "style=" height: 400px; font-size:16px">
+            <div class="row" style="position: absolute">
+                <div class="offset-md-3 col-md-4  text-center "style=" height: 500px; font-size:16px">
                     <h1 style="font-size: 45px; color:white;">Explicacion Juego</h1>
                     <p style="font-size: 22px;  color:white;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium accusamus, earum dignissimos, recusandae atque eum cupiditate temporibus, reprehenderit repellendus commodi voluptas doloremque dolorum omnis blanditiis ex architecto consectetur enim illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit doloremque exercitationem voluptatem officia alias eius impedit recusandae aperiam, facilis, quia magnam dignissimos vero expedita placeat voluptates? Architecto excepturi nesciunt dicta.</p>
-
                 </div>
-            </div>
-                <div class="col-md-2 text-center  "style=" height: 400px;">
-                    <button style="margin-top: 150px; border">
-                        <h1>JUGAR</h1>
+            
+                <div class=" col-md-2 text-center  "style=" height: 500px;">
+                    <button style="margin-top: 150px; background-color:transparent; border:none; color:white;">
+                        <h1><a href="{{ route('ventanaPrueba')}}" style="text-decoration:none">JUGAR</h1>
                     </button>
                 </div>
-        </div>
+             </div>
    
     <x-layouts.footer />
 
