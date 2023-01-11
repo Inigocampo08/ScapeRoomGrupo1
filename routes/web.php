@@ -8,6 +8,8 @@ Route::view('/register','register')->name('register');
 
 Route::view('/login','login')->name('login');
 
+Route::view('/areaPersonal','areaPersonal')->name('areaPersonal');
+
 Route::view('/ventanaPuntuacion','ventanaPuntuacion')->name('ventanaPuntuacion');
 
 Route::view('/ventanaPrueba','ventanaPrueba')->name('ventanaPrueba');
@@ -24,4 +26,3 @@ Route::view('/header','header');
 //     return 'menuPrincipal';
 // });
 
-Route::view('/areaPersonal','areaPersonal')->name('areaPersonal');
