@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+form{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#grupoinputs1{
+
+    justify-content: center;
+}
+
+#particles-js{
+
+    width: 100%;
+    height: 100vh;
+    background-color: #252525;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#main{
+
+    background-color: transparent;
+    position: absolute;
+
+}
+
+.campodetexto{
+
+    padding: 5px;
+    width: 375px;
+    border: 3px solid  #00ff00;
+    border-radius: 6px;
+    background-color: #00ff0084  ;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
+}
+
+.campodetexto:focus{
+
+background-color: #00ff00 ;
+border: 3px solid #00ff0084  ;
+
+}
+
+.etiqueta{
+
+    color: #00ff00;
+
+}
+
+::placeholder {
+    color: #00ff00;
+    font-size: 1em;
+  }
+
+  .boton{
+
+    padding: 4px;
+    background-color: #00ff0084;
+    border: 3px solid #00ff0084  ;
+    border-radius: 6px;
+    color: #00ff00;
+    display: flex;
+    margin-left: 6px;
+    margin-right: 6px;
+    text-align: center;
+}
+
+.boton:hover{
+
+    border: 3px solid #00ff00;
+    color: #033a0384;
+    background-color: #00ff00; 
+    ;
+   
+}
+
+#grupobotones{
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+
+#btn-submit{
+width: 120px;
+text-align: center;
+padding-left: 50px;
+
+}
+
+#btn-registro{
+
+    width: 120px;
+}
+
+#grupoinputs1{
+
+    display: flex;
+    justify-content: center;
+}
+
+#grupoinputs2{
+
+    display: flex;
+    justify-content: center;
+}
+
+#grupoinputs3{
+
+    display: flex;
+    justify-content: center;
+}
+
+#btn-foto{
+
+    padding: 4px;
+    background-color: #00ff0084;
+    border: 3px solid #00ff0084  ;
+    border-radius: 6px;
+    color: #00ff00;
+    display: flex;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+}

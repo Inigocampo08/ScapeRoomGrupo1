@@ -2,11 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/','menuPrincipal')->name('home');
+Route::view('/','login')->name('login');
 
 Route::view('/register','register')->name('register');
-
-Route::view('/login','login')->name('login');
 
 Route::view('/areaPersonal','areaPersonal')->name('areaPersonal');
 
@@ -18,7 +16,7 @@ Route::view('/ventanaGrupos','ventanaGrupos')->name('ventanaGrupos');
 
 Route::view('/ventanaInformacion','ventanaInformacion')->name('ventanaInformacion');
 
-Route::view('/menuPrincipal','menuPrincipal');
+Route::view('/menuPrincipal','menuPrincipal')->name('home');
 
 Route::view('/header','header');
 
