@@ -2,7 +2,7 @@
 
 <style>
 footer{
-    background-color: black;
+    background-color: #252525;
     position: absolute;
     bottom: 0;
     width: 100%;
