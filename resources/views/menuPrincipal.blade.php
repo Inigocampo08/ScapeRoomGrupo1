@@ -7,7 +7,6 @@
   <meta name="author" content="Vincent Garreau" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" media="screen" href="css/style.css">
-  <link rel="stylesheet" href="ParticlesJS.css">
   <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
@@ -16,7 +15,6 @@
     
 
     <x-layouts.header />
-<<<<<<< HEAD
     <x-layouts.fondo>
     <div class="contenedor">
 
@@ -27,11 +25,6 @@
             
         </div>
     </x-layouts.fondo>
-=======
- 
-    
-
->>>>>>> 628d00247d2054c531b9e5e4f645209bdb51c86c
     <x-layouts.footer />
 
 
