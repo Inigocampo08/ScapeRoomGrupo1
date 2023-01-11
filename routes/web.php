@@ -16,7 +16,7 @@ Route::view('/ventanaPrueba','ventanaPrueba')->name('ventanaPrueba');
 
 Route::view('/ventanaGrupos','ventanaGrupos')->name('ventanaGrupos');
 
-Route::view('/ventanaEstadisticas','ventanaEstadisticas')->name('ventanaEstadisticas');
+Route::view('/ventanaInformacion','ventanaInformacion')->name('ventanaInformacion');
 
 Route::view('/menuPrincipal','menuPrincipal');
 

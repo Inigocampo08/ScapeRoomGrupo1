@@ -1,8 +1,9 @@
  
-  <div class="container">
+  <div class="container-fluid">
     <div class="row" style="align-items: center">
-        <div class="offset-md-2 col-md-4 col-sm-4 col-6 border text-center" style="background-color: gray ;height: 50px; " style><a  class="nav-link"  href="{{ route('areaPersonal')}}">Area Personal</a></div>
-        <div class="col-md-4 col-sm-4 col-6 border text-center " style="background-color: gray ;height: 50px; "><a class="nav-link" href="{{ route('ventanaPuntuacion')}}">Estadisticas</a></div>
+        <div class="col-xl-4 col-sm-4 col-4 border text-center" style="background-color: gray ;height: 50px; " style><a  class="nav-link"  href="{{ route('ventanaInformacion')}}">Informacion</a></div>
+        <div class="col-xl-4 col-sm-4 col-4 border text-center " style="background-color: gray ;height: 50px; "><a class="nav-link" href="{{ route('ventanaPuntuacion')}}">Puntuacion</a></div>
+        <div class="col-xl-4 col-sm-4 col-4 border text-center " style="background-color: gray ;height: 50px; "><a class="nav-link" href="{{ route('ventanaGrupos')}}">Grupos</a></div>
     </div>
 
   </div>
