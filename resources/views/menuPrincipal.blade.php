@@ -16,15 +16,7 @@
   <div id="paticles-js">
 
     <x-layouts.header />
-    <div class="contenedor">
-
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-12 "style="height: 100px;"><h1></h1></div>
-            <div class=" offset-md-3 col-md-4  text-center "style=" height: 400px; font-size:16px"><h1 style="font-size: 45px">Explicacion Juego</h1><p style="font-size: 22px">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium accusamus, earum dignissimos, recusandae atque eum cupiditate temporibus, reprehenderit repellendus commodi voluptas doloremque dolorum omnis blanditiis ex architecto consectetur enim illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit doloremque exercitationem voluptatem officia alias eius impedit recusandae aperiam, facilis, quia magnam dignissimos vero expedita placeat voluptates? Architecto excepturi nesciunt dicta.</p></div>
-            <div class="col-md-2  text-center  "style=" height: 400px;"><button style="margin-top: 150px; border"><h1>JUGAR</h1></button></div>
-            
-        </div>
-
+ 
     
 
     <x-layouts.footer />
