@@ -56,17 +56,13 @@
         <div id="particles-js">
             
                 <div class="row" style="position: absolute">
-                    <div class="offset-md-3 col-md-5 col-10 offset-1 text-center "style=" height: 820px; font-size:16px">
-                        <h1 style="font-size: 45px; color:white;"></h1>
-                        <p style="font-size: 22px;  color:white;">
-                        </p>
+                    {{-- <div class="offset-xl-3 col-xl-6 col-10 offset-1 text-center "style="background-color:red; height: 500px; font-size:16px"> --}}
+                    <div class="col-xl-4 col-4 text-center"><img src="/img/LogoFinal.png" ></div>
+                    <div class="col-xl-8 col-8 text-center">
+                      <label>Nombre:</label><input type="text" class="form-control" placeholder="Nombre" name="nombre" value="Nombre" required>
                     </div>
+                    {{-- </div> --}}
                 
-                    <div class=" col-md-2 text-center" style=" height: 200px;">
-                        <button id="bot" style="margin-top: 250px;">
-                            <h1><a href="{{ route('ventanaPrueba')}}" style="text-decoration:none;">JUGAR</h1>
-                        </button>
-                    </div>
                  </div>
                  <footer style="position: absolute">
                     <div  class="container-fluid" >
