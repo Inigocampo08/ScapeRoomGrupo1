@@ -5,10 +5,45 @@
   <title>Home</title>
   <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
   <meta name="author" content="Vincent Garreau" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" con  {{-- <link rel="stylesheet" href="menuPrincipal.css"> --}}
+tent="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" media="screen" href="/css/fondo.css">
+  {{-- <link rel="stylesheet" href="menuPrincipal.css"> --}}
   <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style>
+button{
+    background-color:transparent; 
+    background-color: #00ff0084; 
+    border: 3px solid #00ff0084; 
+    border-radius: 6px;
+    color: #00ff00; 
+    padding: 6px;
+}
+a :hover{ 
+  color: #033a0384;
+}
+footer{
+    background-color: #252525;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color: white;
+    z-index: 2;
+    /* bottom:-10px; */
+    display: flex;
+}    
+ul {
+    list-style: none;
+}
+a{
+    color: white;
+}
+
+</style>
 </head>
 <body>
 
@@ -19,19 +54,38 @@
     <div id="particles-js">
         
             <div class="row" style="position: absolute">
-                <div class="offset-md-3 col-md-5  text-center "style=" height: 400px; font-size:16px">
+                <div class="offset-md-3 col-md-5 col-10 offset-1 text-center "style=" height: 820px; font-size:16px">
                     <h1 style="font-size: 45px; color:white;">Explicacion Juego</h1>
-                    <p style="font-size: 22px;  color:white;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium accusamus, earum dignissimos, recusandae atque eum cupiditate temporibus, reprehenderit repellendus commodi voluptas doloremque dolorum omnis blanditiis ex architecto consectetur enim illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit doloremque exercitationem voluptatem officia alias eius impedit recusandae aperiam, facilis, quia magnam dignissimos vero expedita placeat voluptates? Architecto excepturi nesciunt dicta.</p>
+                    <p style="font-size: 22px;  color:white;">En un laboratorio de máxima seguridad biológica, seguridad de nivel 4, ha ocurrido un terrible accidente. A una persona trabajadora del mismo, Eider, se le ha roto un vial cuando lo transportaba. Dicho vial contiene agentes biológicos del grupo IV. Esto quiere decir, como sabes, que supone un serio peligro para las personas trabajadoras, con muchas probabilidades de que se propague a la colectividad y sin que exista, generalmente, una profilaxis o un tratamiento eficaz. 
+                        Desgraciadamente, no sabemos de qué microorganismo se trata ni el tratamiento, antibiótico o antídoto que debemos utilizar…
+                        Menos mal que Eider ha reaccionado con rapidez al romper el vial y se ha apresurado a presionar el botón de alarma y las puertas blindadas se han cerrado a tiempo para impedir la expansión del agente biológico.
+                        Eider tiene a partir de este momento 60 minutos para determinar el antídoto, ingerirlo y acabar con el microorganismo mortal. Para conseguirlo deberá realizar una serie de pruebas, que le permitirán obtener los códigos secretos que abren las puertas de otras salas y almacenes de reactivos. ¿Le ayudas a conseguirlo?
+                        </p>
                 </div>
             
-                <div class=" col-md-2 text-center  "style=" height: 400px;">
-                    <button style="margin-top: 150px; background-color:transparent; border:none; color:white;">
-                        <h1><a href="{{ route('ventanaPrueba')}}" style="text-decoration:none">JUGAR</h1>
+                <div class=" col-md-2 text-center" style=" height: 200px;">
+                    <button id="bot" style="margin-top: 250px;">
+                        <h1><a href="{{ route('ventanaPrueba')}}" style="text-decoration:none;">JUGAR</h1>
                     </button>
                 </div>
              </div>
-       
-        <x-layouts.footer />
+             <footer style="position: absolute">
+                <div  class="container-fluid" >
+                    <div class="row" style="background-color:#252525; height:60px;">
+                        <div class="col-xl-4 col-sm-4 col-4" >
+                            <p class="fs-6">©2023 por Venenum</p>
+                         </div>   
+                        <div class="col-xl-4 col-sm-4 col-4">
+                            <p class="fs-6"><a href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a><p>
+                         </div>
+                         <div class="col-xl-4 col-sm-4 col-4">
+                             <p class="fs-6"><a href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como llegar</a><p>  
+                         </div>
+                       
+                    </div>
+                </div>
+                </footer>
+            </div>
 
 
     <script src="/js/particles.min.js"></script>
@@ -40,7 +94,6 @@
 <!-- count particles -->
 
 <!-- particles.js container -->
-</div>
 
 {{-- <!-- scripts -->
 <script src="../particles.js"></script>
