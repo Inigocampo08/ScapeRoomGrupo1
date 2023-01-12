@@ -54,20 +54,21 @@ a{
     <div id="particles-js">
         
             <div class="row" style="position: absolute">
-                <div class="offset-md-2 col-md-7 col-10 offset-1 text-center "style=" height: 700px; font-size:16px">
-                    <h1 style="font-size: 45px; color:white;">Explicacion Juego</h1>
-                    <p style="font-size: 22px;  color:white;">En un laboratorio de máxima seguridad biológica, seguridad de nivel 4, ha ocurrido un terrible accidente. A una persona trabajadora del mismo, Eider, se le ha roto un vial cuando lo transportaba. Dicho vial contiene agentes biológicos del grupo IV. Esto quiere decir, como sabes, que supone un serio peligro para las personas trabajadoras, con muchas probabilidades de que se propague a la colectividad y sin que exista, generalmente, una profilaxis o un tratamiento eficaz. 
-                        Desgraciadamente, no sabemos de qué microorganismo se trata ni el tratamiento, antibiótico o antídoto que debemos utilizar…
-                        Menos mal que Eider ha reaccionado con rapidez al romper el vial y se ha apresurado a presionar el botón de alarma y las puertas blindadas se han cerrado a tiempo para impedir la expansión del agente biológico.
-                        Eider tiene a partir de este momento 60 minutos para determinar el antídoto, ingerirlo y acabar con el microorganismo mortal. Para conseguirlo deberá realizar una serie de pruebas, que le permitirán obtener los códigos secretos que abren las puertas de otras salas y almacenes de reactivos. ¿Le ayudas a conseguirlo?
+                <div class=" col-md-8 col-8 text-center offset-2" style=" height: 700px; font-size:16px">
+                    <h1 style="font-size: 45px; color:white;">Laboratorio</h1><br>
+                    <p style="font-size: 22px;  color:white;">En un laboratorio de máxima seguridad biológica, ha ocurrido un terrible accidente. A una persona trabajadora del mismo, se le ha roto un vial cuando lo transportaba. Dicho vial contiene agentes biológicos que supone un serio peligro para las personas trabajadoras, con muchas probabilidades de que se propague a la colectividad y sin que exista, generalmente, una profilaxis o un tratamiento eficaz.</p><br>
+
+                    <p style="font-size: 22px;  color:white;">La trabajadora tiene a partir de este momento 60 minutos para determinar el antídoto, ingerirlo y acabar con el microorganismo mortal. Para conseguirlo deberá realizar una serie de pruebas, que le permitirán obtener los códigos secretos que abren las puertas de otras salas y almacenes de reactivos. ¿Le ayudas a conseguirlo?
                         </p>
+
+                        <button id="bot">
+                            <h1><a href="{{ route('ventanaPrueba')}}" style="text-decoration:none;">JUGAR</h1>
+                        </button>
                 </div>
             
-                <div class=" col-md-2 text-center" style=" height: 700px;">
-                    <button id="bot" style="margin-top:220px">
-                        <h1><a href="{{ route('ventanaPrueba')}}" style="text-decoration:none;">JUGAR</h1>
-                    </button>
-                </div>
+                {{-- <div class=" col-md-2 text-center" style=" height: 700px;">
+                    
+                </div> --}}
              </div>
              <footer style="position: absolute">
                 <div  class="container-fluid">
