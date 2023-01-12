@@ -17,6 +17,9 @@
     <x-layouts.header />
     <x-layouts.fondo />
     <x-layouts.nav />
+
+    
+    
     <x-layouts.footer />
     
  
