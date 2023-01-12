@@ -24,7 +24,7 @@
         padding: 6px;
     }
     a :hover{ 
-      color: #033a0384;
+      color: #89918984;
     }
     footer{
         background-color: #252525;
@@ -54,16 +54,25 @@
         <x-layouts.nav />
     
         <div id="particles-js">
-            
+            {{-- <div class="container-fluid"> 
                 <div class="row" style="position: absolute">
                     {{-- <div class="offset-xl-3 col-xl-6 col-10 offset-1 text-center "style="background-color:red; height: 500px; font-size:16px"> --}}
-                    <div class="col-xl-4 col-4 text-center"><img src="/img/LogoFinal.png" ></div>
+                    {{-- <div class="col-xl-4 col-4 text-center"><img src="/img/LogoFinal.png" ></div>
                     <div class="col-xl-8 col-8 text-center">
-                      <label>Nombre:</label><input type="text" class="form-control" placeholder="Nombre" name="nombre" value="Nombre" required>
-                    </div>
+                      <label>Nombre:</label>
+                      <input type="text" class="form-control" placeholder="Nombre" name="nombre" value="Nombre" required>
+                      <br>
+                      <label>Apellido:</label>
+                      <input type="text" class="form-control" placeholder="Apellido" name="Apellido" value="Apellido" required>
+                      <br>
+                      <label>Email:</label>
+                      <input type="text" class="form-control" placeholder="Email" name="Email" value="Email" required>
+                      <br>
+                      <label>Imagen:</label>
+                      <input type="text" class="form-control" placeholder="Imagen" name="Imagen" value="Imagen" required>
+                    </div> --}}
                     {{-- </div> --}}
                 
-                 </div>
                  <footer style="position: absolute">
                     <div  class="container-fluid" >
                         <div class="row" style="background-color:#252525; height:60px;">

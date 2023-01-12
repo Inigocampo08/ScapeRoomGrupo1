@@ -70,7 +70,7 @@ a{
                 </div>
              </div>
              <footer style="position: absolute">
-                <div  class="container-fluid" >
+                <div  class="container-fluid">
                     <div class="row" style="background-color:#252525; height:60px;">
                         <div class="col-xl-4 col-sm-4 col-4" >
                             <p class="fs-6">©2023 por Venenum</p>
