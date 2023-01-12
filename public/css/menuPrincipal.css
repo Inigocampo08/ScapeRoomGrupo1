@@ -1,0 +1,20 @@
+#boton{
+
+    padding: 4px;
+    background-color: #00ff0084;
+    border: 3px solid #00ff0084  ;
+    border-radius: 6px;
+    color: #00ff00;
+    display: flex;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+#boton:hover{
+
+    border: 3px solid #00ff00;
+    color: #033a0384;
+    background-color: #00ff00; 
+    ;
+   
+}
