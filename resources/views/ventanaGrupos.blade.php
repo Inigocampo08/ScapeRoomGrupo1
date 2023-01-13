@@ -34,13 +34,11 @@
       }
 
       footer {
-          background-color: #252525;
+          background-color: black;
           position: absolute;
-          bottom: 0;
+         bottom: 0px;
           width: 100%;
-          height: 50px;
-          color: white;
-          z-index: 2;
+       
           /* bottom:-10px; */
           display: flex;
       }
@@ -106,10 +104,10 @@
      
           <div class="container-fluid" style="margin-top: 60px" >
               <div class="row">
-                  <div class=" offset-xl-2 col-12 col-sm-12 col-xl-2" style="height:700px;">
+                  <div class=" offset-xl-2 col-12 col-sm-12 col-xl-2" style="height:500px;">
                       <img src="/img/avatar.png" style="height:150px;width:150px;"><br><br>
                       <h1 style="color: #00ff00">Admin</h1>
-                    <div class="col-xl-12 col-12 col-sm-12 text-center " style=" border: 2px solid #00ff00;  ">
+                    <div class="col-xl-12 col-12 col-sm-12 text-center " style=" border: 2px solid #00ff00; heigth:500px  ">
                         <h4 style="color: #00ff00">Puntuacion</h4>
                         <ul style="color: #00ff00">
                             <li>6900</li>
@@ -123,8 +121,8 @@
                       
                     </div>
                  </div>
-                  <div class="col-12 col-sm-12 col-xl-7" style="width:800px; heigth:700px;">
-                      <h3>Nombre:</h3>
+                  <div class="col-12 col-sm-12 col-xl-6 text-center" style=" heigth:500px;">
+                      <h3>Nombre grupo: Los Papas</h3>
                       <input type="text" class="campodetexto  form-control" placeholder="Nombre" name="nombre"
                           value="Nombre" width="20px" required>
                       <br>
@@ -137,12 +135,12 @@
                           value="Email" required>
                       <br>
                       <h3>Imagen:</h3>
-                      <input type="file" name="foto" placeholder="FOTO" id="btn-foto" class="campodetexto" style="width: 659px; bacground-color:re">
+                      <input type="file" name="foto" placeholder="FOTO" id="btn-foto" class="campodetexto" style="width: 600px; bacground-color:re">
                     
-                      <button type="submit" class="boton  btn"  style="width: 92px">Guardar</button>
+                      <button type="submit" class="boton  btn"  style="width: 90px">Guardar</button>
                   </div>
               </div>
-        
+        </div>
 
           
 
@@ -152,8 +150,16 @@
       {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> --}}
 
   </body>
- 
-      
+  <footer>
+    <div class="container-fluid"  >
+        <div class="row">
+            <div class="col-xl-4 text-center">   <p style="color:#00ff00; text-decoration: none;">©2023 por Venenum</p></div>
+            <div class="col-xl-4 text-center"> <p><a style="color:#00ff00; text-decoration: none;" href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a><p></div>
+            <div class="col-xl-4 text-center"> <p><a style="color:#00ff00; text-decoration: none;" href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como llegar</a><p>  </div>
+        </div>
+
+    </div>
+</footer>
 </html>
 
 {{--
