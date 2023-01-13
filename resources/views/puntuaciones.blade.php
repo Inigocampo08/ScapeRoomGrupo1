@@ -11,56 +11,128 @@
 
     
     <!-- CSS only -->
-    <link rel="stylesheet" media="screen" href="/css/fondo.css">
+    {{-- <link rel="stylesheet" media="screen" href="/css/fondo.css"> --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <title>Puntuaciones</title>
-</head>
-<body>
+    <style>
+        button {
+              background-color: transparent;
+              background-color: #00ff0084;
+              border: 3px solid #00ff0084;
+              border-radius: 6px;
+              color: #00ff00;
+              padding: 6px;
+          }
+  
+          a :hover {
+              color: #89918984;
+          }
+  
+          /* footer {
+              background-color: #252525;
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              height: 50px;
+              color: white;
+              z-index: 2;
+              /* bottom:-10px; */
+              display: flex;
+          } */
+  
+          ul {
+              list-style: none;
+          }
+  
+          a {
+              color: white;
+          }
+  
+          h3 {
+              color: #00ff00;
+          }
+  
+          .campodetexto {
+  
+              padding: 5px;
+              width: 75mvh;
+              border: 3px solid #00ff00;
+              border-radius: 6px;
+              background-color: #00ff0084;
+              margin-left: 10px;
+              margin-right: 10px;
+  
+  
+          }
+  
+          .campodetexto:focus {
+  
+              background-color: #00ff00;
+              border: 3px solid #00ff0084;
+  
+          }
+  
+          .boton:hover {
+  
+              border: 3px solid #00ff00;
+              color: #033a0384;
+              background-color: #00ff00;
+  
+          }
+  
+          .boton {
+              border: 3px solid #00ff0084;
+              border-radius: 6px;
+              color: #00ff00;
+              background-color: #00ff0084;
+              padding: 6px;
+  
+          }
+    </style>
+  </head>
+  <body>
+  
+  
+      <x-layouts.header />
+      <x-layouts.nav />
+  
+      {{-- <div id="particles-js"> --}}
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-5 col-xl-5" style="background-color: #00ff00;height:300px;">
+                    <h1>Uno</h1>
+                </div>
+                <div class="col-12 col-sm-7 col-xl-7" style="background-color:aqua; height:600px;">
+                    <h1>Dos</h1>
 
-    <!--contenedor principal-->
-    <div>
-        <!--contenedor perfil-->
-        <div>
-            <img src="/ScapeRoomGrupo1/public/img/avatar.png" alt="Foto de perfil">
-            <h4>Usuario</h4>
-        </div>
-        <!--contenedor puntuacion alta-->
-        <div>
-            <table>
-                <th>Puntuación</th>
-                <th>Tiempo</th>
-                <tr>
-                    <td>1000</td>
-                    <td>35:27</td>
-                </tr>
-            </table>
-        </div>
-        <!--contenedor puntuaciones-->
-        <div class="table-responsive">
-                <table class="table table-primary">
-                    <thead>
-                        <tr>
-                            <th scope="col">Puntuación</th>
-                            <th scope="col">Tiempo</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="">
-                            <td scope="row">1400</td>
-                            <td>23:34</td>
-                        </tr>
-                        <tr class="">
-                            <td scope="row">2500</td>
-                            <td>34:47</td>
-
-                        </tr>
-                    </tbody>
-                </table>
+                </div>
             </div>
-    </div>
-    
-
+                
+        </div>
+  
+        <footer>
+            <div class="container-fluid">
+                <div class="row" style="background-color:#252525; height:60px;">
+                    <div class="col-xl-4 col-sm-4 col-4">
+                        <p class="fs-6">©2023 por Venenum</p>
+                    </div>
+                    <div class="col-xl-4 col-sm-4 col-4">
+                        <p class="fs-6"><a href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a>
+                        <p>
+                    </div>
+                    <div class="col-xl-4 col-sm-4 col-4">
+                        <p class="fs-6"><a
+                                href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como
+                                llegar</a>
+                        <p>
+                    </div>
+  
+                </div>
+            </div>
+        </footer>
+    {{-- </div> --}}
+  
 
 </body>
 <!-- JavaScript Bundle with Popper -->

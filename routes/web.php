@@ -20,6 +20,10 @@ Route::view('/menuPrincipal','menuPrincipal')->name('home');
 
 Route::view('/header','header');
 
+Route::view('/puntuaciones','puntuaciones')->name('puntuaciones');
+
+
+
 // Route::get('/menuPrincipal', function(){
 //     return 'menuPrincipal';
 // });
