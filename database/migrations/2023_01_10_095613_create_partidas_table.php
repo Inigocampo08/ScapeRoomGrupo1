@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('partida', function (Blueprint $table) {
             $table->unsignedBigInteger('IDPrueba');
             $table->unsignedBigInteger('IDUsuario');
+            $table->Integer('Puntuacion');
+            $table->Integer('Tiempo');
             $table->foreign('IDPrueba')->references('id')->on('prueba_base')->onDelete('cascade');
             $table->foreign('IDUsuario')->references('id')->on('usuario')->onDelete('cascade');
             $table->unique(['IDPrueba', 'IDUsuario']);

@@ -109,7 +109,7 @@
                         <img src="/img/avatar.png" style="height:150px;width:150px;"><br><br>
                         <h1 style="color: #00ff00">Admin</h1>
                     </div>
-                    <div class="col-12 col-sm-12 col-xl-7" style="width:800px; heigth:700px;">
+                    <div class="col-12 col-sm-12 col-xl-7" style="width:800px; heigth:700px; margin-left:50px;">
                         <h3>Nombre:</h3>
                         <input type="text" class="campodetexto  form-control" placeholder="Nombre" name="nombre"
                             value="Nombre" width="20px" required>
@@ -123,7 +123,7 @@
                             value="Email" required>
                         <br>
                         <h3>Imagen:</h3>
-                        <input type="file" name="foto" placeholder="FOTO" id="btn-foto" class="campodetexto">
+                        <input type="file" name="foto" placeholder="FOTO" id="btn-foto" style="format:none;" class="campodetexto">
                         <br><br><br>
                         <button type="submit" class="boton  btn">Guardar</button>
                     </div>
