@@ -40,20 +40,15 @@
             height: 50px;
             color: white;
             z-index: 2;
-            /* bottom:-10px; */
+             bottom:-10px;
             display: flex;
         } */
 
+        footer,a,h3 {
+            color: #00ff00;
+        }
         ul {
             list-style: none;
-        }
-
-        a {
-            color: white;
-        }
-
-        h3 {
-            color: #00ff00;
         }
 
         .campodetexto {
@@ -102,13 +97,13 @@
         <x-layouts.header />
         <x-layouts.nav />
 
-            <div class="container-fluid" style="position: fixed; left:200px; top:210px; height:650px;width:1050px;">
-                <div class="row" style="height:550px;width:1050px;">
-                    <div class="col-12 col-sm-12 col-xl-5" style="height:200px;width:200px;">
+            <div class="container-fluid" style="background-color:#252525;">
+                <div class="row">
+                    <div class="col-12 col-sm-4 col-xl-4" style="height:280px;text-align:center;background-color: #252525;">
                         <img src="/img/avatar.png" style="height:150px;width:150px;"><br><br>
                         <h1 style="color: #00ff00">Admin</h1>
                     </div>
-                    <div class="col-12 col-sm-12 col-xl-7" style="width:800px; heigth:700px; margin-left:50px;">
+                    <div class="col-12 col-sm-6 col-xl-6" style="background-color:#252525; height:480px;">
                         <h3>Nombre:</h3>
                         <input type="text" class="campodetexto  form-control" placeholder="Nombre" name="nombre"
                             value="Nombre" width="20px" required>
@@ -123,32 +118,31 @@
                         <br>
                         <h3>Imagen:</h3>
                         <input type="file" name="foto" placeholder="FOTO" id="btn-foto" style="format:none;" class="campodetexto">
-                        <br><br><br>
+                        <br><br>
                         <button type="submit" class="boton  btn">Guardar</button>
                     </div>
                 </div>
             </div>
 
-            <footer style="position: absolute">
+            <footer>
                 <div class="container-fluid">
-                    <div class="row" style="background-color:#252525; height:60px;">
+                    <div class="row" style="background-color:#252525; height:70px;">
                         <div class="col-xl-4 col-sm-4 col-4">
-                            <p class="fs-6">©2023 por Venenum</p>
+                            <p class="fs-6" style="color: 00ff00">©2023 por Venenum</p>
                         </div>
                         <div class="col-xl-4 col-sm-4 col-4">
                             <p class="fs-6"><a href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a>
                             <p>
                         </div>
                         <div class="col-xl-4 col-sm-4 col-4">
-                            <p class="fs-6"><a
-                                    href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como
-                                    llegar</a>
+                            <p class="fs-6"><a href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como llegar</a>
                             <p>
                         </div>
-
+          
                     </div>
                 </div>
             </footer>
+  
 
 
         <script src="/js/particles.min.js"></script>

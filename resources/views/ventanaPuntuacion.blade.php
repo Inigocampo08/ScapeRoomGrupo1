@@ -31,7 +31,7 @@
             height: 50px;
             color: white;
             z-index: 2;
-            /* bottom:-10px; */
+           bottom:-10px;
             display: flex;
         } */
 
