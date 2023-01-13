@@ -91,6 +91,8 @@
           padding: 6px;
 
       }
+     
+    
   </style>
   </head>
 
@@ -107,9 +109,9 @@
                   <div class=" offset-xl-2 col-12 col-sm-12 col-xl-2" style="height:500px;">
                       <img src="/img/avatar.png" style="height:150px;width:150px;"><br><br>
                       <h1 style="color: #00ff00">Admin</h1>
-                    <div class="col-xl-12 col-12 col-sm-12 text-center " style=" border: 2px solid #00ff00; heigth:500px  ">
-                        <h4 style="color: #00ff00">Puntuacion</h4>
-                        <ul style="color: #00ff00">
+                    <div class="col-xl-12 col-12 col-sm-12  " style=" border: 2px solid #00ff00; text-align:center;  ">
+                        <h4 style="color: #00ff00;width:100%">Puntuacion</h4>
+                        <ul style="color: #00ff00;width:100%;text-align:center;">
                             <li>6900</li>
                             <li>5634</li>
                             <li>5223</li>
@@ -123,21 +125,62 @@
                  </div>
                   <div class="col-12 col-sm-12 col-xl-6 text-center" style=" heigth:500px;">
                       <h3>Nombre grupo: Los Papas</h3>
-                      <input type="text" class="campodetexto  form-control" placeholder="Nombre" name="nombre"
-                          value="Nombre" width="20px" required>
-                      <br>
-                      <h3>Apellido:</h3>
-                      <input type="text" class="campodetexto  form-control" placeholder="Apellido" name="Apellido"
-                          value="Apellido" required>
-                      <br>
-                      <h3>Email:</h3>
-                      <input type="text" class="campodetexto  form-control" placeholder="Email" name="Email"
-                          value="Email" required>
-                      <br>
-                      <h3>Imagen:</h3>
-                      <input type="file" name="foto" placeholder="FOTO" id="btn-foto" class="campodetexto" style="width: 600px; bacground-color:re">
-                    
-                      <button type="submit" class="boton  btn"  style="width: 90px">Guardar</button>
+                    <div>
+                        <div class="col-xl-12 col-12 col-sm-12 text-center " style=" border: 2px solid #00ff00; heigth:500px;  ">
+                            <table class="default" style="color: #00ff00;width:100%  ">
+                                <tr style="color: #00ff00;">
+
+                                    <th><u><b>NOMBRE</b></u></th>
+                                
+                                    <th><u><b>GMAIL</b></u></th>
+                                
+                                    <th><u><b>TELEFONO</b></u></th>
+                                
+                                  </tr>
+                                <tr>
+                              
+                                  <td>Ciprian</td>
+                              
+                                  <td>ciprianclase@gmail.com</td>
+                              
+                                  <td>646462623343</td>
+                              
+                                </tr>
+                            
+                                <tr>
+                              
+                                    <td>Ciprian </td>
+                                
+                                    <td>ciprianclase@gmail.com </td>
+                                
+                                    <td>646462623343</td>
+                                
+                                  </tr>
+                                  
+                                  <tr>
+                              
+                                    <td>Ciprian</td>
+                                
+                                    <td>ciprianclase@gmail.com</td>
+                                
+                                    <td>646462623343</td>
+                                
+                                  </tr>
+                                  <tr>
+                              
+                                    <td>Ciprian</td>
+                                
+                                    <td>ciprianclase@gmail.com</td>
+                                
+                                    <td>646462623343</td>
+                                
+                                  </tr>
+                       
+                              
+                              </table>
+                 
+                          
+                    </div>
                   </div>
               </div>
         </div>
