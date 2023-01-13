@@ -109,7 +109,7 @@
                   <div class=" offset-xl-2 col-12 col-sm-12 col-xl-2" style="height:700px;">
                       <img src="/img/avatar.png" style="height:150px;width:150px;"><br><br>
                       <h1 style="color: #00ff00">Admin</h1>
-                    <div class="col-xl-12 col-12 col-sm-12 text-center " style=" border: 2px solid #00ff00; heigth:300px; ">
+                    <div class="col-xl-12 col-12 col-sm-12 text-center " style=" border: 2px solid #00ff00;  ">
                         <h4 style="color: #00ff00">Puntuacion</h4>
                         <ul style="color: #00ff00">
                             <li>6900</li>
@@ -137,9 +137,9 @@
                           value="Email" required>
                       <br>
                       <h3>Imagen:</h3>
-                      <input type="file" name="foto" placeholder="FOTO" id="btn-foto" class="campodetexto">
-                      <br><br><br>
-                      <button type="submit" class="boton  btn">Guardar</button>
+                      <input type="file" name="foto" placeholder="FOTO" id="btn-foto" class="campodetexto" style="width: 659px; bacground-color:re">
+                    
+                      <button type="submit" class="boton  btn"  style="width: 92px">Guardar</button>
                   </div>
               </div>
         
