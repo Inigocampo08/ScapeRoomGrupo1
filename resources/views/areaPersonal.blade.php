@@ -32,7 +32,7 @@
             color: #89918984;
         }
 
-        footer {
+        /* footer {
             background-color: #252525;
             position: absolute;
             bottom: 0;
@@ -42,7 +42,7 @@
             z-index: 2;
             /* bottom:-10px; */
             display: flex;
-        }
+        } */
 
         ul {
             list-style: none;
@@ -102,7 +102,6 @@
         <x-layouts.header />
         <x-layouts.nav />
 
-        <div id="particles-js">
             <div class="container-fluid" style="position: fixed; left:200px; top:210px; height:650px;width:1050px;">
                 <div class="row" style="height:550px;width:1050px;">
                     <div class="col-12 col-sm-12 col-xl-5" style="height:200px;width:200px;">
@@ -150,7 +149,6 @@
                     </div>
                 </div>
             </footer>
-        </div>
 
 
         <script src="/js/particles.min.js"></script>

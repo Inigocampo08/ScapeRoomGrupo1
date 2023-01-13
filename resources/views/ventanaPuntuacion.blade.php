@@ -39,11 +39,7 @@
             list-style: none;
         }
 
-        a {
-            color: white;
-        }
-
-        h3 {
+        footer,a,h3 {
             color: #00ff00;
         }
 
@@ -87,6 +83,7 @@
             justify-content: center;
 
           }
+
   </style>
 </head>
 <body>
@@ -97,44 +94,44 @@
 
     <div class="container-fluid">
       <div class="row">
-          <div class="col-12 col-sm-5 col-xl-5" style="background-color: #00ff00;height:480px;text-align:center;">
+          <div class="col-12 col-sm-5 col-xl-5" style="background-color: #252525;height:480px;text-align:center;">
               <img class="img-fluid" src="/img/avatar.png" style="height: 150px; width:150px; text-align:center;margin-top:50px;"><br><br>
-            <h1 style="color: #252525;">Admin</h1>
+            <h1 style="color: #00ff00;">Admin</h1>
             <br>
             <div class="col-12 col-sm-12 col-xl-12" style="text-align:center;">
-              <h1 style="color: #252525"><u>High Score</u></h1>
-              <table style="color: #252525;border:3px solid #252525;text-align:center;">
+              <h1 style="color: #00ff00"><u>High Score</u></h1>
+              <table style="color: #00ff00;border:3px solid #00ff00;text-align:center;">
                 <tr>
                   <th style="width: 200px"><h4>Puntuacion</h4></th>
                   <th style="width: 200px"><h4>Tiempo</h4></th>
                 </tr>
                 <tr>
-                <td style="width: 200px"><h3 style="color: #252525;width:200px;">1250 pts</h3></td>
-                <td style="width: 200px"><h3 style="color: #252525;width:200px;">47:07 mins</h3></td>
+                <td style="width: 200px"><h3 style="color: #00ff00;width:200px;">1250 pts</h3></td>
+                <td style="width: 200px"><h3 style="color: #00ff00;width:200px;">47:07 mins</h3></td>
                 </tr>
               </table>
 
               </div>
           </div>
-          <div class="col-12 col-sm-7 col-xl-7" style="background-color:#00ff00; height:480px;text-align:center;">
+          <div class="col-12 col-sm-7 col-xl-7" style="background-color:#252525; height:480px;text-align:center;">
               <br>
-              <h1 style="color: #252525"><u>Tus Puntuaciones</u></h1>
+              <h1 style="color: #00ff00"><u>Tus Puntuaciones</u></h1>
           <br><br>
-          <table style="color: #252525;border: 3px solid #252525;text-align:center;">
+          <table style="color: #00ff00;border: 3px solid #00ff00;text-align:center;">
             <tr>
               <th style="width: 100px"><h4 style="width: 100px">Nº</h4></th>
               <th style="width: 200px"><h4 style="width: 200px">Puntuacion</h4></th>
               <th style="width: 200px"><h4 style="width: 200px">Tiempo</h4></th>
             </tr>
             <tr>
-            <td style="width: 100px;"><h3 style="color: #252525;width: 100px;">1</h3></td>
-            <td style="width: 200px"><h3 style="color: #252525;width: 200px;">1250 pts</h3></td>
-            <td style="width: 200px"><h3 style="color: #252525;width: 200px;">47:07 mins</h3></td>
+            <td style="width: 100px;"><h3 style="color: #00ff00;width: 100px;">1</h3></td>
+            <td style="width: 200px"><h3 style="color: #00ff00;width: 200px;">1250 pts</h3></td>
+            <td style="width: 200px"><h3 style="color: #00ff00;width: 200px;">47:07 mins</h3></td>
             </tr>
             <tr>
-              <td style="width: 100px;"><h3 style="color: #252525;width: 100px;">2</h3></td>
-              <td style="width: 200px"><h3 style="color: #252525;width: 200px;">860 pts</h3></td>
-              <td style="width: 200px"><h3 style="color: #252525;width: 200px;">54:37 mins</h3></td>
+              <td style="width: 100px;"><h3 style="color: #00ff00;width: 100px;">2</h3></td>
+              <td style="width: 200px"><h3 style="color: #00ff00;width: 200px;">860 pts</h3></td>
+              <td style="width: 200px"><h3 style="color: #00ff00;width: 200px;">54:37 mins</h3></td>
               </tr>
           </table>
 
@@ -147,7 +144,7 @@
       <div class="container-fluid">
           <div class="row" style="background-color:#252525; height:70px;">
               <div class="col-xl-4 col-sm-4 col-4">
-                  <p class="fs-6" style="color: white">©2023 por Venenum</p>
+                  <p class="fs-6" style="color: 00ff00">©2023 por Venenum</p>
               </div>
               <div class="col-xl-4 col-sm-4 col-4">
                   <p class="fs-6"><a href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a>

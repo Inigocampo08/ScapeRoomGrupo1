@@ -103,59 +103,38 @@
       <x-layouts.nav />
   
       {{-- <div id="particles-js"> --}}
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-sm-5 col-xl-5" style="background-color: #00ff00;height:480px;text-align:center;">
-                    <img class="img-fluid" src="/img/avatar.png" style="height: 150px; width:150px; text-align:center;margin-top:50px;"><br><br>
-                  <h1 style="color: #252525;">Admin</h1>
-                  <br>
-                  <div class="col-12 col-sm-12 col-xl-12" style="text-align:center;">
-                    <h1 style="color: #252525"><u>High Score</u></h1>
-                    <table style="color: #252525;border:3px solid #252525;text-align:center;">
-                      <tr>
-                        <th style="width: 200px"><h4>Puntuacion</h4></th>
-                        <th style="width: 200px"><h4>Tiempo</h4></th>
-                      </tr>
-                      <tr>
-                      <td style="width: 200px"><h3 style="color: #252525;width:200px;">1250 pts</h3></td>
-                      <td style="width: 200px"><h3 style="color: #252525;width:200px;">47:07 mins</h3></td>
-                      </tr>
-                    </table>
-  
-                    </div>
+        <div class="container-fluid" style="position: fixed; left:200px; top:210px; height:650px;width:1050px;">
+            <div class="row" style="height:550px;width:1050px;">
+                <div class="col-12 col-sm-12 col-xl-5" style="height:200px;width:200px;">
+                    <img src="/img/avatar.png" style="height:150px;width:150px;"><br><br>
+                    <h1 style="color: #00ff00">Admin</h1>
                 </div>
-                <div class="col-12 col-sm-7 col-xl-7" style="background-color:#00ff00; height:480px;text-align:center;">
+                <div class="col-12 col-sm-12 col-xl-7" style="width:800px; heigth:700px; margin-left:50px;">
+                    <h3>Nombre:</h3>
+                    <input type="text" class="campodetexto  form-control" placeholder="Nombre" name="nombre"
+                        value="Nombre" width="20px" required>
                     <br>
-                    <h1 style="color: #252525"><u>Tus Puntuaciones</u></h1>
-                <br><br>
-                <table style="color: #252525;border: 3px solid #252525;text-align:center;">
-                  <tr>
-                    <th style="width: 100px"><h4 style="width: 100px">Nº</h4></th>
-                    <th style="width: 200px"><h4 style="width: 200px">Puntuacion</h4></th>
-                    <th style="width: 200px"><h4 style="width: 200px">Tiempo</h4></th>
-                  </tr>
-                  <tr>
-                  <td style="width: 100px;"><h3 style="color: #252525;width: 100px;">1</h3></td>
-                  <td style="width: 200px"><h3 style="color: #252525;width: 200px;">1250 pts</h3></td>
-                  <td style="width: 200px"><h3 style="color: #252525;width: 200px;">47:07 mins</h3></td>
-                  </tr>
-                  <tr>
-                    <td style="width: 100px;"><h3 style="color: #252525;width: 100px;">2</h3></td>
-                    <td style="width: 200px"><h3 style="color: #252525;width: 200px;">860 pts</h3></td>
-                    <td style="width: 200px"><h3 style="color: #252525;width: 200px;">54:37 mins</h3></td>
-                    </tr>
-                </table>
-
+                    <h3>Apellido:</h3>
+                    <input type="text" class="campodetexto  form-control" placeholder="Apellido" name="Apellido"
+                        value="Apellido" required>
+                    <br>
+                    <h3>Email:</h3>
+                    <input type="text" class="campodetexto  form-control" placeholder="Email" name="Email"
+                        value="Email" required>
+                    <br>
+                    <h3>Imagen:</h3>
+                    <input type="file" name="foto" placeholder="FOTO" id="btn-foto" style="format:none;" class="campodetexto">
+                    <br><br><br>
+                    <button type="submit" class="boton  btn">Guardar</button>
                 </div>
             </div>
-                
         </div>
-  
-        <footer>
+
+        <footer style="position: absolute">
             <div class="container-fluid">
-                <div class="row" style="background-color:#252525; height:70px;">
+                <div class="row" style="background-color:#252525; height:60px;">
                     <div class="col-xl-4 col-sm-4 col-4">
-                        <p class="fs-6" style="color: white">©2023 por Venenum</p>
+                        <p class="fs-6">©2023 por Venenum</p>
                     </div>
                     <div class="col-xl-4 col-sm-4 col-4">
                         <p class="fs-6"><a href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a>
@@ -167,11 +146,10 @@
                                 llegar</a>
                         <p>
                     </div>
-  
+
                 </div>
             </div>
         </footer>
-    {{-- </div> --}}
   
 
 </body>
