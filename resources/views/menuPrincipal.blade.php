@@ -62,7 +62,7 @@ a{
                         </p>
 
                         <button id="bot">
-                            <h1><a href="{{ route('ventanaPrueba')}}" style="text-decoration:none;">JUGAR</h1>
+                            <h1><a href="{{ route('juego1')}}" style="text-decoration:none;">JUGAR</h1>
                         </button>
                 </div>
             
