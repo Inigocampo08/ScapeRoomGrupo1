@@ -100,11 +100,35 @@
       {{-- <div id="particles-js"> --}}
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-sm-5 col-xl-5" style="background-color: #00ff00;height:300px;">
-                    <h1>Uno</h1>
+                <div class="col-12 col-sm-5 col-xl-5" style="background-color: #00ff00;height:480px;text-align:center;">
+                    <img class="img-fluid" src="/img/avatar.png" style="height: 150px; width:150px; text-align:center;margin-top:50px;"><br><br>
+                  <h1 style="color: #252525;">Admin</h1>
+                  
+                  <div class="col-12 col-sm-12 col-xl-12" style="text-align:center;border:3px solid #252525;">
+                    <h1 style="color: #252525"><u>High Score</u></h1>
+                    <br><br><br>
+                    <table style="color: #252525;margin-left:50px;">
+                      <tr>
+                        <th style="width: 150px"><h4>Puntuacion</h4></th>
+                        <th style="width: 150px"><h4>Tiempo</h4></th>
+                      </tr>
+                      <td style="width: 150px"><h3>1250 pts</h3></td>
+                      <td style="width: 150px"><h3>47:07 mins</h3></td>
+                    </table>
+  
+                    </div>
                 </div>
-                <div class="col-12 col-sm-7 col-xl-7" style="background-color:aqua; height:600px;">
-                    <h1>Dos</h1>
+                <div class="col-12 col-sm-7 col-xl-7" style="background-color:aqua; height:480px;">
+                    <h1 style="color: #00ff00"><u>High Score</u></h1>
+                  <br><br><br>
+                  <table style="color: #00ff00;margin-left:50px;">
+                    <tr>
+                      <th style="width: 150px"><h4>Puntuacion</h4></th>
+                      <th style="width: 150px"><h4>Tiempo</h4></th>
+                    </tr>
+                    <td style="width: 150px"><h3>1250 pts</h3></td>
+                    <td style="width: 150px"><h3>47:07 mins</h3></td>
+                  </table>
 
                 </div>
             </div>
