@@ -23,7 +23,7 @@
             color: #89918984;
         }
 
-        footer {
+        /* footer {
             background-color: #252525;
             position: absolute;
             bottom: 0;
@@ -33,7 +33,7 @@
             z-index: 2;
             /* bottom:-10px; */
             display: flex;
-        }
+        } */
 
         ul {
             list-style: none;
@@ -81,8 +81,12 @@
             color: #00ff00;
             background-color: #00ff0084;
             padding: 6px;
-
         }
+        table{
+            display: flex;
+            justify-content: center;
+
+          }
   </style>
 </head>
 <body>
@@ -91,72 +95,81 @@
     <x-layouts.header />
     <x-layouts.nav />
 
-    <div id="particles-js">
-      <div class="container-fluid" style="position: fixed; left:50px; top:210px;">
-          <div class="row" style="height:550px;width:1350px;">
-              <div class="col-12 col-sm-5 col-xl-5" style="height:600px;width:400px;margin-left:40px;">
-                  <img src="/img/avatar.png" style="height:150px;width:150px;margin-left:100px;"><br><br>
-                  <h1 style="color: #00ff00;text-align:center;margin-right:30px;">Admin</h1>
-                  <br><br>
-                  <div class="col-12 col-sm-7 col-xl-7" style="width:400px;height:300px;text-align:center;border:3px solid #00ff0084;">
-                  <h1 style="color: #00ff00"><u>High Score</u></h1>
-                  <br><br><br>
-                  <table style="color: #00ff00;margin-left:50px;">
-                    <tr>
-                      <th style="width: 150px"><h4>Puntuacion</h4></th>
-                      <th style="width: 150px"><h4>Tiempo</h4></th>
-                    </tr>
-                    <td style="width: 150px"><h3>1250 pts</h3></td>
-                    <td style="width: 150px"><h3>47:07 mins</h3></td>
-                  </table>
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-12 col-sm-5 col-xl-5" style="background-color: #00ff00;height:480px;text-align:center;">
+              <img class="img-fluid" src="/img/avatar.png" style="height: 150px; width:150px; text-align:center;margin-top:50px;"><br><br>
+            <h1 style="color: #252525;">Admin</h1>
+            <br>
+            <div class="col-12 col-sm-12 col-xl-12" style="text-align:center;">
+              <h1 style="color: #252525"><u>High Score</u></h1>
+              <table style="color: #252525;border:3px solid #252525;text-align:center;">
+                <tr>
+                  <th style="width: 200px"><h4>Puntuacion</h4></th>
+                  <th style="width: 200px"><h4>Tiempo</h4></th>
+                </tr>
+                <tr>
+                <td style="width: 200px"><h3 style="color: #252525;width:200px;">1250 pts</h3></td>
+                <td style="width: 200px"><h3 style="color: #252525;width:200px;">47:07 mins</h3></td>
+                </tr>
+              </table>
 
-                  </div>
               </div>
-              <div class="col-12 col-sm-12 col-xl-7" style="width:800px;margin-left:110px; heigth:200px;text-align:center;border:3px solid #00ff0084;">
-                <h1 style="color: #00ff00"><u>Tus Puntuaciones</u></h1>
-                <br><br>
-                <table style="color: #00ff00;margin-left:50px;">
-                  <tr>
-                    <th style="width: 200px"><h4>Nº</h4></th>
-                    <th style="width: 200px"><h4>Puntuacion</h4></th>
-                    <th style="width: 200px"><h4>Tiempo</h4></th>
-                  </tr>
-                  <td style="width: 200px"><h3>1</h3></td>
-                  <td style="width: 200px"><h3>1250 pts</h3></td>
-                  <td style="width: 200px"><h3>47:07 mins</h3></td>
-                </table>
-              </div>
+          </div>
+          <div class="col-12 col-sm-7 col-xl-7" style="background-color:#00ff00; height:480px;text-align:center;">
+              <br>
+              <h1 style="color: #252525"><u>Tus Puntuaciones</u></h1>
+          <br><br>
+          <table style="color: #252525;border: 3px solid #252525;text-align:center;">
+            <tr>
+              <th style="width: 100px"><h4 style="width: 100px">Nº</h4></th>
+              <th style="width: 200px"><h4 style="width: 200px">Puntuacion</h4></th>
+              <th style="width: 200px"><h4 style="width: 200px">Tiempo</h4></th>
+            </tr>
+            <tr>
+            <td style="width: 100px;"><h3 style="color: #252525;width: 100px;">1</h3></td>
+            <td style="width: 200px"><h3 style="color: #252525;width: 200px;">1250 pts</h3></td>
+            <td style="width: 200px"><h3 style="color: #252525;width: 200px;">47:07 mins</h3></td>
+            </tr>
+            <tr>
+              <td style="width: 100px;"><h3 style="color: #252525;width: 100px;">2</h3></td>
+              <td style="width: 200px"><h3 style="color: #252525;width: 200px;">860 pts</h3></td>
+              <td style="width: 200px"><h3 style="color: #252525;width: 200px;">54:37 mins</h3></td>
+              </tr>
+          </table>
+
           </div>
       </div>
 
-      <footer style="position: absolute">
-          <div class="container-fluid">
-              <div class="row" style="background-color:#252525; height:60px;">
-                  <div class="col-xl-4 col-sm-4 col-4">
-                      <p class="fs-6">©2023 por Venenum</p>
-                  </div>
-                  <div class="col-xl-4 col-sm-4 col-4">
-                      <p class="fs-6"><a href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a>
-                      <p>
-                  </div>
-                  <div class="col-xl-4 col-sm-4 col-4">
-                      <p class="fs-6"><a
-                              href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como
-                              llegar</a>
-                      <p>
-                  </div>
-
-              </div>
-          </div>
-      </footer>
   </div>
+
+  <footer>
+      <div class="container-fluid">
+          <div class="row" style="background-color:#252525; height:70px;">
+              <div class="col-xl-4 col-sm-4 col-4">
+                  <p class="fs-6" style="color: white">©2023 por Venenum</p>
+              </div>
+              <div class="col-xl-4 col-sm-4 col-4">
+                  <p class="fs-6"><a href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a>
+                  <p>
+              </div>
+              <div class="col-xl-4 col-sm-4 col-4">
+                  <p class="fs-6"><a
+                          href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como
+                          llegar</a>
+                  <p>
+              </div>
+
+          </div>
+      </div>
+  </footer>
 
 
   <script src="/js/particles.min.js"></script>
-  <script src="/js/particlesjs-config.json"></script>    
- 
-    
-    
+  <script src="/js/particlesjs-config.json"></script>
+
+
+
 
 <!-- JavaScript Bundle with Popper -->
 {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> --}}
