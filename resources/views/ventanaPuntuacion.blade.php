@@ -102,12 +102,12 @@
               <h1 style="color: #00ff00"><u>High Score</u></h1>
               <table style="color: #00ff00;border:3px solid #00ff00;text-align:center;">
                 <tr>
-                  <th style="width: 200px"><h4>Puntuacion</h4></th>
-                  <th style="width: 200px"><h4>Tiempo</h4></th>
+                  <th><h4>Puntuacion</h4></th>
+                  <th><h4>Tiempo</h4></th>
                 </tr>
                 <tr>
-                <td style="width: 200px"><h3 style="color: #00ff00;width:200px;">1250 pts</h3></td>
-                <td style="width: 200px"><h3 style="color: #00ff00;width:200px;">47:07 mins</h3></td>
+                <td><h3 style="color: #00ff00;">1250 pts</h3></td>
+                <td><h3 style="color: #00ff00;">47:07 mins</h3></td>
                 </tr>
               </table>
 
@@ -119,19 +119,19 @@
           <br><br>
           <table style="color: #00ff00;border: 3px solid #00ff00;text-align:center;">
             <tr>
-              <th style="width: 100px"><h4 style="width: 100px">Nº</h4></th>
-              <th style="width: 200px"><h4 style="width: 200px">Puntuacion</h4></th>
-              <th style="width: 200px"><h4 style="width: 200px">Tiempo</h4></th>
+              <th><h4>Nº</h4></th>
+              <th><h4>Puntuacion</h4></th>
+              <th><h4>Tiempo</h4></th>
             </tr>
             <tr>
-            <td style="width: 100px;"><h3 style="color: #00ff00;width: 100px;">1</h3></td>
-            <td style="width: 200px"><h3 style="color: #00ff00;width: 200px;">1250 pts</h3></td>
-            <td style="width: 200px"><h3 style="color: #00ff00;width: 200px;">47:07 mins</h3></td>
+            <td><h3 style="color: #00ff00;">1</h3></td>
+            <td><h3 style="color: #00ff00;">1250 pts</h3></td>
+            <td><h3 style="color: #00ff00;">47:07 mins</h3></td>
             </tr>
             <tr>
-              <td style="width: 100px;"><h3 style="color: #00ff00;width: 100px;">2</h3></td>
-              <td style="width: 200px"><h3 style="color: #00ff00;width: 200px;">860 pts</h3></td>
-              <td style="width: 200px"><h3 style="color: #00ff00;width: 200px;">54:37 mins</h3></td>
+              <td><h3 style="color: #00ff00;">2</h3></td>
+              <td><h3 style="color: #00ff00;">860 pts</h3></td>
+              <td><h3 style="color: #00ff00;">54:37 mins</h3></td>
               </tr>
           </table>
 
@@ -142,18 +142,20 @@
 
   <footer>
       <div class="container-fluid">
-          <div class="row" style="background-color:#252525; height:70px;">
+          <div class="row" style="background-color:#252525; height:119px;">
               <div class="col-xl-4 col-sm-4 col-4">
+                <br>
                   <p class="fs-6" style="color: 00ff00">©2023 por Venenum</p>
               </div>
               <div class="col-xl-4 col-sm-4 col-4">
+                <br>
                   <p class="fs-6"><a href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a>
                   <p>
               </div>
               <div class="col-xl-4 col-sm-4 col-4">
-                  <p class="fs-6"><a
-                          href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como
-                          llegar</a>
+                  <p class="fs-6">
+                    <br>
+                    <a href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como llegar</a>
                   <p>
               </div>
 
