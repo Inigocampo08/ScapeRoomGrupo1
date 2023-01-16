@@ -157,35 +157,13 @@
   </div>
 
   <footer>
-<<<<<<< HEAD
     <div class="container-fluid"  >
         <div class="row">
             <div class="col-xl-4 text-center"> <p style="color:#00ff00; text-decoration: none;">©2023 por Venenum</p></div>
             <div class="col-xl-4 text-center"> <p><a style="color:#00ff00; text-decoration: none;" href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a><p></div>
             <div class="col-xl-4 text-center"> <p><a style="color:#00ff00; text-decoration: none;" href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como llegar</a><p>  </div>
         </div>
-=======
-      <div class="container-fluid">
-          <div class="row" style="background-color:#252525; height:119px;">
-              <div class="col-xl-4 col-sm-4 col-4 text-center">
-                <br><br><br>
-                  <p class="fs-6" style="color: 00ff00">©2023 por Venenum</p>
-              </div>
-              <div class="col-xl-4 col-sm-4 col-4 text-center">
-                <br><br><br>
-                  <p class="fs-6"><a href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a>
-                  </p>
-              </div>
-              <div class="col-xl-4 col-sm-4 col-4 text-center">
-                  <p class="fs-6">
-                    <br><br><br>
-                    <a href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como llegar</a>
-                  </p>
-              </div>
->>>>>>> 248ed0acdc6412a37064659a0a9f5c36284105a1
 
-    </div>
-</footer>
 
 
   <script src="/js/particles.min.js"></script>
