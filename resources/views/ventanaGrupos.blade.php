@@ -17,6 +17,11 @@
 
 
   <style>
+
+    ¨*{
+        margin: 0;
+        padding: 0;
+    }
     body{
         background-color: #252525
     }
@@ -34,13 +39,13 @@
       }
 
       footer {
-          background-color: black;
+          background-color: #252525;
           position: absolute;
-         bottom: 0px;
-          width: 100%;
+          bottom: 0px;
+          width: 99%;
        
           /* bottom:-10px; */
-          display: flex;
+        
       }
 
       ul {
@@ -104,7 +109,7 @@
       <x-layouts.nav />
 
      
-          <div class="container-fluid" style="margin-top: 60px" >
+          <div class="container-fluid" style="margin-top:60px" >
               <div class="row">
                   <div class=" offset-xl-2 col-12 col-sm-12 col-xl-2" style="height:500px;">
                       <img src="/img/avatar.png" style="height:150px;width:150px;"><br><br>
@@ -117,13 +122,12 @@
                             <li>5223</li>
                             <li>1256</li>
                          
-                      
-        
+
                         </ul>
                       
                     </div>
                  </div>
-                  <div class="col-12 col-sm-12 col-xl-6 text-center" style=" heigth:500px;">
+                  <div class="col-12 col-sm-12 col-xl-6 text-center" style="heigth:500px;">
                       <h3>Nombre grupo: Los Papas</h3>
                     <div>
                         <div class="col-xl-12 col-12 col-sm-12 text-center " style=" border: 2px solid #00ff00; heigth:500px;  ">
@@ -196,7 +200,7 @@
   <footer>
     <div class="container-fluid"  >
         <div class="row">
-            <div class="col-xl-4 text-center">   <p style="color:#00ff00; text-decoration: none;">©2023 por Venenum</p></div>
+            <div class="col-xl-4 text-center"> <p style="color:#00ff00; text-decoration: none;">©2023 por Venenum</p></div>
             <div class="col-xl-4 text-center"> <p><a style="color:#00ff00; text-decoration: none;" href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a><p></div>
             <div class="col-xl-4 text-center"> <p><a style="color:#00ff00; text-decoration: none;" href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como llegar</a><p>  </div>
         </div>
