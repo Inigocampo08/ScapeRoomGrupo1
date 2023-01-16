@@ -87,20 +87,18 @@ tent="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.
 
     <body>
 
-
-
         <x-layouts.header />
 
             <div class="container-fluid" style="background-color:#252525;">
                 <div class="row">
-                <div class="col-10 col-sm-10 col-xl-10" style="text-align: center;">
+                <div class="col-10 col-sm-10 col-xl-10 text-center">
                     <h1>Entrando al Almacen</h1>
                     <p> Acabas de entrar al almacen donde estan los medios de cultivo para conseguir el antídoto. Para ello tienes que unir el medio de cultivo con su Caracteristica.
                         Debes unir los 5 cultivos para poder entrar a la siguiente puerta del almacen. La salvacion esta en tus manos!!</p>
                 </div>
                 </div>
                 <div class="row">
-                    <div class="col-6 col-sm-6 col-xl-6">
+                    <div class="col-6 col-sm-6 col-xl-6 text-center">
                         <button name="button">PCA</button><br>
                         <button name="button">McConkey</button><br>
                         <button name="button">CCA</button><br>
@@ -108,7 +106,7 @@ tent="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.
                         <button name="button">VRBG</button>
 
                     </div>
-                    <div class="col-6 col-sm-6 col-xl-6">
+                    <div class="col-6 col-sm-6 col-xl-6 text-center">
                         <button name="button">PCA</button><br>
                         <button name="button">McConkey</button><br>
                         <button name="button">CCA</button><br>
@@ -121,17 +119,21 @@ tent="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.
 
             <footer>
                 <div class="container-fluid">
-                    <div class="row" style="background-color:#252525; height:70px;">
-                        <div class="col-xl-4 col-sm-4 col-4">
+                    <div class="row" style="background-color:#252525; height:119px;">
+                        <div class="col-xl-4 col-sm-4 col-4 text-center">
+                          <br><br><br>
                             <p class="fs-6" style="color: 00ff00">©2023 por Venenum</p>
                         </div>
-                        <div class="col-xl-4 col-sm-4 col-4">
+                        <div class="col-xl-4 col-sm-4 col-4 text-center">
+                          <br><br><br>
                             <p class="fs-6"><a href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a>
-                            <p>
+                            </p>
                         </div>
-                        <div class="col-xl-4 col-sm-4 col-4">
-                            <p class="fs-6"><a href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como llegar</a>
-                            <p>
+                        <div class="col-xl-4 col-sm-4 col-4 text-center">
+                            <p class="fs-6">
+                              <br><br><br>
+                              <a href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como llegar</a>
+                            </p>
                         </div>
           
                     </div>
