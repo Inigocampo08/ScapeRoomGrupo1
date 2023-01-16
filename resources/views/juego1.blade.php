@@ -91,14 +91,15 @@ tent="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.
 
             <div class="container-fluid" style="background-color:#252525;">
                 <div class="row">
-                <div class="col-10 col-sm-10 col-xl-10 text-center">
+                <div class="col-10 col-sm-10 col-xl-10 offset-1" style="text-align: center;">
                     <h1>Entrando al Almacen</h1>
                     <p> Acabas de entrar al almacen donde estan los medios de cultivo para conseguir el antídoto. Para ello tienes que unir el medio de cultivo con su Caracteristica.
                         Debes unir los 5 cultivos para poder entrar a la siguiente puerta del almacen. La salvacion esta en tus manos!!</p>
                 </div>
                 </div>
-                <div class="row">
+                <div class="row" style="height: 390px;">
                     <div class="col-6 col-sm-6 col-xl-6 text-center">
+                        <br><br><br>
                         <button name="button">PCA</button><br>
                         <button name="button">McConkey</button><br>
                         <button name="button">CCA</button><br>
@@ -107,6 +108,7 @@ tent="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.
 
                     </div>
                     <div class="col-6 col-sm-6 col-xl-6 text-center">
+                        <br><br><br>
                         <button name="button">PCA</button><br>
                         <button name="button">McConkey</button><br>
                         <button name="button">CCA</button><br>
