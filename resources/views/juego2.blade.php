@@ -98,26 +98,26 @@ tent="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.
             <div class="container-fluid" style="background-color:#252525;">
                 <div class="row">
                 <div class="col-10 col-sm-10 col-xl-10 offset-1" style="text-align: center;">
-                    <h1>Entrando al Almacen</h1>
-                    <p> Acabas de entrar al almacen donde estan los medios de cultivo para conseguir el antídoto. Para ello tienes que unir el medio de cultivo con su Caracteristica.
-                        Debes unir los 5 cultivos para poder entrar a la siguiente puerta del almacen. La salvacion esta en tus manos!!</p>
+                    <h1>Buscando la Formula</h1>
+                    <p> Necesitas completar el ejercicio para conseguir la formula para completar el antidoto. Para ello tienes que unir la Formula con su Nombre.
+                        Debes unir los 5 Formulas para poder entrar a la siguiente puerta. La salvacion esta en tus manos!!</p>
                 </div>
                 </div>
                 <div class="row" style="height: 490px;">
                     <div class="col-6 col-sm-6 col-xl-6 text-center">
                         <br><br>
-                        <h3><u>Medios de cultivo</u></h3>
+                        <h3><u>Nombre</u></h3>
                         <br>
-                        <button name="button">PCA</button><br><br>
-                        <button name="button">McConkey</button><br><br>
-                        <button name="button">CCA</button><br><br>
-                        <button name="button">KAA</button><br><br>
-                        <button name="button">VRBG</button>
+                        <button name="button">Formaldehído</button><br><br>
+                        <button name="button">Galactosa</button><br><br>
+                        <button name="button">Ribosa</button><br><br>
+                        <button name="button">isohexano</button><br><br>
+                        <button name="button">3-metil-1-naftol</button>
 
                     </div>
                     <div class="col-6 col-sm-6 col-xl-6 text-center">
                         <br><br>
-                        <h3><u>Características</u></h3>
+                        <h3><u>Formula</u></h3>
                         <br>
                         <button name="button">PCA</button><br><br>
                         <button name="button">McConkey</button><br><br>
@@ -130,9 +130,10 @@ tent="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.
                 <div class="row">
                     <hr>
                     <div class="col-4 col-sm-4 col-xl-4 text-center offset-4">
-                        <a href="{{ route('juego2')}}"><button name="button">Continuar</button></a><br>
+                        <a href="{{ route('juego3')}}"><button name="button">Continuar</button></a><br>
                     </div>
                 </div>
+
             </div>
 
             <footer>
@@ -163,4 +164,4 @@ tent="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 </body>
-</html>
+</html> 
