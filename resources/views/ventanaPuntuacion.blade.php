@@ -32,7 +32,7 @@
 
         footer {
           background-color: #252525;
-          position: absolute;
+       
           bottom: 0px;
           width: 99%;
        
@@ -157,7 +157,7 @@
   </div>
 
   <footer>
-    <div class="container-fluid"  >
+    <div class="container-fluid" style="margin-top:80px;"  >
         <div class="row">
             <div class="col-xl-4 text-center"> <p style="color:#00ff00; text-decoration: none;">©2023 por Venenum</p></div>
             <div class="col-xl-4 text-center"> <p><a style="color:#00ff00; text-decoration: none;" href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a><p></div>
