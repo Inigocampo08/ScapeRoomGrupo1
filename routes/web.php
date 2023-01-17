@@ -21,7 +21,15 @@ Route::view('/menuPrincipal','menuPrincipal')->name('home');
 Route::view('/header','header');
 
 Route::view('/puntuaciones','puntuaciones')->name('puntuaciones');
+
 Route::view('/juego1','juego1')->name('juego1');
+
+Route::view('/juego2','juego2')->name('juego2');
+Route::view('/juego3','juego3')->name('juego3');
+Route::view('/juego4','juego4')->name('juego4');
+Route::view('/juego5','juego5')->name('juego5');
+Route::view('/juego6','juego6')->name('juego6');
+
 
 
 
