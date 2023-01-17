@@ -42,7 +42,6 @@
         
       footer {
           background-color: #252525;
-          position: absolute;
           bottom: 0px;
           width: 99%;
        
@@ -114,7 +113,7 @@
         <x-layouts.header />
         <x-layouts.nav />
 
-            <div class="container-fluid" style="background-color:#252525;">
+            <div class="container-fluid" style="background-color:#252525; margin-top:60px;">
                 <div class="row">
                     <div class="col-12 col-sm-4 col-xl-4" style="height:280px;text-align:center;background-color: #252525;">
                         <img src="/img/avatar.png" style="height:150px;width:150px;"><br><br>
@@ -141,14 +140,12 @@
                 </div>
             </div>
 
-    
-  
-
-
         <script src="/js/particles.min.js"></script>
         <script src="/js/particlesjs-config.json"></script>
+
+
         <footer>
-            <div class="container-fluid"  >
+            <div class="container-fluid" style="margin-top: 30px;" >
                 <div class="row">
                     <div class="col-xl-4 text-center"> <p style="color:#00ff00; text-decoration: none;">©2023 por Venenum</p></div>
                     <div class="col-xl-4 text-center"> <p><a style="color:#00ff00; text-decoration: none;" href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a><p></div>

@@ -32,7 +32,7 @@
 
         footer {
           background-color: #252525;
-          position: absolute;
+       
           bottom: 0px;
           width: 99%;
        
@@ -158,6 +158,9 @@
 
   <footer>
 <<<<<<< HEAD
+    <div class="container-fluid" style="margin-top:80px;"  >
+=======
+<<<<<<< HEAD
       <div class="container-fluid">
           <div class="row" style="background-color:#252525; height:119px;">
               <div class="col-xl-4 col-sm-4 col-4 text-center">
@@ -177,6 +180,7 @@
               </div>
 =======
     <div class="container-fluid"  >
+>>>>>>> 691f3e6a6d2584c17e59ec12a14fa403de18ec42
         <div class="row">
             <div class="col-xl-4 text-center"> <p style="color:#00ff00; text-decoration: none;">©2023 por Venenum</p></div>
             <div class="col-xl-4 text-center"> <p><a style="color:#00ff00; text-decoration: none;" href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a><p></div>

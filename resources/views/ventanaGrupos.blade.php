@@ -40,7 +40,6 @@
 
       footer {
           background-color: #252525;
-          position: absolute;
           bottom: 0px;
           width: 99%;
        
