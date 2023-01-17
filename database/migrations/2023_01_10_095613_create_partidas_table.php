@@ -15,12 +15,12 @@ return new class extends Migration
     {
         Schema::create('partida', function (Blueprint $table) {
             $table->unsignedBigInteger('IDPrueba');
-            $table->unsignedBigInteger('IDUsuario');
+            $table->unsignedBigInteger('IDUser');
             $table->Integer('Puntuacion');
             $table->Integer('Tiempo');
             $table->foreign('IDPrueba')->references('id')->on('prueba_base')->onDelete('cascade');
-            $table->foreign('IDUsuario')->references('id')->on('usuario')->onDelete('cascade');
-            $table->unique(['IDPrueba', 'IDUsuario']);
+            $table->foreign('IDUser')->references('id')->on('users')->onDelete('cascade');
+            $table->unique(['IDPrueba', 'IDUser']);
             $table->bigIncrements('IDPruebaUsuario');
             $table->timestamps();
         });

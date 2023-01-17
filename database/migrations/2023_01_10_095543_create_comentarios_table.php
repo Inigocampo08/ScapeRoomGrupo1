@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('comentario', function (Blueprint $table) {
             $table->id();
             $table->string('TXTComentario', 500);
-            $table->unsignedBigInteger('IDUsuario');
-            $table->foreign('IDUsuario')->references('id')->on('usuario')->onDelete('cascade');
+            $table->unsignedBigInteger('IDUser');
+            $table->foreign('IDUser')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
