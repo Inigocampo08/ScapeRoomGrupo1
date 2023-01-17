@@ -30,8 +30,8 @@
                 <div id="grupoinputs3">
                     <div><input type="file" name="foto" placeholder="FOTO" id="btn-foto"></div>
                     <div id="gruporadio">
-                        <div><label for="Profesor" class="etiquetaradiobutton">Profesor <input type="radio" class="grupodebotonesradio" name="ProfesorAlumno" value="Profesor" id=""></label></div>
-                        <div><label for="Profesor" class="etiquetaradiobutton">Alumno <input type="radio" class="grupodebotonesradio" name="ProfesorAlumno" value="Alumno" id=""></label></div>
+                        <div><label for="Profesor" class="etiquetaradiobutton">Profesor <input type="radio" class="grupodebotonesradio" name="rol" value="Profesor" id=""></label></div>
+                        <div><label for="Profesor" class="etiquetaradiobutton">Alumno <input type="radio" class="grupodebotonesradio" name="rol" value="Alumno" id=""></label></div>
                     </div>
                 </div>
             </form>
