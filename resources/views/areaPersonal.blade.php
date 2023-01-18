@@ -121,19 +121,16 @@
                     </div>
                     <div class="col-12 col-sm-6 col-xl-6" style="background-color:#252525; height:480px;">
                         <h3>Nombre:</h3>
-                        <input type="text" class="campodetexto  form-control" placeholder="Nombre" name="nombre"
-                            value="Nombre" width="20px" required>
+                        <h4></h4>
                         <br>
                         <h3>Apellido:</h3>
-                        <input type="text" class="campodetexto  form-control" placeholder="Apellido" name="Apellido"
-                            value="Apellido" required>
+                        <h4></h4>
                         <br>
                         <h3>Email:</h3>
-                        <input type="text" class="campodetexto  form-control" placeholder="Email" name="Email"
-                            value="Email" required>
+                        <h4></h4>
                         <br>
                         <h3>Imagen:</h3>
-                        <input type="file" name="foto" placeholder="FOTO" id="btn-foto" style="format:none;" class="campodetexto">
+                        <h4></h4>
                         <br><br>
                         <button type="submit" class="boton  btn">Guardar</button>
                     </div>
@@ -178,3 +175,22 @@
                       <br>
                       <label>Imagen:</label>
                       <input type="text" class="form-control" placeholder="Imagen" name="Imagen" value="Imagen" required> --}}
+
+                      {{-- <div class="col-12 col-sm-6 col-xl-6" style="background-color:#252525; height:480px;">
+                        <h3>Nombre:</h3>
+                        <input type="text" class="campodetexto  form-control" placeholder="Nombre" name="nombre"
+                            value="Nombre" width="20px" required>
+                        <br>
+                        <h3>Apellido:</h3>
+                        <input type="text" class="campodetexto  form-control" placeholder="Apellido" name="Apellido"
+                            value="Apellido" required>
+                        <br>
+                        <h3>Email:</h3>
+                        <input type="text" class="campodetexto  form-control" placeholder="Email" name="Email"
+                            value="Email" required>
+                        <br>
+                        <h3>Imagen:</h3>
+                        <input type="file" name="foto" placeholder="FOTO" id="btn-foto" style="format:none;" class="campodetexto">
+                        <br><br>
+                        <button type="submit" class="boton  btn">Guardar</button>
+                    </div> --}}
