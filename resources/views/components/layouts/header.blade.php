@@ -30,17 +30,35 @@
 <header>
     <div class="container-fluid">
         <div class="row" style="background-color:	#252525 ">
-            <div class="col-xl-8 col-sm-8 col-6" style="text-align:left"> <a href="{{ route('home') }}"><img
+            <div class="col-xl-7 col-sm-7 col-6" style="text-align:left"> <a href="{{ route('home') }}"><img
                         src="img/LogoFinal.png" alt="" style="height:120px"></a></div>
-            <div class="col-xl-4 col-sm-4 col-6" style="text-align: right;">
-                <a href="{{ route('login') }}"><img src="img/LogoLogitoFinal.png" alt=""
-                        style="height:35px;margin-right:20px; margin-top:20px;"></a>
-                <div id="inforpersonal">
-                    <div><a href="{{ route('areaPersonal') }}"><img src="img/avatar.png" alt=""
-                                style="height:90px; margin-top: 15px;"></a></div>
+            <div class="col-xl-5 col-sm-5 col-6" style="text-align: right;">
+                <br>
+                <div>
+                <a href="{{ route('login') }}"><img src="img/LogoLogitoFinal.png" style="height:30px; margin-left:80px;" alt=""></a>
+                <a href="{{ route('areaPersonal') }}"><img src="img/avatar.png" style="height:80px" alt=""></a>
+                </div>
+                
                     <div id="nombrejugador">{{ Auth::user()->name }}</div>
+                <div class="col-xl-3 col-sm-3 col-3">
+                   
+                </div>
+                <div class="col-xl-3 col-sm-3 col-3">
+                    
+
                 </div>
             </div>
         </div>
     </div>
+
+                    
+                    {{-- <div id="inforpersonal">
+                    <div>
+                        </div>
+                    
+                    </div> --}}
+                
+                
+
+    
 </header>
