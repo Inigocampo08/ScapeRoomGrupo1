@@ -34,19 +34,9 @@
                         src="img/LogoFinal.png" alt="" style="height:120px"></a></div>
             <div class="col-xl-5 col-sm-5 col-6" style="text-align: right;">
                 <br>
-                <div>
                 <a href="{{ route('login') }}"><img src="img/LogoLogitoFinal.png" style="height:30px; margin-left:80px;" alt=""></a>
                 <a href="{{ route('areaPersonal') }}"><img src="img/avatar.png" style="height:80px" alt=""></a>
-                </div>
-                
-                    <div id="nombrejugador">{{ Auth::user()->name }}</div>
-                <div class="col-xl-3 col-sm-3 col-3">
-                   
-                </div>
-                <div class="col-xl-3 col-sm-3 col-3">
-                    
-
-                </div>
+                <div id="nombrejugador">{{ Auth::user()->name }}</div>
             </div>
         </div>
     </div>
