@@ -112,7 +112,7 @@
       <div class="row">
           <div class="col-12 col-sm-5 col-xl-5" style="background-color: #252525;height:480px;text-align:center;">
               <img class="img-fluid" src="/img/avatar.png" style="height: 150px; width:150px; text-align:center;margin-top:50px;"><br><br>
-            <h1 style="color: #00ff00;">Admin</h1>
+            <h1 style="color: #00ff00;">{{Auth::user()->name}}</h1>
             <br>
             <div class="col-12 col-sm-12 col-xl-12" style="text-align:center;">
               <h1 style="color: #00ff00"><u>High Score</u></h1>
