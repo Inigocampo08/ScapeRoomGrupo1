@@ -1,9 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\User;
+use Dotenv\Exception\ValidationException;
+use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Validation\ValidationException as ValidationValidationException;
 
 class LoginController extends Controller
 {
@@ -35,7 +40,26 @@ class LoginController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //Inicio de sesion
+
+        $credenciales = $request->validate([
+
+            'name' => ['required'],
+            'password' => ['required'],
+
+        ]);
+
+        if(Auth::attempt($credenciales, $request->boolean('remember'))){
+
+            $request->session()->regenerate();
+            return to_route('home');
+        }   else{
+
+            throw ValidationException::withMessages([
+                'name' => __('auth.failed')
+            ]);
+        }
+
     }
 
     /**
@@ -80,6 +104,12 @@ class LoginController extends Controller
      */
     public function destroy($id)
     {
-        //
+        //Logout
+
+        Auth::guard('')->logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return to_route('login');
     }
 }
