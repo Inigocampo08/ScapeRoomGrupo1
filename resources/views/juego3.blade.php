@@ -16,11 +16,23 @@
 
 <body>
   <x-layouts.header />
-
 	<div id="todo">
+		<br><br>
+		<div id="explicacion" class="container">
+			<div class="col-xl-10 col-sm-10 col-10 offset-1">
+				<br>
+				<p style="color: black">Debes acertar la palabra oculta que se refieren a los Microorganismos estudiados en clase,
+				las palabras son compuestas pero estan sin espacio. Debes ir eligiendo letra a letra hasta adivinar el Microorganismo.
+				SOLO TIENES 8 INTENTOS </p>
+				<br>
+			</div>
+		</div>
+		<br>
 	<div id="app" class="container">
 
-</div>
+	</div>
+
+<br><br>
 </div>
 <x-layouts.footer />
 

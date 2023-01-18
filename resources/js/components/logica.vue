@@ -48,8 +48,9 @@
 			<input type="text" class="form-control text-center" v-model="contador_errores" size="3">
 			<br>
             <a href="{{ route('juego4')}}"><button class="btn btn-primary text-center" id="bot1">Continuar</button></a>
+            <br><br>
 		</div>	<!-- En cuarta columna -->
-									
+        <br>				
 	</div>	<!-- End row -->
 </template>
 
