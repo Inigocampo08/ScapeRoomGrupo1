@@ -18,12 +18,14 @@
         flex-direction: column;
         justify-content: center;
         align-items-center;
+    }
 
-
+    #salir{
+        margin-right: 15px;
     }
     #nombrejugador{
 
-        color: #00ff00
+        color: #00ff00;
 
     }
 </style>
@@ -34,21 +36,10 @@
                         src="img/LogoFinal.png" alt="" style="height:120px"></a></div>
             <div class="col-xl-5 col-sm-5 col-6" style="text-align: right;">
                 <br>
-                <a href="{{ route('login') }}"><img src="img/LogoLogitoFinal.png" style="height:30px; margin-left:80px;" alt=""></a>
+                <a href="{{ route('login') }}"><img src="img/LogoLogitoFinal.png" style="height:30px;"  id="salir" alt=""></a>
                 <a href="{{ route('areaPersonal') }}"><img src="img/avatar.png" style="height:80px" alt=""></a>
                 <div id="nombrejugador">{{ Auth::user()->name }}</div>
             </div>
         </div>
-    </div>
-
-                    
-                    {{-- <div id="inforpersonal">
-                    <div>
-                        </div>
-                    
-                    </div> --}}
-                
-                
-
-    
+    </div>    
 </header>
