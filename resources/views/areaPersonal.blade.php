@@ -121,7 +121,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-xl-6" style="background-color:#252525; height:480px;">
                         <h3>Nombre:</h3>
-                        <h4></h4>
+                        <h4>{{Auth::user()->name}}</h4>
                         <br>
                         <h3>Apellido:</h3>
                         <h4></h4>
@@ -129,9 +129,6 @@
                         <h3>Email:</h3>
                         <h4></h4>
                         <br>
-                        <h3>Imagen:</h3>
-                        <h4></h4>
-                        <br><br>
                         <button type="submit" class="boton  btn">Guardar</button>
                     </div>
                 </div>
