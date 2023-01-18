@@ -15,6 +15,7 @@
     <div id="particles-js">
         <div id="main" class="form-signin w-100 m-auto">
             <form action="{{ route('register.store') }}" method="POST" class="º">
+                @csrf
                 <div><img class="mb-4" src="/img/LogoFinal.png" alt="" width="275" height="225"></div>
                 <br>
                 <div id="grupoinputs1">
@@ -25,22 +26,27 @@
                 <div id="grupoinputs2">
                     <div><input type="password" name="contraseña" class="campodetexto" placeholder="CONTRASEÑA"></div>
                     <div><input type="email" name="email" class="campodetexto" placeholder="EMAIL"></div>
+
                 </div>
                 <br>
                 <div id="grupoinputs3">
                     <div><input type="file" name="foto" placeholder="FOTO" id="btn-foto"></div>
                     <div id="gruporadio">
-                        <div><label for="Profesor" class="etiquetaradiobutton">Profesor <input type="radio" class="grupodebotonesradio" name="rol" value="Profesor" id=""></label></div>
-                        <div><label for="Profesor" class="etiquetaradiobutton">Alumno <input type="radio" class="grupodebotonesradio" name="rol" value="Alumno" id=""></label></div>
+                        <div><label for="Profesor" class="etiquetaradiobutton">Profesor <input type="radio"
+                                    class="grupodebotonesradio" name="rol" value="Profesor" id=""></label>
+                        </div>
+                        <div><label for="Profesor" class="etiquetaradiobutton">Alumno <input type="radio"
+                                    class="grupodebotonesradio" name="rol" value="Alumno" id=""></label>
+                        </div>
                     </div>
                 </div>
                 <br>
                 <br>
                 <div id="grupobotones">
-                    <input type="submit" value="Registrarse">
-                    <div id="btn-submit"><a type="submit" class="boton" name="registrar" id="btn2" href="{{ route('login')}}" value="LOGIN">Volver</a></div>
-                    <!--div id="btn-register"><a type="submit" class="boton" name="registrar" id="btn2" value="REGISTRAR">REGISTRARSE</a></div-->
-                </div>
+                    <div id="btn-submit"><a type="submit" class="boton" name="volver" id="btn2"
+                            href="{{ route('login') }}" value="LOGIN">LOGIN</a></div>
+                    <div id="btn-register"><input type="submit" value="REGISTRARSE" class="boton" name="registrar">
+                    </div>
             </form>
 
         </div>
