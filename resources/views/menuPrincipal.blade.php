@@ -15,14 +15,14 @@ tent="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.
 
 <style>
 button{
-    background-color:transparent; 
-    background-color: #00ff0084; 
-    border: 3px solid #00ff0084; 
+    background-color:transparent;
+    background-color: #00ff0084;
+    border: 3px solid #00ff0084;
     border-radius: 6px;
-    color: #00ff00; 
+    color: #00ff00;
     padding: 6px;
 }
-a :hover{ 
+a :hover{
   color: #033a0384;
 }
 footer{
@@ -35,7 +35,7 @@ footer{
     z-index: 2;
     /* bottom:-10px; */
     display: flex;
-}    
+}
 ul {
     list-style: none;
 }
@@ -47,12 +47,13 @@ a{
 </head>
 <body>
 
-    
+
 
     <x-layouts.header />
 
-    <div id="particles-js">
-        
+
+                <div id="particles-js">
+
             <div class="row" style="position: absolute">
                 <div class=" col-md-8 col-8 text-center offset-2" style=" height: 700px; font-size:16px">
                     <h1 style="font-size: 45px; color:white;">Laboratorio</h1><br>
@@ -65,9 +66,9 @@ a{
                             <h1><a href="{{ route('juego1')}}" style="text-decoration:none;">JUGAR</h1>
                         </button>
                 </div>
-            
+
                 {{-- <div class=" col-md-2 text-center" style=" height: 700px;">
-                    
+
                 </div> --}}
              </div>
              <footer style="position: absolute">
@@ -75,14 +76,14 @@ a{
                     <div class="row" style="background-color:#252525; height:60px;">
                         <div class="col-xl-4 col-sm-4 col-4" >
                             <p class="fs-6">©2023 por Venenum</p>
-                         </div>   
+                         </div>
                         <div class="col-xl-4 col-sm-4 col-4">
                             <p class="fs-6"><a href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a><p>
                          </div>
                          <div class="col-xl-4 col-sm-4 col-4">
-                             <p class="fs-6"><a href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como llegar</a><p>  
+                             <p class="fs-6"><a href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como llegar</a><p>
                          </div>
-                       
+
                     </div>
                 </div>
                 </footer>
