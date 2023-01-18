@@ -55,8 +55,8 @@ class RegisternController extends Controller
 
         $usuario = User::create([
 
-            "name" => $request->name,
-            "apellidos" => $request->apellidos,
+            "name" => $request->nombre,
+            "apellidos" => $request->apellido,
             "email" => $request->email,
             "password" => Hash::make($request->password),
             "imagen" => $request->imagen,
