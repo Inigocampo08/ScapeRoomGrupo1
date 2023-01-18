@@ -117,19 +117,19 @@
                 <div class="row">
                     <div class="col-12 col-sm-4 col-xl-4" style="height:280px;text-align:center;background-color: #252525;">
                         <img src="/img/avatar.png" style="height:150px;width:150px;"><br><br>
-                        <h1 style="color: #00ff00">Admin</h1>
+                        <h1 style="color: #00ff00">{{Auth::user()->name}}</h1>
                     </div>
                     <div class="col-12 col-sm-6 col-xl-6" style="background-color:#252525; height:480px;">
                         <h3>Nombre:</h3>
                         <h4>{{Auth::user()->name}}</h4>
                         <br>
                         <h3>Apellido:</h3>
-                        <h4></h4>
+                        <h4>{{Auth::user()->apellidos}}</h4>
                         <br>
                         <h3>Email:</h3>
-                        <h4></h4>
+                        <h4>{{Auth::user()->email}}</h4>
                         <br>
-                        <button type="submit" class="boton  btn">Guardar</button>
+                        <button type="submit" class="boton  btn">Editar</button>
                     </div>
                 </div>
             </div>
