@@ -1,33 +1,10 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/header.css">
 <script src="https://kit.fotawesome.com/9d49876e0a.js" crossorigin="anonymous"></script>
 <style>
-    #botonlog {
-        margin-top: 30px;
-        margin-right: 20px;
-        height: 50px;
-        color: white;
-    }
-
-    header {
-        border-bottom: 4px solid #00ff00;
-    }
-
-    #inforpersonal{
-
-        flex-direction: column;
-        justify-content: center;
-        align-items-center;
-    }
-
-    #salir{
-        margin-right: 15px;
-    }
-    #nombrejugador{
-
-        color: #00ff00;
-
-    }
+   
 </style>
 <header>
     <div class="container-fluid">
@@ -36,7 +13,12 @@
                         src="img/LogoFinal.png" alt="" style="height:120px"></a></div>
             <div class="col-xl-5 col-sm-5 col-6" style="text-align: right;">
                 <br>
-                <a href="{{ route('logout.destroy') }}"><img src="img/LogoLogitoFinal.png" style="height:30px;"  id="salir" alt=""></a>
+                <form action="{{ route('logout.destroy') }}">
+                    @csrf
+                    <button id="botonlog"><img src="img/LogoLogitoFinal.png" style="height:30px;"  id="salir" alt=""></button>
+                </form>
+                {{-- <a type="submit" href="{{ route('logout.destroy') }}"><img src="img/LogoLogitoFinal.png" style="height:30px;"  id="salir" alt=""></a> --}}
+                {{-- <button type="button" id="botonlog" onclick="<href="{{ route('logout.destroy') }}">"<img src="img/LogoLogitoFinal.png" style="height:30px;"  id="salir" alt=""></button> --}}
                 <a href="{{ route('areaPersonal') }}"><img src="img/avatar.png" style="height:80px" alt=""></a>
                 <div id="nombrejugador">{{ Auth::user()->name }}</div>
             </div>
