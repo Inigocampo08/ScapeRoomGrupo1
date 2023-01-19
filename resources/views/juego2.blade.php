@@ -14,11 +14,11 @@ tent="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.
 
             <link href="./css/bootstrap.min.css" rel="stylesheet">
             <link href="./css/style.css" rel="stylesheet">
+
+    @vite(['resources/js/juego2.js', 'resources/js/juego2.css'])
     </head>
 
     <body>
-        
-
         <x-layouts.header />
         <div id="todo">
                 <br><br>
@@ -33,29 +33,6 @@ tent="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.
                 </div>
                 <br>
                 <main role="main" class="container" id="app">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1 class="text-center">Juego de memorama</h1>
-                            <p>
-                                <span class="h5">Intentos: </span>
-                                {{intentos}}/{{MAXIMOS_INTENTOS}}&nbsp;<span class="h5">Aciertos:
-                                </span> {{aciertos}}
-                            </p>
-                        </div>
-                    </div>
-                    <div v-for="(fila, indiceFila) in memorama" :key="indiceFila"
-                        class="row">
-                        <div :key="indiceFila+''+indiceImagen" class="col-3"
-                            v-for="(imagen, indiceImagen) in fila">
-                            <div class="mb-4">
-                                <img @click="voltear(indiceFila, indiceImagen)"
-                                    :class="{'girar': imagen.mostrar}"
-                                    :src="(imagen.mostrar ? imagen.ruta :
-                                    NOMBRE_IMAGEN_OCULTA)" class="card-img-top img-fluid
-                                    img-thumbnail">
-                            </div>
-                        </div>
-                    </div>
                 </main>
             
                 <script src="./js/sweetalert2.all.min.js"></script>
