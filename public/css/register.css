@@ -1,22 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 
-form{
+form {
 
     display: flex;
     flex-direction: column;
 
 }
 
-#grupoinputs1{
+#grupoinputs1 {
 
     justify-content: center;
 }
 
-#particles-js{
+#particles-js {
 
     width: 100%;
     height: 100vh;
@@ -28,37 +28,37 @@ form{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-#main{
+#main {
 
     background-color: transparent;
     position: absolute;
 
 }
 
-.campodetexto{
+.campodetexto {
 
     padding: 5px;
     width: 375px;
-    border: 3px solid  #00ff00;
+    border: 3px solid #00ff00;
     border-radius: 6px;
-    background-color: #00ff0084  ;
+    background-color: #00ff0084;
     margin-left: 10px;
     margin-right: 10px;
-    
+
 
 }
 
-.campodetexto:focus{
+.campodetexto:focus {
 
-background-color: #00ff00 ;
-border: 3px solid #00ff0084  ;
+    background-color: #00ff00;
+    border: 3px solid #00ff0084;
 
 }
 
-.etiqueta{
+.etiqueta {
 
     color: #00ff00;
 
@@ -67,13 +67,13 @@ border: 3px solid #00ff0084  ;
 ::placeholder {
     color: #00ff00;
     font-size: 1em;
-  }
+}
 
-  .boton{
+.boton {
 
     padding: 4px;
     background-color: #00ff0084;
-    border: 3px solid #00ff0084  ;
+    border: 3px solid #00ff0084;
     border-radius: 6px;
     color: #00ff00;
     display: flex;
@@ -82,57 +82,58 @@ border: 3px solid #00ff0084  ;
     text-align: center;
 }
 
-.boton:hover{
+.boton:hover {
 
     border: 3px solid #00ff00;
     color: #033a0384;
-    background-color: #00ff00; 
+    background-color: #00ff00;
     ;
-   
+
 }
 
-#grupobotones{
+#grupobotones {
     display: flex;
     align-self: flex-end;
     justify-content: center;
     text-align: center;
+    width: 100%;
 }
 
-#btn-submit{
-width: 120px;
-text-align: center;
-padding-left: 50px;
+#btn-submit {
+    width: 120px;
+    text-align: center;
+    padding-left: 50px;
 
 }
 
-#btn-registro{
+#btn-registro {
 
     width: 120px;
 }
 
-#grupoinputs1{
+#grupoinputs1 {
 
     display: flex;
     justify-content: center;
 }
 
-#grupoinputs2{
+#grupoinputs2 {
 
     display: flex;
     justify-content: center;
 }
 
-#grupoinputs3{
+#grupoinputs3 {
 
     display: flex;
     justify-content: center;
 }
 
-#btn-foto{
+#btn-foto {
 
     padding: 4px;
     background-color: #00ff0084;
-    border: 3px solid #00ff0084  ;
+    border: 3px solid #00ff0084;
     border-radius: 6px;
     color: #00ff00;
     display: flex;
@@ -140,7 +141,36 @@ padding-left: 50px;
     margin-right: 6px;
 }
 
-a{
+a {
     text-decoration: none;
     text-align: center;
+}
+
+#grupoinputs3 {
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#gruporadio {
+    display: flex;
+    justify-content: flex-start;
+
+
+}
+
+.etiquetaradiobutton {
+
+    color: #00ff00;
+    font-size: large;
+
+}
+
+.grupodebotonesradio {
+
+    padding: 10px;
+
+
 }

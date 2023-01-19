@@ -1,0 +1,39 @@
+
+img.card-img-top {
+    object-fit: cover;
+    cursor: pointer;
+    max-height: 150px !important;
+    max-width: 150px !important;
+}
+
+img.card-img-top.girar {
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+body {
+  /*Para la barra inferior fija*/
+}
+
+#todo{
+    background-color: #00ff00;
+   }
+
+  #explicacion{
+    background-color: #cecece;
+    border:4px solid green;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+  }
+  h1{
+    color: black;
+  }
+

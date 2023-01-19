@@ -42,7 +42,6 @@
         
       footer {
           background-color: #252525;
-          position: absolute;
           bottom: 0px;
           width: 99%;
        
@@ -60,7 +59,7 @@
              bottom:-10px;
             display: flex;
         } */
-
+      
         footer,a,h3 {
             color: #00ff00;
         }
@@ -114,41 +113,33 @@
         <x-layouts.header />
         <x-layouts.nav />
 
-            <div class="container-fluid" style="background-color:#252525;">
+            <div class="container-fluid" style="background-color:#252525; margin-top:60px;">
                 <div class="row">
                     <div class="col-12 col-sm-4 col-xl-4" style="height:280px;text-align:center;background-color: #252525;">
                         <img src="/img/avatar.png" style="height:150px;width:150px;"><br><br>
-                        <h1 style="color: #00ff00">Admin</h1>
+                        <h1 style="color: white;">{{Auth::user()->name}}</h1>
                     </div>
                     <div class="col-12 col-sm-6 col-xl-6" style="background-color:#252525; height:480px;">
-                        <h3>Nombre:</h3>
-                        <input type="text" class="campodetexto  form-control" placeholder="Nombre" name="nombre"
-                            value="Nombre" width="20px" required>
+                        <h3 >Nombre:</h3>
+                        <h4 style="color: white;">{{Auth::user()->name}}</h4>
                         <br>
                         <h3>Apellido:</h3>
-                        <input type="text" class="campodetexto  form-control" placeholder="Apellido" name="Apellido"
-                            value="Apellido" required>
+                        <h4 style="color: white;">{{Auth::user()->apellidos}}</h4>
                         <br>
                         <h3>Email:</h3>
-                        <input type="text" class="campodetexto  form-control" placeholder="Email" name="Email"
-                            value="Email" required>
+                        <h4 style="color: white;">{{Auth::user()->email}}</h4>
                         <br>
-                        <h3>Imagen:</h3>
-                        <input type="file" name="foto" placeholder="FOTO" id="btn-foto" style="format:none;" class="campodetexto">
-                        <br><br>
-                        <button type="submit" class="boton  btn">Guardar</button>
+                        <button type="submit" class="boton  btn">Editar</button>
                     </div>
                 </div>
             </div>
 
-    
-  
-
-
         <script src="/js/particles.min.js"></script>
         <script src="/js/particlesjs-config.json"></script>
+
+
         <footer>
-            <div class="container-fluid"  >
+            <div class="container-fluid" style="margin-top: 30px;" >
                 <div class="row">
                     <div class="col-xl-4 text-center"> <p style="color:#00ff00; text-decoration: none;">©2023 por Venenum</p></div>
                     <div class="col-xl-4 text-center"> <p><a style="color:#00ff00; text-decoration: none;" href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a><p></div>
@@ -181,3 +172,22 @@
                       <br>
                       <label>Imagen:</label>
                       <input type="text" class="form-control" placeholder="Imagen" name="Imagen" value="Imagen" required> --}}
+
+                      {{-- <div class="col-12 col-sm-6 col-xl-6" style="background-color:#252525; height:480px;">
+                        <h3>Nombre:</h3>
+                        <input type="text" class="campodetexto  form-control" placeholder="Nombre" name="nombre"
+                            value="Nombre" width="20px" required>
+                        <br>
+                        <h3>Apellido:</h3>
+                        <input type="text" class="campodetexto  form-control" placeholder="Apellido" name="Apellido"
+                            value="Apellido" required>
+                        <br>
+                        <h3>Email:</h3>
+                        <input type="text" class="campodetexto  form-control" placeholder="Email" name="Email"
+                            value="Email" required>
+                        <br>
+                        <h3>Imagen:</h3>
+                        <input type="file" name="foto" placeholder="FOTO" id="btn-foto" style="format:none;" class="campodetexto">
+                        <br><br>
+                        <button type="submit" class="boton  btn">Guardar</button>
+                    </div> --}}
