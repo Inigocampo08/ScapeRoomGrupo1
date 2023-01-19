@@ -1,0 +1,27 @@
+#botonlog {
+    margin-top: 30px;
+    margin-right: 20px;
+    height: 50px;
+    color: white;
+    all:unset
+}
+
+header {
+    border-bottom: 4px solid #00ff00;
+}
+
+#inforpersonal{
+
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+#salir{
+    margin-right: 15px;
+}
+#nombrejugador{
+
+    color: #00ff00;
+
+}
