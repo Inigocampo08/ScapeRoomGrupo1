@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\RegisternController;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/','login')->name('login');
@@ -33,7 +34,7 @@ Route::view('/juego6','juego6')->name('juego6');
 
 Route::post('/registro', [RegisternController::class, 'store'])->name('register.store');
 Route::post("/login", [LoginController::class, 'store'])->name('login.store');
-Route::post('/logout', [LoginController::class, 'destroy'])->name('logout.destroy');
+Route::get('/logout', [LoginController::class, 'destroy'])->name('logout.destroy');
 
 
 
