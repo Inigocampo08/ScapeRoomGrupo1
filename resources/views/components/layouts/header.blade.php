@@ -13,14 +13,19 @@
                         src="img/LogoFinal.png" alt="" style="height:120px"></a></div>
             <div class="col-xl-5 col-sm-5 col-6" style="text-align: right;">
                 <br>
-                <form action="{{ route('logout.destroy') }}">
-                    @csrf
-                    <button id="botonlog"><img src="img/LogoLogitoFinal.png" style="height:30px;"  id="salir" alt=""></button>
-                </form>
+                <div>
+                    <form action="{{ route('logout.destroy') }}">
+                        @csrf
+                        <button id="botonlog"><img src="img/LogoLogitoFinal.png" style="height:40px;"  id="salir" alt=""></button>
+                    </form>
+                </div>
+                <a href="{{ route('areaPersonal') }}"><img src="img/avatar.png" style="height:120px " alt=""></a>
+                <div id="nombrejugador">{{ Auth::user()->name }}</div>
+          
+               
                 {{-- <a type="submit" href="{{ route('logout.destroy') }}"><img src="img/LogoLogitoFinal.png" style="height:30px;"  id="salir" alt=""></a> --}}
                 {{-- <button type="button" id="botonlog" onclick="<href="{{ route('logout.destroy') }}">"<img src="img/LogoLogitoFinal.png" style="height:30px;"  id="salir" alt=""></button> --}}
-                <a href="{{ route('areaPersonal') }}"><img src="img/avatar.png" style="height:80px" alt=""></a>
-                <div id="nombrejugador">{{ Auth::user()->name }}</div>
+              
             </div>
         </div>
     </div>    

@@ -45,7 +45,7 @@ class LoginController extends Controller
 
         $credenciales = [
 
-            'name' => $request->name,
+            'name' => $request->nombre,
             'password' => $request->password,
             //"active" => 'true'
 
@@ -54,10 +54,12 @@ class LoginController extends Controller
         $remember = ($request->has('remember') ? true : false);
 
         if(Auth::attempt($credenciales, $remember)){
+            Log::alert('gol');
+            return redirect(route('home'));
 
         }else{
-
-            return redirect('login');
+            Log::alert($credenciales);
+            return redirect(route('login'));
         }
 
     }
