@@ -21,8 +21,8 @@
                 <input type="text" name="nombre" class="campodetexto" placeholder="NOMBRE">
                 <input type="password" name="contraseña" class="campodetexto" placeholder="CONTRASEÑA">
                 <div id="grupobotones">
-                    <div id="btn-submit"><input type="submit" class="boton" name="enviar" id="btn1" href="{{ route('home')}}" value="ENTRAR">ENTRAR</a></div>
-                    <div id="btn-registro"><input type="submit" class="boton" name="registrar" id="btn2" href="{{ route('register')}}" value="REGISTRAR">REGISTRARSE</a></div>
+                    <div id="btn-submit"><input type="submit" class="boton" name="enviar" id="btn1"  value="ENTRAR">ENTRAR</a></div>
+                    <div id="btn-registro"><a type="submit" class="boton" name="registrar" id="btn2" href="{{ route('register')}}" value="REGISTRAR">REGISTRARSE</a></div>
                 </div>
             </form>
             <br>
