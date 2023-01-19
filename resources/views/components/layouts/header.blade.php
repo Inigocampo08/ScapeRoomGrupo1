@@ -36,7 +36,7 @@
                         src="img/LogoFinal.png" alt="" style="height:120px"></a></div>
             <div class="col-xl-5 col-sm-5 col-6" style="text-align: right;">
                 <br>
-                <a href="{{ route('login') }}"><img src="img/LogoLogitoFinal.png" style="height:30px;"  id="salir" alt=""></a>
+                <a href="{{ route('logout.destroy') }}"><img src="img/LogoLogitoFinal.png" style="height:30px;"  id="salir" alt=""></a>
                 <a href="{{ route('areaPersonal') }}"><img src="img/avatar.png" style="height:80px" alt=""></a>
                 <div id="nombrejugador">{{ Auth::user()->name }}</div>
             </div>

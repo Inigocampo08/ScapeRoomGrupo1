@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException as ValidationValidationException;
 
+
 class LoginController extends Controller
 {
     /**
@@ -42,22 +43,21 @@ class LoginController extends Controller
     {
         //Inicio de sesion
 
-        $credenciales = $request->validate([
+        $credenciales = [
 
-            'name' => ['required'],
-            'password' => ['required'],
+            'name' => $request->name,
+            'password' => $request->password,
+            //"active" => 'true'
 
-        ]);
+        ];
 
-        if(Auth::attempt($credenciales, $request->boolean('remember'))){
+        $remember = ($request->has('remember') ? true : false);
 
-            $request->session()->regenerate();
-            return to_route('home');
-        }   else{
+        if(Auth::attempt($credenciales, $remember)){
 
-            throw ValidationException::withMessages([
-                'name' => __('auth.failed')
-            ]);
+        }else{
+
+            return redirect('login');
         }
 
     }
@@ -102,14 +102,15 @@ class LoginController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
         //Logout
 
-        Auth::guard('')->logout();
+        Auth::logout();
+
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return to_route('login');
+        return redirect(route('login'));
     }
 }

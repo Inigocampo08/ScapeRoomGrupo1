@@ -15,7 +15,8 @@
 <body class="text-center">
     <div id="particles-js">
         <div id="main" class="form-signin w-100 m-auto">
-            <form action="" method="post" class="º">
+            <form action="{{ route('login.store') }}" method="POST" class="º">
+                @csrf
                 <img class="mb-4" src="img/LogoFinal.png" alt="" width="275" height="225">
                 <br>
                 <input type="text" name="nombre" class="campodetexto" placeholder="USUARIO">

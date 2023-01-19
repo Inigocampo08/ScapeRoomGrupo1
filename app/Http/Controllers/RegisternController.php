@@ -42,14 +42,14 @@ class RegisternController extends Controller
     {
         //Registrar Usuarios
 
-        $request->validate([
-            "name" => ["required" ],
-            "apellidos" =>["required"],
-            "email" => ["required", "email"],
-            "password" => ["required", "confirmed" ],
-            "imagen" => ["required"],
-            "rol" => ["required"]
-        ]);
+        // $request->validate([
+        //     "name" => ["required" ],
+        //     "apellidos" =>["required"],
+        //     "email" => ["required", "email"],
+        //     "password" => ["required", "confirmed" ],
+        //     "imagen" => ["required"],
+        //     "rol" => ["required"]
+        // ]);
 
         Log::alert('Entro');
 

@@ -17,7 +17,7 @@ Route::view('/ventanaGrupos','ventanaGrupos')->name('ventanaGrupos');
 
 Route::view('/ventanaInformacion','ventanaInformacion')->name('ventanaInformacion');
 
-Route::view('/menuPrincipal','menuPrincipal')->name('home');
+Route::view('/menuPrincipal','menuPrincipal')->middleware('auth')->name('home');
 
 Route::view('/header','header');
 
@@ -32,7 +32,7 @@ Route::view('/juego5','juego5')->name('juego5');
 Route::view('/juego6','juego6')->name('juego6');
 
 Route::post('/registro', [RegisternController::class, 'store'])->name('register.store');
-Route::post("/login", [LoginController::class, 'storea'])->name('login.store');
+Route::post("/login", [LoginController::class, 'store'])->name('login.store');
 Route::post('/logout', [LoginController::class, 'destroy'])->name('logout.destroy');
 
 
