@@ -17,7 +17,9 @@
 <body>
   <x-layouts.header />
 	<div id="todo">
-		<br><br>
+		<br>
+		<h3 class="text-center text-info">JUEGO DE AHORCADO</h3>
+		<br>
 		<div id="explicacion" class="container">
 			<div class="col-xl-10 col-sm-10 col-10 offset-1">
 				<br>
@@ -37,8 +39,6 @@
 <x-layouts.footer />
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-
-	{{-- <script type="text/javascript" src="/js/logica.js"></script> --}}
 
 </body>
 </html>
