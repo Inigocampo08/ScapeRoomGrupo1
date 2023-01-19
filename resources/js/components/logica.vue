@@ -2,8 +2,6 @@
     
 	<div class="row">	
 		<div class="col-xl-12 col-sm-12 col-12 text-center">
-			<h3 class="text-center text-info">JUEGO DE AHORCADO</h3>
-
 			<ul id="horizontal-list centrado">
 				
 				<!-- Aca va la lista de las letras digitadas -->
@@ -46,8 +44,8 @@
 			<br>
 			<label class="text-primary">Errores:</label>
 			<input type="text" class="form-control text-center" v-model="contador_errores" size="3">
-			<br>
-            <a href="{{ route('juego4')}}"><button class="btn btn-primary text-center" id="bot1">Continuar</button></a>
+			<br><br>
+            <p id="bot"></p>
             <br><br>
 		</div>	<!-- En cuarta columna -->
         <br>				
@@ -131,14 +129,49 @@ export default{
             if(this.contador_aciertos==this.palabra_generada.length){
                 this.win=true
                 this.game = false
+                var pp=document.getElementById("bot");
+                var div1 = document.createElement("div");
+                div1.setAttribute("style", "background-color:grey;border:4px solid green;"); 
+
+                var text = document.createElement("h1");
+                text.textContent="Ganaste";
+
+                var a = document.createElement("a");
+                a.setAttribute("href", "{{route('juego4')}}");
+
+                var boton = document.createElement("button");
+                boton.textContent="Continuar";
                 
+                pp.appendChild(div1);
+                div1.appendChild(text);
+                div1.appendChild(a);
+                a.appendChild(boton);
+
+
 
             }
 
-            if(this.contador_errores==10){
+            if(this.contador_errores==8){
                 this.lost = true
                 this.game = false
-                alert("Perdiste!!")
+                var pp=document.getElementById("bot");
+                var div1 = document.createElement("div");
+                div1.setAttribute("style", "background-color:grey;border:4px solid green;"); 
+
+                var text = document.createElement("h1");
+                text.textContent="Perdiste";
+
+                var a = document.createElement("a");
+                a.setAttribute("href", "{{route('menuPrincipal')}}");
+
+                var boton = document.createElement("button");
+                boton.textContent="Volver";
+                
+                pp.appendChild(div1);
+                div1.appendChild(text);
+                div1.appendChild(a);
+                a.appendChild(boton);
+                
 
             }
                         
