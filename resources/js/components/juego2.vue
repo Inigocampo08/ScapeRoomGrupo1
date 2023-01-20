@@ -2,8 +2,7 @@
 
 <div class="row">
     <div class="col-12">
-        <h1 class="text-center">Juego de memorama</h1>
-        <p>
+        <p style="color: black;">
             <span class="h5">Intentos: </span>
             {{intentos}}/{{MAXIMOS_INTENTOS}}&nbsp;<span class="h5">Aciertos:
             </span> {{aciertos}}
@@ -14,7 +13,7 @@
     class="row">
     <div :key="indiceFila+''+indiceImagen" class="col-3"
         v-for="(imagen, indiceImagen) in fila">
-        <div class="mb-4">
+        <div class="mb-4 offset-3">
             <img @click="voltear(indiceFila, indiceImagen)"
                 :class="{'girar': imagen.mostrar}"
                 :src="(imagen.mostrar ? imagen.ruta :
@@ -23,19 +22,23 @@
         </div>
     </div>
 </div>
+<p id="bot"></p>
 </template>
 
 <script>
 const MAXIMOS_INTENTOS = 8, // Intentos máximos que tiene el jugador
     COLUMNAS = 4, // Columnas del memorama
     SEGUNDOS_ESPERA_VOLTEAR_IMAGEN = 1, // Por cuántos segundos mostrar ambas imágenes
-    NOMBRE_IMAGEN_OCULTA = "./img/question.png"; // La imagen que se muestra cuando la real está oculta
+    NOMBRE_IMAGEN_OCULTA = "./img/LogoFinal.png"; // La imagen que se muestra cuando la real está oculta
 
 
     export default{
     data(){
         return {			
             // La ruta de las imágenes. Puede ser relativa o absoluta
+            game:true,	
+            win:false,
+            lost:false,
             imagenes: [
                 "./img/Formaldehído.png",
                 "./img/Galactosa.jpg",
@@ -61,34 +64,50 @@ const MAXIMOS_INTENTOS = 8, // Intentos máximos que tiene el jugador
         // Método que muestra la alerta indicando que el jugador ha perdido; después
         // de mostrarla, se reinicia el juego
         indicarFracaso() {
-            Swal.fire({
-                    title: "Perdiste",
-                    html: `
-                <img class="img-fluid" src="./img/perdiste.png" alt="Perdiste">
-                <p class="h4">Agotaste tus intentos</p>`,
-                    confirmButtonText: "Jugar de nuevo",
-                    allowOutsideClick: false,
-                    allowEscapeKey: false,
-                })
-                .then(this.reiniciarJuego)
+            var pp=document.getElementById("bot");
+                var div1 = document.createElement("div");
+                div1.setAttribute("style", "background-color:grey;border:4px solid green; text-align:center;"); 
+
+                var text = document.createElement("h1");
+                text.textContent="Perdiste";
+
+                var a = document.createElement("a");
+                a.setAttribute("href", "{{route('menuPrincipal')}}");
+
+                var boton = document.createElement("button");
+                boton.textContent="Volver";
+                
+                pp.appendChild(div1);
+                div1.appendChild(text);
+                div1.appendChild(a);
+                a.appendChild(boton);
         },
         // Mostrar alerta de victoria y reiniciar juego
         indicarVictoria() {
-            Swal.fire({
-                    title: "¡Ganaste!",
-                    html: `
-                <img class="img-fluid" src="./img/ganaste.png" alt="Ganaste">
-                <p class="h4">Muy bien hecho</p>`,
-                    confirmButtonText: "Jugar de nuevo",
-                    allowOutsideClick: false,
-                    allowEscapeKey: false,
-                })
-                .then(this.reiniciarJuego)
+            var pp=document.getElementById("bot");
+                var div1 = document.createElement("div");
+                div1.setAttribute("style", "background-color:grey;border:4px solid green; text-align:center;"); 
+
+                var text = document.createElement("h1");
+                text.textContent="Ganaste";
+
+                var a = document.createElement("a");
+                a.setAttribute("href", "{{route('juego3')}}");
+
+                var boton = document.createElement("button");
+                boton.textContent="Continuar";
+                
+                pp.appendChild(div1);
+                div1.appendChild(text);
+                div1.appendChild(a);
+                a.appendChild(boton);
         },
         // Método que indica si el jugador ha ganado
         haGanado() {
             return this.memorama.every(arreglo => arreglo.every(imagen => imagen.acertada));
         },
+
+
         // Ayudante para mezclar un arreglo
         mezclarArreglo(a) {
             var j, x, i;
