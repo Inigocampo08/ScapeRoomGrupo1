@@ -51,8 +51,6 @@ class RegisternController extends Controller
         //     "rol" => ["required"]
         // ]);
 
-        Log::alert('Entro');
-
         $usuario = User::create([
 
             "name" => $request->nombre,
@@ -67,7 +65,6 @@ class RegisternController extends Controller
         $usuario->save();
 
         Auth::login($usuario);
-
 
         return redirect(route('home'));
 
@@ -116,5 +113,25 @@ class RegisternController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function login(Request $request) {
+
+        $credentials = [
+            "name" => $request->nombre,
+            "password" => $request->password,
+        ];
+
+        Log::alert($credentials);
+
+        if(Auth::attempt($credentials)) {
+
+        Log::alert('Gol del Caaadiiiz!');
+        $request->session()->regenerate();
+
+            return redirect(route('home'));
+        } else {
+            return redirect(route('login'));
+        }
     }
 }

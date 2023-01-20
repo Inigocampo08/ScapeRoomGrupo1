@@ -33,7 +33,7 @@ Route::view('/juego5','juego5')->name('juego5');
 Route::view('/juego6','juego6')->name('juego6');
 
 Route::post('/registro', [RegisternController::class, 'store'])->name('register.store');
-Route::post("/login", [LoginController::class, 'store'])->name('login.store');
+Route::post("/login", [RegisternController::class, 'login'])->name('login.store');
 Route::get('/logout', [LoginController::class, 'destroy'])->name('logout.destroy');
 
 
