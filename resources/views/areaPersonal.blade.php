@@ -15,97 +15,94 @@
 
 </head>
 
+<style>
+    ¨*{
+margin: 0;
+padding: 0;
+}
+body{
+background-color: #252525
+}
+button {
+    background-color: transparent;
+    background-color: #00ff0084;
+    border: 3px solid #00ff0084;
+    border-radius: 6px;
+    color: #00ff00;
+    padding: 6px;
+}
+
+a :hover {
+    color: #89918984;
+}
+
+
+footer {
+  background-color: #252525;
+  bottom: 0px;
+  width: 99%;
+
+  /* bottom:-10px; */
+
+}
+/* footer {
+    background-color: #252525;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color: white;
+    z-index: 2;
+     bottom:-10px;
+    display: flex;
+} */
+
+footer,a,h3 {
+    color: #00ff00;
+}
+ul {
+    list-style: none;
+}
+
+.campodetexto {
+
+    padding: 5px;
+    width: 75mvh;
+    border: 3px solid #00ff00;
+    border-radius: 6px;
+    background-color: #00ff0084;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+}
+
+.campodetexto:focus {
+
+    background-color: #00ff00;
+    border: 3px solid #00ff0084;
+
+}
+
+.boton:hover {
+
+    border: 3px solid #00ff00;
+    color: #033a0384;
+    background-color: #00ff00;
+
+}
+
+.boton {
+    border: 3px solid #00ff0084;
+    border-radius: 6px;
+    color: #00ff00;
+    background-color: #00ff0084;
+    padding: 6px;
+
+}
+</style>
 <body>
-
-
-    <style>
-            ¨*{
-        margin: 0;
-        padding: 0;
-    }
-    body{
-        background-color: #252525
-    }
-        button {
-            background-color: transparent;
-            background-color: #00ff0084;
-            border: 3px solid #00ff0084;
-            border-radius: 6px;
-            color: #00ff00;
-            padding: 6px;
-        }
-
-        a :hover {
-            color: #89918984;
-        }
-
-        
-      footer {
-          background-color: #252525;
-          bottom: 0px;
-          width: 99%;
-       
-          /* bottom:-10px; */
-        
-      }
-        /* footer {
-            background-color: #252525;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 50px;
-            color: white;
-            z-index: 2;
-             bottom:-10px;
-            display: flex;
-        } */
-      
-        footer,a,h3 {
-            color: #00ff00;
-        }
-        ul {
-            list-style: none;
-        }
-
-        .campodetexto {
-
-            padding: 5px;
-            width: 75mvh;
-            border: 3px solid #00ff00;
-            border-radius: 6px;
-            background-color: #00ff0084;
-            margin-left: 10px;
-            margin-right: 10px;
-
-
-        }
-
-        .campodetexto:focus {
-
-            background-color: #00ff00;
-            border: 3px solid #00ff0084;
-
-        }
-
-        .boton:hover {
-
-            border: 3px solid #00ff00;
-            color: #033a0384;
-            background-color: #00ff00;
-
-        }
-
-        .boton {
-            border: 3px solid #00ff0084;
-            border-radius: 6px;
-            color: #00ff00;
-            background-color: #00ff0084;
-            padding: 6px;
-
-        }
-    </style>
-    </head>
-
+</head>
     <body>
 
 
@@ -129,13 +126,33 @@
                         <h3>Email:</h3>
                         <h4 style="color: white;">{{Auth::user()->email}}</h4>
                         <br>
-                        <button type="submit" class="boton  btn">Editar</button>
+                       <!-- Button trigger modal -->
+<!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button>
+  
+  <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                ...
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
+{{-- 
         <script src="/js/particles.min.js"></script>
-        <script src="/js/particlesjs-config.json"></script>
+        <script src="/js/particlesjs-config.json"></script> --}}
 
 
         <footer>
@@ -154,7 +171,14 @@
         {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> --}}
 
     </body>
+    {{-- <script>
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
 
+        myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+})
+    </script> --}}
 </html>
 
 {{--
