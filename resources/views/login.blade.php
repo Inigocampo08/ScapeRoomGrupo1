@@ -20,14 +20,14 @@
                 <br>
                 <input type="text" name="nombre" class="campodetexto" placeholder="NOMBRE">
                 <input type="password" name="password" class="campodetexto" placeholder="CONTRASEÑA">
+                <br>
+                <br>
                 <div id="grupobotones">
                     <div id="btn-submit"><input type="submit" class="boton" name="enviar" id="btn1" value="ENTRAR"></div>
                     <div id="btn-registro"><a class="boton" name="registrar" id="btn2" href="{{ route('register')}}" value="REGISTRAR">REGISTRARSE</a></div>
                 </div>
             </form>
-            <br>
-            <br>
-        
+
         </div>
 
     </div>

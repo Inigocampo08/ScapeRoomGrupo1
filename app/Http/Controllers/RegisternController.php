@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Validation\Validator;
 
 class RegisternController extends Controller
 {
@@ -56,7 +57,7 @@ class RegisternController extends Controller
             "name" => $request->nombre,
             "apellidos" => $request->apellido,
             "email" => $request->email,
-            "password" => Hash::make($request->password),
+            "password" => Hash::make($request->contraseña),
             "imagen" => $request->imagen,
             "rol" => $request->rol,
 
@@ -117,20 +118,21 @@ class RegisternController extends Controller
 
     public function login(Request $request) {
 
-        $credentials = [
+        $credentials =  [
             "name" => $request->nombre,
-            "password" => $request->passwsord,
+            "password" => $request->password,
         ];
 
         Log::alert($credentials);
 
-        if(Auth::attempt($credentials)) {
+       if(Auth::attempt($credentials)) {
 
-        Log::alert('Gol del Caaadiiiz!');
-        $request->session()->regenerate();
+            Log::alert('Gol del Caaadiiiz!');
+            $request->session()->regenerate();
 
             return redirect(route('home'));
         } else {
+
             return redirect(route('login'));
         }
     }
