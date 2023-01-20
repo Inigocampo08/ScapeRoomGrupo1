@@ -119,7 +119,7 @@ class RegisternController extends Controller
 
         $credentials = [
             "name" => $request->nombre,
-            "password" => $request->password,
+            "password" => $request->passwsord,
         ];
 
         Log::alert($credentials);
