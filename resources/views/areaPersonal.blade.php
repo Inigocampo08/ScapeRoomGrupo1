@@ -105,12 +105,10 @@ ul {
 </head>
     <body>
 
-
-
         <x-layouts.header />
         <x-layouts.nav />
 
-            <div class="container-fluid" style="background-color:#252525; margin-top:60px;">
+            <div class="container-fluid" style="background-color:#252525;height:620px">
                 <div class="row">
                     <div class="col-12 col-sm-4 col-xl-4" style="height:280px;text-align:center;background-color: #252525;">
                         <img src="/img/avatar.png" style="height:150px;width:150px;"><br><br>
@@ -172,21 +170,9 @@ ul {
                     </div>
                 </div>
             </div>
-{{-- 
-        <script src="/js/particles.min.js"></script>
-        <script src="/js/particlesjs-config.json"></script> --}}
-
-
-        <footer>
-            <div class="container-fluid" style="margin-top: 30px;" >
-                <div class="row">
-                    <div class="col-xl-4 text-center"> <p style="color:#00ff00; text-decoration: none;">©2023 por Venenum</p></div>
-                    <div class="col-xl-4 text-center"> <p><a style="color:#00ff00; text-decoration: none;" href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a><p></div>
-                    <div class="col-xl-4 text-center"> <p><a style="color:#00ff00; text-decoration: none;" href="https://www.google.com/maps/dir//cifp+txurdinaga/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd4e4fac87437727:0x364f27e82def0130?sa=X&ved=2ahUKEwjk2qLliL38AhXiRvEDHanuD1UQ9Rd6BAhZEAU">Como llegar</a><p>  </div>
-                </div>
-        
             </div>
-        </footer>
+            <x-layouts.footer/>
+
 
 
         <!-- JavaScript Bundle with Popper -->
