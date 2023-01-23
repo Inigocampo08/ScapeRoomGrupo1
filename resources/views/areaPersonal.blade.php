@@ -109,6 +109,7 @@ ul {
         <x-layouts.nav />
 
             <div class="container-fluid" style="background-color:#252525;height:620px">
+                <br><br><br><br><br>
                 <div class="row">
                     <div class="col-12 col-sm-4 col-xl-4" style="height:280px;text-align:center;background-color: #252525;">
                         <img src="/img/avatar.png" style="height:150px;width:150px;"><br><br>
