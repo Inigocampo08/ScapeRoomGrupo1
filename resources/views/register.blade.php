@@ -41,7 +41,6 @@
                     </div>
                 </div>
                 <br>
-                <br>
                 <div id="grupobotones">
                     <div id="btn-submit"><a type="submit" class="boton" name="volver" id="btn2"
                             href="{{ route('login') }}" value="LOGIN">LOGIN</a></div>
