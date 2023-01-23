@@ -12,7 +12,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 
 <style>
@@ -127,23 +127,45 @@ ul {
                         <h4 style="color: white;">{{Auth::user()->email}}</h4>
                         <br>
                        <!-- Button trigger modal -->
-<!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button>
-  
-  <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
+                       <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#botonEditar">
+                        Editar
+                    </button>
+                    </div>
+                    <div class="modal" id="botonEditar">
+                        <div class="modal-dialog">
                             <div class="modal-content">
+
                                 <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <h5 class="modal-tittle">Editar usuario</h5>
+                                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
                                 </div>
                                 <div class="modal-body">
-                                ...
+                                    <form action="{{ route('areaPersonal') }}" >
+                                        @csrf
+                                        <label>Nombre:</label>
+                                        <input type="text" class="form-control" name="nombre" value="{{Auth::user()->name}}" required>
+                                        <br>
+                                        <label>Apellido:</label>
+                                        <input type="text" class="form-control"  name="Apellido" value="{{Auth::user()->apellidos}}" required>
+                                        <br>
+                                        <label>Email:</label>
+                                        <input type="text" class="form-control" name="Email" value="{{Auth::user()->email}}" required>
+                                        <br>
+                                        <label >Password:</label>
+                                        <input type="password" class="form-control" name="contraseña"  placeholder="Ingrese otra contraseña en caso de cambiarla">
+                                        <br>
+                                        <label>FotoPerfil:</label>
+                                        <input type="file" name="foto" id="btn-foto" value="{{Auth::user()->imagen}}">
+                                        <br>
+                                    
+                                        
+                                    
+                              
                                 </div>
                                 <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button class="btn btn-success">ACTUALIZAR</button>
+                                    </form>
+                                    <button class="btn btn-success" data-bs-dismiss="modal">CANCELAR</button>
                                 </div>
                             </div>
                         </div>
