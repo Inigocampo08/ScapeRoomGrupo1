@@ -40,8 +40,6 @@ a :hover {
 footer {
   background-color: #252525;
   bottom: 0px;
-  width: 99%;
-
   /* bottom:-10px; */
 
 }
@@ -108,7 +106,7 @@ ul {
         <x-layouts.header />
         <x-layouts.nav />
 
-            <div class="container-fluid" style="background-color:#252525;height:620px">
+            <div class="container-fluid" style="background-color:#252525;height:550px">
                 <br><br><br><br><br>
                 <div class="row">
                     <div class="col-12 col-sm-4 col-xl-4" style="height:280px;text-align:center;background-color: #252525;">
@@ -127,7 +125,7 @@ ul {
                         <br>
                        <!-- Button trigger modal -->
                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#botonEditar">
-                        Editar
+                       Editar
                     </button>
                     </div>
                     <div class="modal" id="botonEditar">
@@ -139,31 +137,28 @@ ul {
                                     <button class="btn btn-close" data-bs-dismiss="modal"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="{{ route('areaPersonal') }}" >
+                             <form action="{{ route('user.update', Auth::user()->id) }}" method="POST" >
                                         @csrf
+                                        {{ method_field('PUT')}}
                                         <label>Nombre:</label>
                                         <input type="text" class="form-control" name="nombre" value="{{Auth::user()->name}}" required>
                                         <br>
                                         <label>Apellido:</label>
-                                        <input type="text" class="form-control"  name="Apellido" value="{{Auth::user()->apellidos}}" required>
+                                        <input type="text" class="form-control"  name="apellido" value="{{Auth::user()->apellidos}}" required>
                                         <br>
                                         <label>Email:</label>
-                                        <input type="text" class="form-control" name="Email" value="{{Auth::user()->email}}" required>
-                                        <br>
-                                        <label >Password:</label>
-                                        <input type="password" class="form-control" name="contraseña"  placeholder="Ingrese otra contraseña en caso de cambiarla">
+                                        <input type="text" class="form-control" name="email" value="{{Auth::user()->email}}" required>
                                         <br>
                                         <label>FotoPerfil:</label>
-                                        <input type="file" name="foto" id="btn-foto" value="{{Auth::user()->imagen}}">
+                                        <input type="file" name="imagen" id="btn-foto" value="{{Auth::user()->imagen}}">
                                         <br>
-                                    
                                         
                                     
                               
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-success">ACTUALIZAR</button>
-                                    </form>
+                             </form>
                                     <button class="btn btn-success" data-bs-dismiss="modal">CANCELAR</button>
                                 </div>
                             </div>

@@ -7,6 +7,7 @@
     </div>
 
   </div>
+<<<<<<< HEAD
 
 
 
@@ -27,4 +28,8 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ route('ventanaGrupos')}}">Grupos</a>
     </div> --}}
+=======
+  
+  
+>>>>>>> d17d3181a9da9a4f2fc193634e8e8c207871b06d
 
