@@ -14,7 +14,7 @@
 <body class="text-center">
     <div id="particles-js">
         <div id="main" class="form-signin w-100 m-auto">
-            <form action="{{ route('register.store') }}" method="POST" class="º">
+            <form action="{{ route('register.store') }}" method="POST" class="º" enctype="multipart/form-data">
                 @csrf
                 <div><img class="mb-4" src="/img/LogoFinal.png" alt="" width="275" height="225"></div>
                 <br>
