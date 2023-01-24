@@ -9,23 +9,5 @@
   </div>
   
   
-  
-  
-  
-  
-  
-  
-  {{-- <div class="container-fluid" style="background-color: gray; text-align: center; color:greenyellow" >
-
-    
-
-            <a  class="nav-link"  href="{{ route('ventanaEstadisticas')}}">Estadisticas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('ventanaPuntuacion')}}">Puntuacion</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('ventanaGrupos')}}">Grupos</a>
-    </div> --}}
 
   

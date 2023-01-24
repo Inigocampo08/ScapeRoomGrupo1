@@ -40,8 +40,6 @@ a :hover {
 footer {
   background-color: #252525;
   bottom: 0px;
-  width: 99%;
-
   /* bottom:-10px; */
 
 }
@@ -108,7 +106,7 @@ ul {
         <x-layouts.header />
         <x-layouts.nav />
 
-            <div class="container-fluid" style="background-color:#252525;height:620px">
+            <div class="container-fluid" style="background-color:#252525;height:550px">
                 <br><br><br><br><br>
                 <div class="row">
                     <div class="col-12 col-sm-4 col-xl-4" style="height:280px;text-align:center;background-color: #252525;">
