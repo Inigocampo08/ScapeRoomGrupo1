@@ -43,14 +43,14 @@ class RegisternController extends Controller
     {
         //Registrar Usuarios
 
-        //$request->validate([
-           //  "name" => ["required" ],
-             //"apellidos" =>["required"],
-             //"email" => ["required", "email"],
-             //"password" => ["required" ],
-             //"imagen" => ["required"],
-             //"rol" => ["required"]
-         //]);
+        // $request->validate([
+        //         "name" => ["required" ],
+        //         "apellidos" =>["required"],
+        //         "email" => ["required", "email"],
+        //         "password" => ["required" ],
+        //         "imagen" => ["required"],
+        //         "rol" => ["required"]
+        //                 ]);
 
         $usuario = User::create([
 
@@ -58,12 +58,16 @@ class RegisternController extends Controller
             "apellidos" => $request->apellido,
             "email" => $request->email,
             "password" => Hash::make($request->contraseña),
-            "imagen" => $request->imagen,
+            "imagen" => $request->nombre. '.' . pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION),
             "rol" => $request->rol,
 
         ]);
 
         $usuario->save();
+
+        Log::alert($request->foto);
+
+        move_uploaded_file($request->foto, './img/userimg/' . $request->nombre . '.' . (pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION)));
 
         Auth::login($usuario);
 
@@ -91,6 +95,8 @@ class RegisternController extends Controller
     public function edit($id)
     {
         //
+        $user = user::findOrFail($id);
+        return view('user.editar', ['user' => $user]);
     }
 
     /**
@@ -103,6 +109,15 @@ class RegisternController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $user = user::findOrFail($id);
+        $user->name = $request->input('nombre');
+        $user->apellidos = $request->input('apellido');
+        $user->email = $request->input('email');
+        $user->imagen = $request->input('imagen') ;
+        $user->save();
+
+        return redirect(route('areaPersonal'));
+
     }
 
     /**
