@@ -39,30 +39,7 @@ class LoginController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //Inicio de sesion
 
-        $credenciales = [
-
-            'name' => $request->nombre,
-            'password' => $request->password,
-            //"active" => 'true'
-
-        ];
-
-        $remember = ($request->has('remember') ? true : false);
-
-        if(Auth::attempt($credenciales, $remember)){
-            Log::alert('gol');
-            return redirect(route('home'));
-
-        }else{
-            Log::alert($credenciales);
-            return redirect(route('login'));
-        }
-
-    }
 
     /**
      * Display the specified resource.

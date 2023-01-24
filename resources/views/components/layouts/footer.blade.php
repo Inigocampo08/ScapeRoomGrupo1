@@ -35,7 +35,7 @@
 </style>
 
 <footer>
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color:#252525;">
         <div class="row" style="background-color:#252525; height:139px;">
             <div class="col-xl-4 col-sm-4 col-4 text-center">
               <br><br><br>

@@ -14,7 +14,8 @@ Route::view('/ventanaPuntuacion','ventanaPuntuacion')->name('ventanaPuntuacion')
 
 Route::view('/ventanaPrueba','ventanaPrueba')->name('ventanaPrueba');
 
-Route::view('/ventanaGrupos','ventanaGrupos')->name('ventanaGrupos');
+//Route::view('/ventanaGrupos','ventanaGrupos')->name('ventanaGrupos');
+Route::view('/VentanaGruposNueva', 'VentanaGruposNueva')->name('VentanaGruposNueva');
 
 Route::view('/ventanaInformacion','ventanaInformacion')->name('ventanaInformacion');
 
@@ -33,9 +34,12 @@ Route::view('/juego5','juego5')->name('juego5');
 Route::view('/juego6','juego6')->name('juego6');
 
 Route::post('/registro', [RegisternController::class, 'store'])->name('register.store');
-Route::post("/login", [LoginController::class, 'store'])->name('login.store');
+Route::post("/login", [RegisternController::class, 'login'])->name('login.store');
 Route::get('/logout', [LoginController::class, 'destroy'])->name('logout.destroy');
 
+Route::get('/user/{id}/editar', [RegisternController::class, 'edit'])->name('user.edit');
+
+Route::put('/user/{id}', [RegisternController::class, 'update'])->name('user.update');
 
 
 

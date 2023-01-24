@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 #main{
@@ -35,7 +35,7 @@
     background-color: #00ff0084  ;
     margin-left: 10px;
     margin-right: 10px;
-    
+
 
 }
 
@@ -73,8 +73,8 @@ border: 3px solid #00ff0084  ;
 
     border: 3px solid #00ff00;
     color: #033a0384;
-    background-color: #00ff00; 
-   
+    background-color: #00ff00;
+
 }
 
 #grupobotones{
@@ -82,11 +82,19 @@ border: 3px solid #00ff0084  ;
     align-self: flex-end;
     justify-content: center;
     text-decoration: none;
+    width: 100%;
 
 }
 
 #btn-submit{
-width: 90px;
+width: 100px;
+}
+
+#btn1{
+
+    width: 90px;
+
+
 }
 
 #btn-registro{

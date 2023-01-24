@@ -6,10 +6,9 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Primeros pasos con Vue</title>
+	<title>Ahorcado</title>
 	 <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
 
   @vite(['resources/js/logica.js', 'resources/js/juego3.css'])
 </head>
@@ -18,7 +17,7 @@
   <x-layouts.header />
 	<div id="todo">
 		<br>
-		<h3 class="text-center text-info">JUEGO DE AHORCADO</h3>
+		<h3 class="text-center text-info" style="color: black">JUEGO DE AHORCADO</h3>
 		<br>
 		<div id="explicacion" class="container">
 			<div class="col-xl-10 col-sm-10 col-10 offset-1">

@@ -14,12 +14,16 @@
 <body class="text-center">
     <div id="particles-js">
         <div id="main" class="form-signin w-100 m-auto">
-            <form action="{{ route('register.store') }}" method="POST" class="º">
+            <form action="{{ route('register.store') }}" method="POST" class="º" enctype="multipart/form-data">
                 @csrf
                 <div><img class="mb-4" src="/img/LogoFinal.png" alt="" width="275" height="225"></div>
                 <br>
                 <div id="grupoinputs1">
                     <div><input type="text" name="nombre" class="campodetexto" placeholder="USUARIO"></div>
+                    <br>
+                    @error('nombre')
+                    <small style="color:red">{{ $message }}</small>
+                    @enderror
                     <div><input type="text" name="apellido" class="campodetexto" placeholder="APELLIDO"></div>
                 </div>
                 <br>
@@ -40,7 +44,6 @@
                         </div>
                     </div>
                 </div>
-                <br>
                 <br>
                 <div id="grupobotones">
                     <div id="btn-submit"><a type="submit" class="boton" name="volver" id="btn2"

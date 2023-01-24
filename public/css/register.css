@@ -11,6 +11,12 @@ form {
 
 }
 
+small{
+
+    z-index: 2;
+    position: absolute;
+}
+
 #grupoinputs1 {
 
     justify-content: center;
@@ -87,7 +93,7 @@ form {
     border: 3px solid #00ff00;
     color: #033a0384;
     background-color: #00ff00;
-    ;
+
 
 }
 
@@ -173,4 +179,10 @@ a {
     padding: 10px;
 
 
+}
+
+
+#btn2{
+
+    width: 60px;
 }
