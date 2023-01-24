@@ -36,6 +36,9 @@ Route::post('/registro', [RegisternController::class, 'store'])->name('register.
 Route::post("/login", [RegisternController::class, 'login'])->name('login.store');
 Route::get('/logout', [LoginController::class, 'destroy'])->name('logout.destroy');
 
+Route::get('/user/{id}/editar', [RegisternController::class, 'edit'])->name('user.edit');
+
+Route::put('/user/{id}', [RegisternController::class, 'update'])->name('user.update');
 
 
 

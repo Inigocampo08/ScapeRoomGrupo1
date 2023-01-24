@@ -91,6 +91,8 @@ class RegisternController extends Controller
     public function edit($id)
     {
         //
+        $user = user::findOrFail($id);
+        return view('user.editar', ['user' => $user]);
     }
 
     /**
@@ -103,6 +105,15 @@ class RegisternController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $user = user::findOrFail($id);
+        $user->name = $request->input('nombre');
+        $user->apellidos = $request->input('apellido');
+        $user->email = $request->input('email');
+        $user->imagen = $request->input('imagen') ;
+        $user->save();
+
+        return redirect(route('login'));
+
     }
 
     /**
