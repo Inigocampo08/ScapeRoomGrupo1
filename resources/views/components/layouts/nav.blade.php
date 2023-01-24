@@ -7,29 +7,4 @@
     </div>
 
   </div>
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-  {{-- <div class="container-fluid" style="background-color: gray; text-align: center; color:greenyellow" >
-
-
-
-            <a  class="nav-link"  href="{{ route('ventanaEstadisticas')}}">Estadisticas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('ventanaPuntuacion')}}">Puntuacion</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('ventanaGrupos')}}">Grupos</a>
-    </div> --}}
-=======
-  
-  
->>>>>>> d17d3181a9da9a4f2fc193634e8e8c207871b06d
 
