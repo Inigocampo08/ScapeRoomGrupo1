@@ -43,7 +43,7 @@ const MAXIMOS_INTENTOS = 8, // Intentos máximos que tiene el jugador
                 "./img/Formaldehído.png",
                 "./img/Galactosa.jpg",
                 "./img/Ribosa.jpg",
-                "./img/Fructosa.jpg",
+                "./img/Fructosa.png",
                 "./img/Piruvato.png",
                 "./img/Glucosa.png",
             ],

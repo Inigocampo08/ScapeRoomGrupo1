@@ -11,6 +11,12 @@ form {
 
 }
 
+small{
+
+    z-index: 2;
+    position: absolute;
+}
+
 #grupoinputs1 {
 
     justify-content: center;

@@ -20,6 +20,10 @@
                 <br>
                 <div id="grupoinputs1">
                     <div><input type="text" name="nombre" class="campodetexto" placeholder="USUARIO"></div>
+                    <br>
+                    @error('nombre')
+                    <small style="color:red">{{ $message }}</small>
+                    @enderror
                     <div><input type="text" name="apellido" class="campodetexto" placeholder="APELLIDO"></div>
                 </div>
                 <br>
