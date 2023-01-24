@@ -116,7 +116,7 @@ class RegisternController extends Controller
         $user->imagen = $request->input('imagen') ;
         $user->save();
 
-        return redirect(route('login'));
+        return redirect(route('areaPersonal'));
 
     }
 
