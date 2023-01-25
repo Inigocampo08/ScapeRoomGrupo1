@@ -103,7 +103,7 @@
     <x-layouts.header />
     <x-layouts.nav />
 
-    <div class="container-fluid" style="height:550px">
+    <div class="container-fluid">
       <div class="row">
           <div class="col-12 col-sm-5 col-xl-5" style="background-color: #252525;height:480px;text-align:center;">
               <img class="img-fluid" src="/img/avatar.png" style="height: 150px; width:150px; text-align:center;margin-top:50px;"><br><br>

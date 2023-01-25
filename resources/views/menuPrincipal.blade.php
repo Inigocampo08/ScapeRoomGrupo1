@@ -39,7 +39,7 @@ body{
 
     <x-layouts.header />
     <x-layouts.nav/>
-    <div class="container-fluid" style="background-color:#252525;height:550px">
+    <div class="container-fluid" style="background-color:#252525;">
         <br><br><br>
 
         <div class="row" style="background-color:#252525">

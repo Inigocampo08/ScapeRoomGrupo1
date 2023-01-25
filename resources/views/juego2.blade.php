@@ -7,25 +7,57 @@
   <meta name="author" content="Vincent Garreau" />
   <meta name="viewport" con  {{-- <link rel="stylesheet" href="menuPrincipal.css"> --}}
 tent="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  {{-- <link rel="stylesheet" media="screen" href="/css/fondo.css"> --}}
-  {{-- <link rel="stylesheet" href="menuPrincipal.css"> --}}
+
   <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
             <link href="./css/bootstrap.min.css" rel="stylesheet">
-            {{-- <link href="./css/style.css" rel="stylesheet"> --}}
             <script src="./js/sweetalert2.all.min.js"></script>
                 <script src="./js/vue.min.js"></script>
                 <script src="./js/script.js"></script>
+                <script src="./js/cont.js"></script>
+
+<script>
+    window.onload = updateClock;
+
+var minutos=29;
+var segundos = 59;
+
+function updateClock() {
+  document.getElementById('countdown').innerHTML = minutos +":"+ segundos;
+  if(segundos==0 && minutos==0){
+    console.log('Final');
+  }else{
+    segundos-=1;
+    if(segundos==0)
+    {
+        segundos=59;
+        minutos-=1;
+    }
+
+    setTimeout("updateClock()",1000);
+    
+  }
+}
+    </script>
+
 
     @vite(['resources/js/juego2.js', 'resources/js/juego2.css'])
+
     </head>
 
     <body>
         <x-layouts.header />
         <div id="todo" class="container-fluid">
             <br>
-            <h1 class="text-center" style="color: black;">Juego de memorama</h1>
+            <div style="row">
+                <div class="col-xl-12 col-sm-12 col-12">
+                    <h1 class="text-center" style="color: black;">Juego de memorama</h1>
+                </div>
+                <div class="col-xl-12 col-sm-12 col-12 text-right">
+                    <h1 class="text-center" id="countdown" style="color: black"></h1>
+                </div>
+            </div>
                 <br>
                 <div id="explicacion" class="container">
                     <div class="col-xl-10 col-sm-10 col-10 offset-1">
