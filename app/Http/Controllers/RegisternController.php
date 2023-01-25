@@ -43,14 +43,14 @@ class RegisternController extends Controller
     {
         //Registrar Usuarios
 
-        // $request->validate([
-        //         "name" => ["required" ],
-        //         "apellidos" =>["required"],
-        //         "email" => ["required", "email"],
-        //         "password" => ["required" ],
-        //         "imagen" => ["required"],
-        //         "rol" => ["required"]
-        //                 ]);
+        //$request->validate([
+           //  "name" => ["required" ],
+             //"apellidos" =>["required"],
+             //"email" => ["required", "email"],
+             //"password" => ["required" ],
+             //"imagen" => ["required"],
+             //"rol" => ["required"]
+         //]);
 
         $usuario = User::create([
 
@@ -58,16 +58,12 @@ class RegisternController extends Controller
             "apellidos" => $request->apellido,
             "email" => $request->email,
             "password" => Hash::make($request->contraseña),
-            "imagen" => $request->nombre. '.' . pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION),
+            "imagen" => $request->imagen,
             "rol" => $request->rol,
 
         ]);
 
         $usuario->save();
-
-        Log::alert($request->foto);
-
-        move_uploaded_file($request->foto, './img/userimg/' . $request->nombre . '.' . (pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION)));
 
         Auth::login($usuario);
 
