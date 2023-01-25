@@ -98,6 +98,15 @@ ul {
     padding: 6px;
 
 }
+
+#fotoperfil{
+
+    width:80px;
+    height:80px;
+    border-radius:150px;
+    border:10px solid #252525;
+
+}
 </style>
 <body>
 </head>
@@ -110,7 +119,7 @@ ul {
                 <br><br><br><br><br>
                 <div class="row">
                     <div class="col-12 col-sm-4 col-xl-4" style="height:280px;text-align:center;background-color: #252525;">
-                        <img src="/img/avatar.png" style="height:150px;width:150px;"><br><br>
+                        <img src="img/userimg/{{ Auth::user()->imagen}}" id="fotoperfil" style="height:150px;width:150px;"><br><br>
                         <h1 style="color: white;">{{Auth::user()->name}}</h1>
                     </div>
                     <div class="col-12 col-sm-6 col-xl-6" style="background-color:#252525; height:480px;">
@@ -152,9 +161,9 @@ ul {
                                         <label>FotoPerfil:</label>
                                         <input type="file" name="imagen" id="btn-foto" value="{{Auth::user()->imagen}}">
                                         <br>
-                                        
-                                    
-                              
+
+
+
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-success">ACTUALIZAR</button>
