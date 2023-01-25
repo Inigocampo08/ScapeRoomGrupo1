@@ -101,9 +101,7 @@ ul {
 
 #fotoperfil{
 
-    width:250px;
-    height:250px;
-    border-radius:150px;
+    border-radius:300px;
     border:10px solid #252525;
 
 }
@@ -119,7 +117,7 @@ ul {
                 <br><br><br><br><br>
                 <div class="row">
                     <div class="col-12 col-sm-4 col-xl-4" style="height:280px;text-align:center;background-color: #252525;">
-                        <img src="img/userimg/{{ Auth::user()->imagen}}" id="fotoperfil" style="height:150px;width:150px;"><br><br>
+                        <img src="img/userimg/{{ Auth::user()->imagen}}" id="fotoperfil" style="height:260px;width:260px;"><br>
                         <h1 style="color: white;">{{Auth::user()->name}}</h1>
                     </div>
                     <div class="col-12 col-sm-6 col-xl-6" style="background-color:#252525; height:480px;">
@@ -159,7 +157,7 @@ ul {
                                         <input type="text" class="form-control" name="email" value="{{Auth::user()->email}}" required>
                                         <br>
                                         <label>FotoPerfil:</label>
-                                        <input type="file" name="imagen" id="btn-foto" value="{{Auth::user()->imagen}}">
+                                        <input type="file" name="foto" id="btn-foto" value="{{Auth::user()->imagen}}">
                                         <br>
 
 
