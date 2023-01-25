@@ -43,14 +43,14 @@ class RegisternController extends Controller
     {
         //Registrar Usuarios
 
-        // $request->validate([
-        //         "name" => ["required" ],
-        //         "apellidos" =>["required"],
-        //         "email" => ["required", "email"],
-        //         "password" => ["required" ],
-        //         "imagen" => ["required"],
-        //         "rol" => ["required"]
-        //                 ]);
+         $request->validate([
+                 "nombre" => "required" ,
+                 "apellido" =>"required",
+                 "email" => "required", "email",
+                 "contraseña" => "required" ,
+                 "foto" => "required",
+                 "rol" => "required"
+                         ]);
 
         $usuario = User::create([
 
@@ -108,13 +108,19 @@ class RegisternController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //Borrar la imgaen anterior
+       // $image_path = public_path().'/img/userimg/';
+       // unlink($image_path);
+
+        //Hacer el update
         $user = user::findOrFail($id);
         $user->name = $request->input('nombre');
         $user->apellidos = $request->input('apellido');
         $user->email = $request->input('email');
-        $user->imagen = $request->input('imagen') ;
+        $user->imagen = $request->nombre . '.' . pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION);
         $user->save();
+
+        move_uploaded_file($request->foto, './img/userimg/' . $request->nombre . '.' . (pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION)));
 
         return redirect(route('areaPersonal'));
 
@@ -151,4 +157,5 @@ class RegisternController extends Controller
             return redirect(route('login'));
         }
     }
+
 }
