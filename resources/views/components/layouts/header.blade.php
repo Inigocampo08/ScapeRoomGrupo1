@@ -23,22 +23,31 @@
         color: #00ff00
         color: #00ff00;
     }
+    #fotoperfil{
+
+    width:80px;
+    height:80px;
+    border-radius:150px;
+    border:10px solid #252525;
+
+    }
+
 </style>
 <header>
     <div class="container-fluid">
         <div class="row" style="background-color:	#252525 ">
-            <div class="col-xl-7 col-sm-7 col-6" style="text-align:left"> 
+            <div class="col-xl-7 col-sm-7 col-6" style="text-align:left">
                 <a href="{{ route('home') }}">
                     <img src="img/LogoFinal.png" alt="" style="height:120px"></a>
             </div>
             <div class="col-xl-5 col-sm-5 col-6" style="text-align: right;">
                 <br>
                 <a href="{{ route('login') }}"><img src="img/LogoLogitoFinal.png" style="height:30px;"  id="salir" alt=""></a>
-                <a href="{{ route('areaPersonal') }}"><img src="img/avatar.png" style="height:80px" alt=""></a>
+                <a href="{{ route('areaPersonal') }}"><img class="img-circle" id="fotoperfil" src="img/userimg/{{ Auth::user()->imagen}}" alt=""></a>
                 <div id="nombrejugador"><p style="color: #00ff00; margin-right:30px;">{{ Auth::user()->name }}</p></div>
             </div>
         </div>
     </div>
 
-    </div>    
+    </div>
 </header>
