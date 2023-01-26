@@ -99,11 +99,11 @@
 </head>
 <?php
 
-// variables de conexion
-$host = "localhost";
-$username = "root";
-$password = "";
-$dbname = "reto2";
+// // variables de conexion
+// $host = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "reto2";
 
 
 try {
@@ -125,27 +125,33 @@ try {
     // escribo todos los registros obtenidos en arrays
     $opcionA = array();
     $opcionB = array();
+    $IDpregunta = array();
 
     foreach ($resultados as $columna) {
         array_push($opcionA, $columna['OpcionA']);
         array_push($opcionB, $columna['OpcionB']);
+        array_push($IDpregunta, $columna['IDpregunta']);
     }
     // test de las respuestas obtenidas
     /*
         var_dump($opcionA);
         echo "<br><br>";
         var_dump($opcionB);
-        */
+        echo "<br><br>";
+        var_dump($IDpregunta);
+    */
 
     // cojo 5 del array con un numero aleatorio
     $medioCultivo = array();
     $caracteristica = array();
+    $indice = array();
     $random = 0;
     for ($posicion = 0; $posicion < 5; $posicion++) {
 
         $random = rand(0, 29);
         array_push($medioCultivo, $opcionA[$random]);
         array_push($caracteristica, $opcionB[$random]);
+        array_push($indice, $IDpregunta[$random]);
     }
 
     // test de las respuestas obtenidas
@@ -153,39 +159,16 @@ try {
         var_dump($medioCultivo);
         echo "<br><br>";
         var_dump($caracteristica);
-        */
+        echo "<br><br>";
+        var_dump($indice);
+    */
 } catch (PDOException $e) {
     echo "La conexión ha fallado: " . $e->getMessage();
 }
 
 ?>
 
-<script>
-    // defino variables
-    var seleccionMedio = 0
-    var seleccionCaracteristica = 0;
 
-
-
-
-    // validaciones de las opciones elegidas
-    function ValidarSelecciones() {
-        // prueba de datos obtenidos
-        console.log("Medio seleccionado: " + seleccionMedio);
-        console.log("Caracteristica seleccionada: " + seleccionCaracteristica);
-
-        // las comparo
-        // si son iguales
-        if (seleccionMedio == seleccionCaracteristica) {
-            console.log("Las 2 partes SI coinciden");
-        }
-        // si no son iguales
-        else {
-            console.log("Las 2 partes NO coinciden");
-        }
-
-    }
-</script>
 
 <body>
 
@@ -207,9 +190,9 @@ try {
                 <?php
 
                 for ($posicion = 0; $posicion < 5; $posicion++) {
-                    echo "<button name='button'>" . $medioCultivo[$posicion] . "</button><br><br>";
+                    echo "<button name='button' id='" . $indice[$posicion] . "' onclick=eventoClickMedio(this) class='medioCultivo' value='" . $indice[$posicion] . "'>" . $medioCultivo[$posicion] . "</button><br><br>";
                 }
-
+                
                 ?>
 
             </div>
@@ -220,7 +203,7 @@ try {
                 <?php
 
                 for ($posicion = 0; $posicion < 5; $posicion++) {
-                    echo "<button name='button'>" . $caracteristica[$posicion] . "</button><br><br>";
+                    echo "<button name='button' id='" . $indice[$posicion] . "' onclick=eventoClickCaracteristica(this) class='caracteristica' value='" . $indice[$posicion] . "'>" . $caracteristica[$posicion] . "</button><br><br>";
                 }
 
                 ?>
@@ -256,12 +239,17 @@ try {
             </div>
         </div>
     </footer>
-
+    <!--
     <script src="/js/particles.min.js"></script>
     <script src="/js/particlesjs-config.json"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    -->
+    <script src="../js/juego1.js"></script>
 
+
+    
 </body>
+
 
 
 </html>
