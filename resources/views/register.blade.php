@@ -22,6 +22,18 @@
                     <div><input type="text" name="nombre" class="campodetexto" placeholder="USUARIO"></div>
                     <div><input type="text" name="apellido" class="campodetexto" placeholder="APELLIDO"></div>
                 </div>
+                <div>
+                    <div>
+                        @error('nombre')
+                            <small style="color:red">{{ $message }}</small>
+                        @enderror
+                    </div>
+                    <div>
+                        @error('apellido')
+                            <small style="color:red">{{ $message }}</small>
+                        @enderror
+                    </div>
+                </div>
                 <br>
                 <div id="grupoinputs2">
                     <div><input type="password" name="contraseña" class="campodetexto" placeholder="CONTRASEÑA"></div>
@@ -30,7 +42,8 @@
                 </div>
                 <br>
                 <div id="grupoinputs3">
-                    <div><input accept="image/png,image/jpeg,image/jpg" type="file" name="foto" placeholder="FOTO" id="btn-foto"></div>
+                    <div><input accept="image/png,image/jpeg,image/jpg" type="file" name="foto" placeholder="FOTO"
+                            id="btn-foto"></div>
                     <div id="gruporadio">
                         <div><label for="Profesor" class="etiquetaradiobutton">Profesor <input type="radio"
                                     class="grupodebotonesradio" name="rol" value="Profesor" id=""></label>
@@ -48,7 +61,7 @@
                     </div>
             </form>
 
-            <div id="diverror" class="col-xl-4 text-center">
+            {{-- <div id="diverror" class="col-xl-4 text-center">
 
                 @error('nombre')
                 <small style="color:red">{{ $message }}</small>
@@ -74,7 +87,7 @@
                 <small style="color:red">{{ $message }}</small>
                 @enderror
 
-            </div>
+            </div> --}}
 
         </div>
 
