@@ -186,3 +186,14 @@ a {
 
     width: 60px;
 }
+
+#diverror{
+
+    display: flex;
+    width: 30%;
+    border: 3px solid #00ff00;
+    background-color: #252525;
+    justify-content: center;
+    border-radius: 15px;
+
+}

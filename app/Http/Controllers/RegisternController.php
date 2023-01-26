@@ -48,7 +48,7 @@ class RegisternController extends Controller
                  "apellido" =>"required",
                  "email" => "required", "email",
                  "contraseña" => "required" ,
-                 "foto" => "required",
+                 "foto" => "required", 'image',
                  "rol" => "required"
                          ]);
 
