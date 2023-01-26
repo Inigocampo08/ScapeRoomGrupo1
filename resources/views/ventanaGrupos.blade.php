@@ -105,7 +105,7 @@
 
 
       <x-layouts.header />
-      <x-layouts.nav />
+   
 
      
           <div class="container-fluid" style="margin-top:60px" >
