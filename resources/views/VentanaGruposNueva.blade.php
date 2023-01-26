@@ -137,8 +137,8 @@
         <div class="row">
             
             @auth
-            @if(Auth::user()->rol != "alumno")
-            <div class="offset-xl-5 col-xl-2 offset-sm-5  col-sm-2 offset-5  col-2"> <article id="article">
+            @if(Auth::user()->rol == "Profesor")
+            <div class="offset-xl-4 col-xl-2 offset-sm-4  col-sm-2 offset-4  col-2"> <article id="article">
                 <button>AgregarGrupo</button>
             </div>
                
