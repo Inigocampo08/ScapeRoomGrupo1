@@ -8,7 +8,7 @@
             </div>
             <div class="col-xl-4 col-sm-4 col-4 text-center">
               <br>
-                <p class="fs-6"><a href="mailto:ciprianclase@gmail.com">¿Tienes dudas? Pregúntanos</a>
+                <p class="fs-6"><a href="mailto:ciprianclase@gmail.com">¿Tienes dudas? </a>
                 </p>
             </div>
             <div class="col-xl-4 col-sm-4 col-4 text-center">

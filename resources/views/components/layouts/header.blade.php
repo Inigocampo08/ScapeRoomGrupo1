@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Area Personal</title>
+    <title>
+        {{config('app.name')}}
+    </title>
+
     <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
     <meta name="author" content="Vincent Garreau" />
     <meta name="viewport"

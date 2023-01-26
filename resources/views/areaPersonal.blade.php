@@ -1,8 +1,7 @@
 
 <style>
     ¨*{
-margin: 0;
-padding: 0;
+
 }
 body{
 background-color: #252525
@@ -89,6 +88,10 @@ ul {
     border:10px solid #252525;
 
 }
+#principal{
+    background-color:#252525;
+    min-height:calc(100vh - 90px - 80px) ;
+}
 </style>
 <body>
 </head>
@@ -97,15 +100,15 @@ ul {
         <x-layouts.header />
 
 
-            <div class="container-fluid" style="background-color:#252525;height:83vh">
+            <div class="container-fluid" id="principal" >
                 <br><br><br><br><br>
                 <div class="row">
                     <div class="col-12 col-sm-4 offset-xl-2 col-xl-4" style="height:280px;text-align:center;background-color: #252525;">
-                        <img src="img/userimg/{{ Auth::user()->imagen}}" id="fotoperfil" style="height:150px;width:150px;"><br><br>
+                        <img src="img/userimg/{{ Auth::user()->imagen}}" id="fotoperfil" style="height:170px;width:170px;"><br><br>
 
                         <h1 style="color: white;">{{Auth::user()->name}}</h1>
                     </div>
-                    <div class="col-12 col-sm-6 col-xl-6" style="background-color:#252525; height:320px;">
+                    <div class="col-12 col-sm-6 col-xl-4 text-center" style="background-color:#252525; height:320px;">
                         <h3 >Nombre:</h3>
                         <h4 style="color: white;">{{Auth::user()->name}}</h4>
                         <br>
@@ -156,8 +159,11 @@ ul {
                             </div>
                         </div>
                     </div>
+                    
                 </div>
+                <br><br>
             </div>
+           
             </div>
            
 
