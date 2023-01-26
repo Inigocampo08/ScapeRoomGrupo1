@@ -20,10 +20,6 @@
                 <br>
                 <div id="grupoinputs1">
                     <div><input type="text" name="nombre" class="campodetexto" placeholder="USUARIO"></div>
-                    <br>
-                    @error('nombre')
-                    <small style="color:red">{{ $message }}</small>
-                    @enderror
                     <div><input type="text" name="apellido" class="campodetexto" placeholder="APELLIDO"></div>
                 </div>
                 <br>
@@ -34,12 +30,12 @@
                 </div>
                 <br>
                 <div id="grupoinputs3">
-                    <div><input type="file" name="foto" placeholder="FOTO" id="btn-foto"></div>
+                    <div><input accept="image/png,image/jpeg,image/jpg" type="file" name="foto" placeholder="FOTO" id="btn-foto"></div>
                     <div id="gruporadio">
                         <div><label for="Profesor" class="etiquetaradiobutton">Profesor <input type="radio"
                                     class="grupodebotonesradio" name="rol" value="Profesor" id=""></label>
                         </div>
-                        <div><label for="Profesor" class="etiquetaradiobutton">Alumno <input type="radio"
+                        <div><label for="Profesor" class="etiquetaradiobutton">Alumno<input type="radio"
                                     class="grupodebotonesradio" name="rol" value="Alumno" id=""></label>
                         </div>
                     </div>
@@ -51,6 +47,34 @@
                     <div id="btn-register"><input type="submit" value="REGISTRARSE" class="boton" name="registrar">
                     </div>
             </form>
+
+            <div id="diverror" class="col-xl-4 text-center">
+
+                @error('nombre')
+                <small style="color:red">{{ $message }}</small>
+                @enderror
+
+                @error('apellido')
+                <small style="color:red">{{ $message }}</small>
+                @enderror
+
+                @error('contraseña')
+                <small style="color:red">{{ $message }}</small>
+                @enderror
+
+                @error('email')
+                <small style="color:red">{{ $message }}</small>
+                @enderror
+
+                @error('foto')
+                <small style="color:red">{{ $message }}</small>
+                @enderror
+
+                @error('rol')
+                <small style="color:red">{{ $message }}</small>
+                @enderror
+
+            </div>
 
         </div>
 

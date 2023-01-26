@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 7424e81001cf11816a387acab081987af9724b79
 <head>
   <meta charset="utf-8">
   <title>Area Personal</title>
