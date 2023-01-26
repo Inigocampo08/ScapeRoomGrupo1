@@ -118,7 +118,7 @@ ul {
             <div class="container-fluid" style="background-color:#252525;height:550px">
                 <br><br><br><br><br>
                 <div class="row">
-                    <div class="col-12 col-sm-4 col-xl-4" style="height:280px;text-align:center;background-color: #252525;">
+                    <div class="col-12 col-sm-4 offset-xl-2 col-xl-4" style="height:280px;text-align:center;background-color: #252525;">
                         <img src="img/userimg/{{ Auth::user()->imagen}}" id="fotoperfil" style="height:150px;width:150px;"><br><br>
                         <h1 style="color: white;">{{Auth::user()->name}}</h1>
                     </div>

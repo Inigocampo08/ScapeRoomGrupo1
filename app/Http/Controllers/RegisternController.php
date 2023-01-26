@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Grupo;
 use Illuminate\Http\Request;
 
 
@@ -21,6 +22,10 @@ class RegisternController extends Controller
     public function index()
     {
         //
+        $grupos = Grupo::all();
+
+        return view("VentanaGruposNueva",compact("grupos"));
+
     }
 
     /**
@@ -137,10 +142,10 @@ class RegisternController extends Controller
             "name" => $request->nombre,
             "password" => $request->contraseña,
         ];
-
         Log::alert($credentials);
 
        if(Auth::attempt($credentials)) {
+
 
             Log::alert('Gol del Caaadiiiz!');
             $request->session()->regenerate();
