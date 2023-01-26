@@ -137,7 +137,7 @@ export default{
                 text.textContent="Ganaste";
 
                 var a = document.createElement("a");
-                a.setAttribute("href", "{{route('juego4')}}");
+                a.setAttribute("href", "/juego4");
 
                 var boton = document.createElement("button");
                 boton.textContent="Continuar";
@@ -162,7 +162,7 @@ export default{
                 text.textContent="Perdiste";
 
                 var a = document.createElement("a");
-                a.setAttribute("href", "{{route('menuPrincipal')}}");
+                a.setAttribute("href", "/menuPrincipal");
 
                 var boton = document.createElement("button");
                 boton.textContent="Volver";
