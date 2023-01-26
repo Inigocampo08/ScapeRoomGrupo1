@@ -20,7 +20,7 @@ tent="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.
 <script>
     window.onload = updateClock;
 
-var minutos=29;
+var minutos=4;
 var segundos = 59;
 
 function updateClock() {

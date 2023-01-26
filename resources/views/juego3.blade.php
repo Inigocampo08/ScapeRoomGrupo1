@@ -10,6 +10,31 @@
 	 <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
+
+	<script>
+		window.onload = updateClock;
+	
+	var minutos=4;
+	var segundos = 59;
+	
+	function updateClock() {
+	  document.getElementById('countdown').innerHTML = minutos +":"+ segundos;
+	  if(segundos==0 && minutos==0){
+		console.log('Final');
+	  }else{
+		segundos-=1;
+		if(segundos==0)
+		{
+			segundos=59;
+			minutos-=1;
+		}
+	
+		setTimeout("updateClock()",1000);
+		
+	  }
+	}
+		</script>
+
   @vite(['resources/js/logica.js', 'resources/js/juego3.css'])
 </head>
 
@@ -17,7 +42,14 @@
   <x-layouts.header />
 	<div id="todo">
 		<br>
-		<h3 class="text-center text-info" style="color: black">JUEGO DE AHORCADO</h3>
+            <div style="row">
+                <div class="col-xl-12 col-sm-12 col-12">
+                    <h1 class="text-center" style="color: black;">Juego de Ahorcado</h1>
+                </div>
+                <div class="col-xl-12 col-sm-12 col-12 text-right">
+                    <h1 class="text-center" id="countdown" style="color: black"></h1>
+                </div>
+            </div>
 		<br>
 		<div id="explicacion" class="container">
 			<div class="col-xl-10 col-sm-10 col-10 offset-1">

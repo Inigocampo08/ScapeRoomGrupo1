@@ -51,7 +51,7 @@ body{
                         </p>
                         <br>
                         <button id="bot">
-                            <a href="{{ route('juego1')}}" style="text-decoration:none;"><h1>JUGAR</h1></a>
+                            <a href="{{ route('juego2')}}" style="text-decoration:none;"><h1>JUGAR</h1></a>
                         </button>
                 </div>
             </div>
