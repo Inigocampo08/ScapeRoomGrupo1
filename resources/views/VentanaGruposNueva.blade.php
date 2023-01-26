@@ -140,7 +140,7 @@
             @if(Auth::user()->rol != "alumno")
             <div class="offset-xl-5 col-xl-2 offset-sm-5  col-sm-2 offset-5  col-2"> <article id="article">
                 <button>AgregarGrupo</button>
-            </article></div>
+            </div>
                
             @endif
             @endauth

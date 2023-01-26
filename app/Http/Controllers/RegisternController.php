@@ -122,10 +122,10 @@ class RegisternController extends Controller
         $user->name = $request->input('nombre');
         $user->apellidos = $request->input('apellido');
         $user->email = $request->input('email');
-        $user->imagen = $request->nombre . '.' . pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION);
+        // $user->imagen = $request->nombre . '.' . pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION);
         $user->save();
 
-        move_uploaded_file($request->foto, './img/userimg/' . $request->nombre . '.' . (pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION)));
+        // move_uploaded_file($request->foto, './img/userimg/' . $request->nombre . '.' . (pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION)));
 
         return redirect(route('areaPersonal'));
 
