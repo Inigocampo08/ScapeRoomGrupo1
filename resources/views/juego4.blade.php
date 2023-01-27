@@ -45,25 +45,30 @@
   }
     </style>
     <script>
-        window.onload = updateClock;
-	
-	var minutos=4;
-	var segundos = 59;
-	
+    window.onload = updateClock;
+
+	var minutos=1;
+	var segundos = 30;
+
 	function updateClock() {
-	  document.getElementById('countdown').innerHTML = minutos +":"+ segundos;
-	  if(segundos==0 && minutos==0){
-		console.log('Final');
-	  }else{
-		segundos-=1;
-		if(segundos==0)
+		if(segundos<10 && segundos>0)
 		{
-			segundos=59;
-			minutos-=1;
+			segundos="0"+segundos;
 		}
-		setTimeout("updateClock()",1000);
-	  }
-	}
+	document.getElementById('countdown').innerHTML = minutos +":"+ segundos;
+	if(segundos==0 && minutos==0){
+		document.getElementById('countdown').innerHTML="Se acabo el tiempo";
+	}else{
+		
+			segundos-=1;
+			if(segundos==0 && minutos!=0)
+			{
+				segundos=59;
+				minutos-=1;
+			}
+			setTimeout("updateClock()",1000);
+			}
+}
 
 var mapa= [0,0,0,0,0,0,0,0,0];
 var jugador=1;
