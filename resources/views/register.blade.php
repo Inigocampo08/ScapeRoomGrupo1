@@ -22,35 +22,57 @@
                     <div><input type="text" name="nombre" class="campodetexto" placeholder="USUARIO"></div>
                     <div><input type="text" name="apellido" class="campodetexto" placeholder="APELLIDO"></div>
                 </div>
-                <div>
-                    <div>
+                <div id="diverror1">
+                    <div id="error1">
                         @error('nombre')
                             <small style="color:red">{{ $message }}</small>
                         @enderror
                     </div>
-                    <div>
+                    <div id="error2">
                         @error('apellido')
                             <small style="color:red">{{ $message }}</small>
                         @enderror
                     </div>
                 </div>
+
+                hola
+
                 <br>
                 <div id="grupoinputs2">
                     <div><input type="password" name="contraseña" class="campodetexto" placeholder="CONTRASEÑA"></div>
                     <div><input type="email" name="email" class="campodetexto" placeholder="EMAIL"></div>
-
+                </div>
+                <div id="diverror2">
+                    <div id="error3">
+                        @error('contraseña')
+                            <small style="color:red">{{ $message }}</small>
+                        @enderror
+                    </div>
+                    <div id="error4">
+                        @error('email')
+                            <small style="color:red">{{ $message }}</small>
+                        @enderror
+                    </div>
                 </div>
                 <br>
                 <div id="grupoinputs3">
                     <div><input accept="image/png,image/jpeg,image/jpg" type="file" name="foto" placeholder="FOTO"
                             id="btn-foto"></div>
                     <div id="gruporadio">
-                        <div><label for="Profesor" class="etiquetaradiobutton">Profesor <input type="radio"
+                        <div><label for="Profesor" class="etiquetaradiobutton">Profesor  <input type="radio"
                                     class="grupodebotonesradio" name="rol" value="Profesor" id=""></label>
                         </div>
-                        <div><label for="Profesor" class="etiquetaradiobutton">Alumno<input type="radio"
-                                    class="grupodebotonesradio" name="rol" value="Alumno" id=""></label>
+                        <div><label for="Profesor" class="etiquetaradiobutton">Alumno  <input
+                                    type="radio"class="grupodebotonesradio" name="rol" value="Alumno"
+                                    id=""></label>
                         </div>
+                    </div>
+                </div>
+                <div id="diverror3">
+                    <div id="error5">
+                        @error('foto')
+                            <small style="color:red">{{ $message }}</small>
+                        @enderror
                     </div>
                 </div>
                 <br>
@@ -60,34 +82,6 @@
                     <div id="btn-register"><input type="submit" value="REGISTRARSE" class="boton" name="registrar">
                     </div>
             </form>
-
-            {{-- <div id="diverror" class="col-xl-4 text-center">
-
-                @error('nombre')
-                <small style="color:red">{{ $message }}</small>
-                @enderror
-
-                @error('apellido')
-                <small style="color:red">{{ $message }}</small>
-                @enderror
-
-                @error('contraseña')
-                <small style="color:red">{{ $message }}</small>
-                @enderror
-
-                @error('email')
-                <small style="color:red">{{ $message }}</small>
-                @enderror
-
-                @error('foto')
-                <small style="color:red">{{ $message }}</small>
-                @enderror
-
-                @error('rol')
-                <small style="color:red">{{ $message }}</small>
-                @enderror
-
-            </div> --}}
 
         </div>
 
