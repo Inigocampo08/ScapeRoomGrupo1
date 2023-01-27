@@ -6,22 +6,182 @@
     all:unset
 } */
 
-header {
-    border-bottom: 4px solid #00ff00;
+/* header {
+    border-bottom: 3px solid #00ff00;
+}
+
+#contenedor{
+    height:90px;
 }
 
 #inforpersonal{
 
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+
 }
 
-#salir{
-    margin-right: 15px;
-}
+
 #nombrejugador{
 
     color: #00ff00;
 
+}
+#fotoperfil{
+    margin-top: 10px;
+    margin-right: 3px;
+    width:70px;
+    height:70px;
+    border-radius:150px;
+    border:3px solid #00ff00;  
+}
+#navegador {
+    margin-top: 20px;
+    text-align: right;
+    display: block;
+}
+#navegador ul{
+    list-style-type: none;
+    
+  
+}
+#navegador ul li a {
+    text-decoration: none;
+}
+#navegador  li{
+    display: inline-block;
+  
+    margin: 5px;
+
+}
+#navegador{
+    height: 80px;
+    align-items:right;
+}
+
+
+
+#logo{
+    height: 90px
+}
+
+@media screen and (max-width: 670px) { 
+    #navegador{
+        display: none;     
+    }
+   
+}
+
+@media screen and (max-width: 400px) { 
+    #navegador{
+        display: none;     
+    }
+    #fotoperfils{
+        display: none;
+    }
+
+   
+}
+ */
+
+nav{
+    border-bottom: 3px solid #00ff00;
+    background: black;
+    height: 90px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    margin-top: -20px;
+    height: 80px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #00ff00;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-top: 25px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/* section{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+} */
+#fotoperfil{
+    margin-top: 10px;
+    margin-right: 3px;
+    width:70px;
+    height:70px;
+    border-radius:150px;
+    border:3px solid #00ff00;  
+}
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #252525;
+        top: 90px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #00ff00;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
 }

@@ -1,24 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Area Personal</title>
-    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
-    <meta name="author" content="Vincent Garreau" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" media="screen" href="/css/fondo.css">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</head>
 
 <style>
     ¨*{
-margin: 0;
-padding: 0;
+
 }
 body{
 background-color: #252525
@@ -65,7 +48,7 @@ ul {
 .campodetexto {
 
     padding: 5px;
-    width: 75mvh;
+    width: 75vh;
     border: 3px solid #00ff00;
     border-radius: 6px;
     background-color: #00ff0084;
@@ -105,23 +88,27 @@ ul {
     border:10px solid #252525;
 
 }
+#principal{
+    background-color:#252525;
+    min-height:calc(100vh - 90px - 80px) ;
+}
 </style>
 <body>
 </head>
     <body>
 
         <x-layouts.header />
-        <x-layouts.nav />
 
-            <div class="container-fluid" style="background-color:#252525;height:550px">
+
+            <div class="container-fluid" id="principal" >
                 <br><br><br><br><br>
                 <div class="row">
                     <div class="col-12 col-sm-4 offset-xl-2 col-xl-4" style="height:280px;text-align:center;background-color: #252525;">
-                        <img src="img/userimg/{{ Auth::user()->imagen}}" id="fotoperfil" style="height:150px;width:150px;"><br><br>
+                        <img src="img/userimg/{{ Auth::user()->imagen}}" id="fotoperfil" style="height:170px;width:170px;"><br><br>
 
                         <h1 style="color: white;">{{Auth::user()->name}}</h1>
                     </div>
-                    <div class="col-12 col-sm-6 col-xl-6" style="background-color:#252525; height:480px;">
+                    <div class="col-12 col-sm-6 col-xl-4 text-center" style="background-color:#252525; height:320px;">
                         <h3 >Nombre:</h3>
                         <h4 style="color: white;">{{Auth::user()->name}}</h4>
                         <br>
@@ -172,58 +159,18 @@ ul {
                             </div>
                         </div>
                     </div>
+                    
                 </div>
+                <br><br>
             </div>
+           
             </div>
-            <x-layouts.footer/>
+           
 
 
 
-        <!-- JavaScript Bundle with Popper -->
-        {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> --}}
-
+       
+        <x-layouts.footer/>
     </body>
-    {{-- <script>
-        var myModal = document.getElementById('myModal')
-        var myInput = document.getElementById('myInput')
-
-        myModal.addEventListener('shown.bs.modal', function () {
-        myInput.focus()
-})
-    </script> --}}
+   
 </html>
-
-{{--
-{{-- <div class="offset-xl-3 col-xl-6 col-10 offset-1 text-center "style="background-color:red; height: 500px; font-size:16px"> --}}
-{{-- <div class="col-xl-4 col-4 text-center"><img src="/img/LogoFinal.png" ></div>
-                    <div class="col-xl-8 col-8 text-center">
-                      <label>Nombre:</label>
-                      <input type="text" class="form-control" placeholder="Nombre" name="nombre" value="Nombre" required>
-                      <br>
-                      <label>Apellido:</label>
-                      <input type="text" class="form-control" placeholder="Apellido" name="Apellido" value="Apellido" required>
-                      <br>
-                      <label>Email:</label>
-                      <input type="text" class="form-control" placeholder="Email" name="Email" value="Email" required>
-                      <br>
-                      <label>Imagen:</label>
-                      <input type="text" class="form-control" placeholder="Imagen" name="Imagen" value="Imagen" required> --}}
-
-                      {{-- <div class="col-12 col-sm-6 col-xl-6" style="background-color:#252525; height:480px;">
-                        <h3>Nombre:</h3>
-                        <input type="text" class="campodetexto  form-control" placeholder="Nombre" name="nombre"
-                            value="Nombre" width="20px" required>
-                        <br>
-                        <h3>Apellido:</h3>
-                        <input type="text" class="campodetexto  form-control" placeholder="Apellido" name="Apellido"
-                            value="Apellido" required>
-                        <br>
-                        <h3>Email:</h3>
-                        <input type="text" class="campodetexto  form-control" placeholder="Email" name="Email"
-                            value="Email" required>
-                        <br>
-                        <h3>Imagen:</h3>
-                        <input type="file" name="foto" placeholder="FOTO" id="btn-foto" style="format:none;" class="campodetexto">
-                        <br><br>
-                        <button type="submit" class="boton  btn">Guardar</button>
-                    </div> --}}

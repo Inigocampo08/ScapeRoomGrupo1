@@ -92,7 +92,7 @@
 
 
         <x-layouts.header />
-        <x-layouts.nav />
+    
 
             <div class="container-fluid" style="background-color:#252525;">
                 <div class="row">
