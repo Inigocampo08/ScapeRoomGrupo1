@@ -63,45 +63,13 @@ const MAXIMOS_INTENTOS = 8, // Intentos máximos que tiene el jugador
     methods: {
         // Método que muestra la alerta indicando que el jugador ha perdido; después
         // de mostrarla, se reinicia el juego
-        indicarFracaso() {
-            var pp=document.getElementById("bot");
-                var div1 = document.createElement("div");
-                div1.setAttribute("style", "background-color:grey;border:4px solid green; text-align:center;"); 
-
-                var text = document.createElement("h1");
-                text.textContent="Perdiste";
-
-                var a = document.createElement("a");
-                a.setAttribute("href", "{{route('menuPrincipal')}}");
-
-                var boton = document.createElement("button");
-                boton.textContent="Volver";
-                
-                pp.appendChild(div1);
-                div1.appendChild(text);
-                div1.appendChild(a);
-                a.appendChild(boton);
-        },
-        // Mostrar alerta de victoria y reiniciar juego
-        indicarVictoria() {
-            var pp=document.getElementById("bot");
-                var div1 = document.createElement("div");
-                div1.setAttribute("style", "background-color:grey;border:4px solid green; text-align:center;"); 
-
-                var text = document.createElement("h1");
-                text.textContent="Ganaste";
-
-                var a = document.createElement("a");
-                a.setAttribute("href", "{{route('juego3')}}");
-
-                var boton = document.createElement("button");
-                boton.textContent="Continuar";
-                
-                pp.appendChild(div1);
-                div1.appendChild(text);
-                div1.appendChild(a);
-                a.appendChild(boton);
-        },
+        // indicarFracaso() {
+            
+        // },
+        // // Mostrar alerta de victoria y reiniciar juego
+        // indicarVictoria() {
+            
+        // },
         // Método que indica si el jugador ha ganado
         haGanado() {
             return this.memorama.every(arreglo => arreglo.every(imagen => imagen.acertada));
@@ -120,14 +88,13 @@ const MAXIMOS_INTENTOS = 8, // Intentos máximos que tiene el jugador
             return a;
         },
         // Aumenta un intento y verifica si el jugador ha perdido
-        aumentarIntento() {
-            this.intentos++;
-            if (this.intentos >= MAXIMOS_INTENTOS) {
-                this.indicarFracaso();
-            }
-        },
+        // aumentarIntento() {
+            
+        // },
         // Se desencadena cuando se hace click en la imagen
         voltear(indiceFila, indiceImagen) {
+            if(this.game){
+
             // Si se está regresando una imagen a su estado original, detener flujo
             if (this.esperandoTimeout) {
                 return;
@@ -151,7 +118,28 @@ const MAXIMOS_INTENTOS = 8, // Intentos máximos que tiene el jugador
                 this.memorama[indiceFila][indiceImagen].mostrar = false;
                 this.ultimasCoordenadas.indiceFila = null;
                 this.ultimasCoordenadas.indiceImagen = null;
-                this.aumentarIntento();
+                this.intentos++;
+            if (this.intentos >= MAXIMOS_INTENTOS) {
+                this.lost = true
+                this.game = false
+                var pp=document.getElementById("bot");
+                var div1 = document.createElement("div");
+                div1.setAttribute("style", "background-color:grey;border:4px solid green; text-align:center;"); 
+
+                var text = document.createElement("h1");
+                text.textContent="Perdiste";
+
+                var a = document.createElement("a");
+                a.setAttribute("href", "/menuPrincipal");
+
+                var boton = document.createElement("button");
+                boton.textContent="Volver";
+                
+                pp.appendChild(div1);
+                div1.appendChild(text);
+                div1.appendChild(a);
+                a.appendChild(boton);
+            }
                 return;
             }
 
@@ -166,7 +154,25 @@ const MAXIMOS_INTENTOS = 8, // Intentos máximos que tiene el jugador
                 this.ultimasCoordenadas.indiceImagen = null;
                 // Cada que acierta comprobamos si ha ganado
                 if (this.haGanado()) {
-                    this.indicarVictoria();
+                    this.win=true
+                    this.game = false
+                    var pp=document.getElementById("bot");
+                    var div1 = document.createElement("div");
+                    div1.setAttribute("style", "background-color:grey;border:4px solid green; text-align:center;"); 
+
+                    var text = document.createElement("h1");
+                    text.textContent="Ganaste";
+
+                    var a = document.createElement("a");
+                    a.setAttribute("href", "/juego3");
+
+                    var boton = document.createElement("button");
+                    boton.textContent="Continuar";
+                    
+                    pp.appendChild(div1);
+                    div1.appendChild(text);
+                    div1.appendChild(a);
+                    a.appendChild(boton);
                 }
             } else {
                 // Si no acierta, entonces giramos ambas imágenes
@@ -179,8 +185,27 @@ const MAXIMOS_INTENTOS = 8, // Intentos máximos que tiene el jugador
                     this.ultimasCoordenadas.indiceImagen = null;
                     this.esperandoTimeout = false;
                 }, SEGUNDOS_ESPERA_VOLTEAR_IMAGEN * 1000);
-                this.aumentarIntento();
+                this.intentos++;
+                if (this.intentos >= MAXIMOS_INTENTOS) {
+                    this.lost = true
+                    this.game = false
+                    var pp=document.getElementById("bot");
+                    var div1 = document.createElement("div");
+                    div1.setAttribute("style", "background-color:grey;border:4px solid green; text-align:center;"); 
+                    var text = document.createElement("h1");
+                    text.textContent="Perdiste";
+                    var a = document.createElement("a");
+                    a.setAttribute("href", "{{route('menuPrincipal')}}");
+                    var boton = document.createElement("button");
+                    boton.textContent="Volver";
+                    
+                    pp.appendChild(div1);
+                    div1.appendChild(text);
+                    div1.appendChild(a);
+                    a.appendChild(boton);
+                }
             }
+        }
         },
         reiniciarJuego() {
             let memorama = [];
