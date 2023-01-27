@@ -61,20 +61,10 @@ const MAXIMOS_INTENTOS = 8, // Intentos máximos que tiene el jugador
         }
     },
     methods: {
-        // Método que muestra la alerta indicando que el jugador ha perdido; después
-        // de mostrarla, se reinicia el juego
-        // indicarFracaso() {
-            
-        // },
-        // // Mostrar alerta de victoria y reiniciar juego
-        // indicarVictoria() {
-            
-        // },
         // Método que indica si el jugador ha ganado
         haGanado() {
             return this.memorama.every(arreglo => arreglo.every(imagen => imagen.acertada));
         },
-
 
         // Ayudante para mezclar un arreglo
         mezclarArreglo(a) {
