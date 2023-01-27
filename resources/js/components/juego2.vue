@@ -195,7 +195,7 @@ const MAXIMOS_INTENTOS = 8, // Intentos máximos que tiene el jugador
                     var text = document.createElement("h1");
                     text.textContent="Perdiste";
                     var a = document.createElement("a");
-                    a.setAttribute("href", "{{route('menuPrincipal')}}");
+                    a.setAttribute("href", "/menuPrincipal");
                     var boton = document.createElement("button");
                     boton.textContent="Volver";
                     
