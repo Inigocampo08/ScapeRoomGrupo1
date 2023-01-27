@@ -20,24 +20,28 @@ tent="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.
 <script>
     window.onload = updateClock;
 
-var minutos=4;
-var segundos = 59;
+var minutos=1;
+var segundos = 30;
 
 function updateClock() {
+    if(segundos<10 && segundos>0)
+    {
+        segundos="0"+segundos;
+    }
   document.getElementById('countdown').innerHTML = minutos +":"+ segundos;
   if(segundos==0 && minutos==0){
-    console.log('Final');
-  }else{
-    segundos-=1;
-    if(segundos==0)
-    {
-        segundos=59;
-        minutos-=1;
-    }
-
-    setTimeout("updateClock()",1000);
+    var dato=document.getElementById('countdown').innerHTML="Se acabo el tiempo";
+		dato.style.color="red";
+    }else{
     
-  }
+        segundos-=1;
+        if(segundos==0 && minutos!=0)
+        {
+            segundos=59;
+            minutos-=1;
+        }
+        setTimeout("updateClock()",1000);
+        }
 }
     </script>
 
