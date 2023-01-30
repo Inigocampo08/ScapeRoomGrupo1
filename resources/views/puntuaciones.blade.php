@@ -114,7 +114,7 @@
                             value="Email" required>
                         <br>
                         <h3>Imagen:</h3>
-                        <input type="file" name="foto" placeholder="FOTO" id="btn-foto" style="format:none;" class="campodetexto">
+                        <input type="file" name="foto" placeholder="FOTO" id="btn-foto" class="campodetexto">
                         <br><br>
                         <button type="submit" class="boton  btn">Guardar</button>
                     </div>
