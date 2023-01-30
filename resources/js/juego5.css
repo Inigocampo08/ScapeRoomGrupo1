@@ -50,9 +50,18 @@
    }
 
   #explicacion{
-    background-color: #cecece;
+    background-color: #9a9999;
     border:4px solid green;
     border-radius: 5px;
     color: black;
     text-align: center;
+  }
+
+  input{
+    width: 30px;
+    height: 50px;
+  }
+
+  .app{
+    background-color: #9a9999;
   }

@@ -73,7 +73,7 @@ function updateClock() {
                     </div>
                 </div>
                 <br>
-                <main role="main" class="container" id="app">
+                <main role="main" class="container" id="app" style="background-color: #9a9999;">
                 </main>
             <br><br>
         </div>

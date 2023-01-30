@@ -17,6 +17,10 @@ Route::view('/ventanaPrueba','ventanaPrueba')->name('ventanaPrueba');
 //Route::view('/ventanaGrupos','ventanaGrupos')->name('ventanaGrupos');
 Route::get('/VentanaGruposNueva', [RegisternController::class,'index'])->name('VentanaGruposNueva');
 
+
+Route::view('/ventanaFinal','ventanaFinal')->name('ventanaFinal');
+
+
 Route::view('/ventanaInformacion','ventanaInformacion')->name('ventanaInformacion');
 
 Route::view('/menuPrincipal','menuPrincipal')->middleware('auth')->name('home');
