@@ -1,6 +1,6 @@
 <template>
 
-    <div class="row">
+    <div class="row" id="total">
         <div class="col-12">
             <p style="color: black;">
                 <span class="h5">Intentos: </span>
@@ -11,16 +11,35 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-xl-12 col-sm-12 col-12 text-center" style="background-color: blue;">
+            <div class="col-xl-12 col-sm-12 col-12 text-center">
                 <h1>{{ medioacido[0] }}</h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xl-12 col-sm-12 col-12 text-center" style="background-color: blue;">
-                <input type="text" style="width: 20px;">
+        <div class="row justify-content-center" id="cont1">
+            <div class="col-xl-12 col-sm-12 col-12 text-center">
+                <br><br>
+                <div style="display: flex; justify-content:space-between;">
+                <input type="text" style="width: 30px; height: 50px;">
                 <h1>{{ medioacido[0].substring(0,2) }}</h1>
-
+                <h1>+</h1>
+                <input type="text" style="width: 30px; height: 50px;">
+                <h1>{{ medioacido[0].substring(5,9) }}</h1>
+                <h1>=</h1>
+                <input type="text" style="width: 30px; height: 50px;">
+                <h1>{{ medioacido[0].substring(11,17) }}</h1>
+                <h1>+</h1>
+                <input type="text" style="width: 30px; height: 50px;">
+                <h1>{{ medioacido[0].substring(20,24) }}</h1>
+                <h1>+</h1>
+                <input type="text" style="width: 30px; height: 50px;">
+                <h1>{{ medioacido[0].substring(26,29) }}</h1>
+                </div>
+                <br>
+                
         </div>
+    </div>
+    <div class="row">
+        <p id="bot"></p>
     </div>
     </div>
     </template>
@@ -72,7 +91,25 @@
         methods: {
             // Método que indica si el jugador ha ganado
             haGanado() {
-                return this.memorama.every(arreglo => arreglo.every(imagen => imagen.acertada));
+                this.win=true
+                    this.game = false
+                    var pp=document.getElementById("bot");
+                    var div1 = document.createElement("div");
+                    div1.setAttribute("style", "background-color:grey;border:4px solid green; text-align:center;"); 
+
+                    var text = document.createElement("h1");
+                    text.textContent="Ganaste";
+
+                    var a = document.createElement("a");
+                    a.setAttribute("href", "/ventanaFinal");
+
+                    var boton = document.createElement("button");
+                    boton.textContent="Continuar";
+                    
+                    pp.appendChild(div1);
+                    div1.appendChild(text);
+                    div1.appendChild(a);
+                    a.appendChild(boton);
             },
     
             // Ayudante para mezclar un arreglo
