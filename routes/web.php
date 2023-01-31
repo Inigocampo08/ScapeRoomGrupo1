@@ -47,3 +47,4 @@ Route::put('/user/{id}', [RegisternController::class, 'update'])->name('user.upd
 //     return 'menuPrincipal';
 // });
 
+
