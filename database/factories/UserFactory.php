@@ -17,13 +17,20 @@ class UserFactory extends Factory
      */
     public function definition()
     {
+
+        // genera registros sin parar
         return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'name' => $this->faker->firstName(),
+            'apellidos' => $this->faker->lastName(),
+            'email' => Str::random(10).'@gmail.com',
+            'password' => Str::random(20),
+            'imagen' => 'avatar.png', 
+            'rol' => 'alumno',
             'remember_token' => Str::random(10),
+            'created_at' => date('Y-m-d H:m:s'),
+            'updated_at' => date('Y-m-d H:m:s'),
         ];
+
     }
 
     /**
