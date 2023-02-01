@@ -80,16 +80,16 @@
           padding: 6px;
 
       }
-<<<<<<< HEAD
+
       #contendorPrincipal {
         
         min-height: calc(100vh -90px -80px);
         background-color: #252525;
-=======
+
       #article {
 
 
->>>>>>> fb7b39f064be13d3a774c40bb81aea3f72f6c638
+
       }
 
 
@@ -105,12 +105,12 @@
         <br>
         <br>
         <div class="row" >
-<<<<<<< HEAD
+
             @auth
             @if (Auth::user()->rol == "Profesor")
-=======
+
 {{--
->>>>>>> fb7b39f064be13d3a774c40bb81aea3f72f6c638
+
             @foreach ($grupos as $grupo )
                
             <div class="col-xl-3 offset-sm-2 col-sm-3 offset-xl-2  offset-1 col-10  text-center" style="border: 2px solid #00ff00 ; border-radius:22px; heigth:70vh">
@@ -146,11 +146,11 @@
             @endif
             @endauth
             
-=======
+
 
             @endforeach
 
->>>>>>> fb7b39f064be13d3a774c40bb81aea3f72f6c638
+638
         </div>
        <br>
         <div class="row">

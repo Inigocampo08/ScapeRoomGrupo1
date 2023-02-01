@@ -23,15 +23,11 @@ body{
 }
 #principal{
     background-color:#252525;
-<<<<<<< HEAD
-     min-height:calc(100vh - 100px - 80px);
-  
-=======
      min-height:calc(100vh - 90px - 80px);
 
 
 
->>>>>>> fb7b39f064be13d3a774c40bb81aea3f72f6c638
+
 }
 </style>
 
