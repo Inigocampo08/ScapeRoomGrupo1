@@ -33,35 +33,9 @@
             <li><a href="{{route('VentanaGruposNueva')}}">GRUPOS</a></li>
             <li><a href="{{route('ventanaPuntuacion')}}">PUNTUACION</a></li>
             <li><a href="{{route('login')}}">LOGOUT</a></li>
-            <a href="{{ route('areaPersonal') }}"><img class="img-circle" id="fotoperfil" src="img/userimg/{{ Auth::user()->imagen}}" alt=""></a>
+            <a href="{{ route('areaPersonal') }}"><img class="img-circle" id="fotoperfil" src="img/userimg/{{ Auth::user()->imagen}}" alt="Avatar"></a>
         </ul>
     </nav>
-    
 
-    
-{{-- <header style="background-color: black">
-    <div class="container-fluid">
-        <div class="row" id="contenedor">
-            <div class="col-xl-2 col-lg-2 col-sm-2 col-xs-4 col-12 ">
-                <a href="{{ route('home') }}"> 
-                    <img src="img/logoVenenum.png" id="logo" alt="" ></a>
-            </div>
-            
-                    <div class="col-xl-8 col-lg-9 col-sm-9 col-xs-8 " id="navegador"  >
-                        <ul><li><a href="{{route('areaPersonal')}}"><p>AREA PERSONAL</p></a></li>
-                            <li><a href="{{route('VentanaGruposNueva')}}"><p>GRUPOS</p></a></li>
-                            <li><a href="{{route('ventanaPuntuacion')}}"><p>PUNTUACION</p></a></li>
-                            <li><button><a href="{{route('login')}}"></a>LOGOUT</button></li>
-                        </ul>
-                    </div>
-                    <div class="col-xl-2 col-lg-1 col-sm-1 offset-xs-6 col-xs-2 col-2" id="fotoperfils" >
-                        <a href="{{ route('areaPersonal') }}"><img class="img-circle" id="fotoperfil" src="img/userimg/{{ Auth::user()->imagen}}" alt=""></a>
-                    </div>
-        </div>
-    </div>
-
-    </div>
-</header>
- --}}
 
 
