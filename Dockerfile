@@ -36,6 +36,9 @@ RUN n stable
 
 # 2. apache configs + document root
 ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
+ENV APACHE_RUN_USER=#1000
+ENV APACHE_RUN_GROUP=#1000
+
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
@@ -63,7 +66,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # so when we execute CLI commands, all the host file's ownership remains intact
 # otherwise command from inside container will create root-owned files and directories
 ARG uid
-RUN useradd -G www-data,root -u $uid -d /home/devuser devuser
+RUN useradd -G www-data,root -u 1000 -d /home/devuser devuser
 RUN mkdir -p /home/devuser/.composer && \
     chown -R devuser:devuser /home/devuser
 
