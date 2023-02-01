@@ -1,0 +1,67 @@
+#app{
+    background-color:#cecece;
+    border:4px solid green;
+    border-radius: 5px;
+    padding-top: 10px;
+  }
+  .teclado{
+      margin-top:5px;
+      margin-left:4px;
+      width: 35px;
+      display: inline-grid;
+      border:2px solid green;
+      border-radius: 100px;	
+      background-color: #ebf5fb ;
+      text-align: center;
+      cursor: pointer;
+  }
+  .linea{
+      margin-left:10px;
+  }
+  ul#horizontal-list li {
+    display:inline;
+  }
+  ul#horizontal-list button{
+      margin-left: 10px;
+      width: 40px;
+  }
+  
+  .cuadro{
+    width: 30px;		  
+    margin-left: 6px;		 		  		  		  
+    text-align: center;
+    padding-left:3px;
+    font-size: 1em;
+    border-bottom: double;
+  }
+  .rojo{
+      background-color:red;
+  }
+  .verde{
+      background-color: green;
+  }
+  body{
+    background-color: #00ff00;
+
+  }
+  #todo{
+    background-color: #00ff00;
+    color: black;
+   }
+
+  #explicacion{
+    background-color: #9a9999;
+    border:4px solid green;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+  }
+
+  input{
+    width: 30px;
+    height: 50px;
+  }
+
+  .app{
+    background-color: #9a9999;
+  }

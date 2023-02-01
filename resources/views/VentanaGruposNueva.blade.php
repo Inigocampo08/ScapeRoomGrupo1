@@ -2,7 +2,7 @@
 
   <style>
 
-  
+
     body{
         background-color: #252525
     }
@@ -19,7 +19,18 @@
           color: #89918984;
       }
 
+<<<<<<< HEAD
     
+=======
+      footer {
+          background-color: #252525;
+          bottom: 0px;
+          width: 99%;
+
+          /* bottom:-10px; */
+
+      }
+>>>>>>> fb7b39f064be13d3a774c40bb81aea3f72f6c638
 
       ul {
           list-style: none;
@@ -34,7 +45,7 @@
       }
 
       .campodetexto {
-       
+
           padding: 5px;
           width: 75mvh;
           border: 3px solid #00ff00;
@@ -69,27 +80,37 @@
           padding: 6px;
 
       }
+<<<<<<< HEAD
       #contendorPrincipal {
         
         min-height: calc(100vh -90px -80px);
         background-color: #252525;
+=======
+      #article {
+
+
+>>>>>>> fb7b39f064be13d3a774c40bb81aea3f72f6c638
       }
-     
-    
+
+
   </style>
 
 
 
       <x-layouts.header />
-  
-    <main >
+
+    <main>
 
     <div class="container-fluid" id="contendorPrincipal">
         <br>
         <br>
         <div class="row" >
+<<<<<<< HEAD
             @auth
             @if (Auth::user()->rol == "Profesor")
+=======
+{{--
+>>>>>>> fb7b39f064be13d3a774c40bb81aea3f72f6c638
             @foreach ($grupos as $grupo )
                
             <div class="col-xl-3 offset-sm-2 col-sm-3 offset-xl-2  offset-1 col-10  text-center" style="border: 2px solid #00ff00 ; border-radius:22px; heigth:70vh">
@@ -102,6 +123,7 @@
             </div>
             <br>
             <br>
+<<<<<<< HEAD
             @endforeach 
             @endif
             @endauth
@@ -124,10 +146,15 @@
             @endif
             @endauth
             
+=======
+
+            @endforeach
+
+>>>>>>> fb7b39f064be13d3a774c40bb81aea3f72f6c638
         </div>
        <br>
         <div class="row">
-            
+
             @auth
             @if(Auth::user()->rol == "Profesor")
             <div class=" col-xl-12   col-sm-12   col-12 text-center" > <article id="article">
@@ -136,6 +163,7 @@
                  </button>
                 <br>
             </div>
+<<<<<<< HEAD
             <div class="modal" id="botonEditar">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -164,15 +192,33 @@
                <br>
                <br>
                
+=======
+
+>>>>>>> fb7b39f064be13d3a774c40bb81aea3f72f6c638
             @endif
             @endauth
-        </div>
+        </div> --}}
+
+        @auth
+            @if (Auth::user()->rol == "Profesor")
+
+            <div class="row">
+
+
+            </div>
+
+            @endif
+        @endauth
+
+
+
+
 
     </div>
     </main>
-                     
 
-    
+
+
       <x-layouts.footer/>
 
 
