@@ -86,6 +86,8 @@
         min-height: calc(100vh -90px -80px);
         background-color: #252525;
 
+      }
+
       #article {
 
 

@@ -27,6 +27,7 @@ class UserFactory extends Factory
             'password' => Hash::make(Str::random(20)),
             'imagen' => 'avatar.png',
             'rol' => 'alumno',
+            'id_grupo' => random_int(1,10),
             'remember_token' => Str::random(10),
             'created_at' => date('Y-m-d H:m:s'),
             'updated_at' => date('Y-m-d H:m:s'),

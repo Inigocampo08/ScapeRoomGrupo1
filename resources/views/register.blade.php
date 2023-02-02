@@ -63,7 +63,7 @@
                                     class="grupodebotonesradio" name="rol" value="Profesor" id=""></label>
                         </div>
                         <div><label for="Profesor" class="etiquetaradiobutton">Alumno  <input
-                                    type="radio"class="grupodebotonesradio" name="rol" value="Alumno"
+                                    type="radio"class="grupodebotonesradio" name="rol" value="alumno"
                                     id=""></label>
                         </div>
                     </div>
