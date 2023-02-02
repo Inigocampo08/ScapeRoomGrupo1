@@ -21,8 +21,8 @@ return new class extends Migration
             $table->string('password');
             $table->string('imagen', 30)->nullable();
             $table->string("rol", 25);
-            $table->string("Grupo",30);
-            $table->foreign("nombre_grupo")->references("Nombre")->on("grupos")->onDelete("cascade")->onUpdate("cascade");
+            // $table->unsignedBigInteger("id_grupo");
+            $table->unsignedInteger("id_grupo")->references("id")->on("grupo")->onDelete("cascade")->onUpdate("cascade");
             $table->rememberToken();
             $table->timestamps();
         });

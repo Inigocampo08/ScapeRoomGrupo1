@@ -23,7 +23,7 @@ class RegisternController extends Controller
     {
         //
         if(Auth::user()->rol == "alumno"){
-
+            $sqlsentence = 'SELECT name, ,Nombre, email FROM users INNER JOIN grupo on usuario.id_nombre = grupo.id ';
             $usuarios = user::all();
         return view('VentanaGruposNueva', ['usuarios' => $usuarios]);
 
