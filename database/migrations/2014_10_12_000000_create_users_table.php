@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('imagen', 30)->nullable();
             $table->string("rol", 25);
             $table->string("Grupo",30);
+            $table->foreign("nombre_grupo")->references("Nombre")->on("grupos")->onDelete("cascade")->onUpdate("cascade");
             $table->rememberToken();
             $table->timestamps();
         });
