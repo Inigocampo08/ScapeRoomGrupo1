@@ -50,7 +50,7 @@ body{
                         </button>
                         <br>
                         <br>
-                       <audio controls src="/audio/musicaFondo.mp3" autoplay loop="infinite" ></audio>
+                       <audio controls src="/audio/musicaFondo.mp3" autoplay loop="infinite" class="d-none"  ></audio>
                         {{-- <script>
                             window.onload = function() {
                                 document.getElementById("autoplay").play();
