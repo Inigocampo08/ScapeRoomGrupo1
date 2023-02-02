@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\Validator;
+use Illuminate\Support\Facades\DB;
 
 class RegisternController extends Controller
 {
@@ -19,22 +20,23 @@ class RegisternController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index()
     {
         //
-        if(Auth::user()->rol == "alumno"){
-            $usuarios = user::all();
-        return view('VentanaGruposNueva', ['usuarios' => $usuarios]);
+        // if(Auth::user()->rol == "alumno"){
+        //     $usuarios = user::all();
+        // return view('VentanaGruposNueva', ['usuarios' => $usuarios]);
 
-        }
-        else{
-
+        // }
+        // else{
+            //$grupoPersona = Auth::user()->id_grupo;
+            //$consultagrupos = 'SELECT * FROM users WHERE id_grupo  = $grupopersona';
             $usuarios = user::all();
             $grupos = Grupo::all();
+            //$usuariosgrupo = DB::select($consultagrupos);
+             return view("VentanaGruposNueva",compact("grupos","usuarios"));
 
-        return view("VentanaGruposNueva",compact("grupos","usuarios"));
-
-        }
+        //}
 
     }
 
@@ -86,6 +88,7 @@ class RegisternController extends Controller
             "password" => Hash::make($request->contraseña),
             "imagen" => $request->nombre. '.' . pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION),
             "rol" => $request->rol,
+            "id_grupo" => random_int(0,10),
 
         ]);
 

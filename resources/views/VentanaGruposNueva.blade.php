@@ -100,8 +100,10 @@
 
 
       <x-layouts.header />
+      
 
-    <main>
+
+   
 
     {{-- <div class="container-fluid" id="contendorPrincipal">
         <br>
@@ -198,7 +200,7 @@
             @endif
             @endauth
         </div> --}}
-
+        
         @auth
             @if (Auth::user()->rol == "Profesor")
 
@@ -222,7 +224,6 @@
                         <th>Nombre</th>
                         <th>Apellido</th>
                         <th>Email</th>
-                        <th></th>
             @foreach ($usuarios as $usuario )
                         <td></td>
                         <td></td>
@@ -236,8 +237,9 @@
         </div>
             @endif
         @endauth
-
-    </main>
+    
+    
+</div>
 
 
 

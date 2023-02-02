@@ -30,7 +30,11 @@
         </a>
         <ul>
             <li><a class="active" href="{{route('areaPersonal')}}">AREA PERSONAL</a></li>
+            @auth
+            @if (Auth::user()->rol == "Profesor")
             <li><a href="{{route('VentanaGruposNueva')}}">GRUPOS</a></li>
+            @endif
+            @endauth
             <li><a href="{{route('ventanaPuntuacion')}}">PUNTUACION</a></li>
             <li><a href="{{route('login')}}">LOGOUT</a></li>
             <a href="{{ route('areaPersonal') }}"><img class="img-circle" id="fotoperfil" src="img/userimg/{{ Auth::user()->imagen}}" alt="Avatar"></a>
