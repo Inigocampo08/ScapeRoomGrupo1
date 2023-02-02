@@ -36,6 +36,6 @@
             <a href="{{ route('areaPersonal') }}"><img class="img-circle" id="fotoperfil" src="img/userimg/{{ Auth::user()->imagen}}" alt="Avatar"></a>
         </ul>
     </nav>
-
++
 
 

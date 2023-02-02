@@ -132,6 +132,37 @@
 
 
 
+            @auth
+            @if (Auth::user()->rol == 'Alumno')
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <table>
+                        <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                        <th></th>
+            @foreach ($usuarios as $usuario )
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+            @endforeach
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+            @endif
+        @endauth
+
+
+
+
+
+
+
 
 
     </div>
