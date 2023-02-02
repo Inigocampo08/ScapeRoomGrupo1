@@ -22,7 +22,7 @@ class RegisternController extends Controller
     public function index()
     {
         //
-        if(Auth::user()->rol == "Alumno"){
+        if(Auth::user()->rol == "alumno"){
 
             $usuarios = user::all();
         return view('VentanaGruposNueva', ['usuarios' => $usuarios]);

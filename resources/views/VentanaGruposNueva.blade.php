@@ -211,7 +211,7 @@
 
 
             @auth
-            @if (Auth::user()->rol == 'Alumno')
+            @if (Auth::user()->rol == 'alumno')
         <div class="container">
             <div class="row">
                 <div class="col-12">
