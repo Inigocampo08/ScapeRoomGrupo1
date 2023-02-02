@@ -30,9 +30,10 @@ class RegisternController extends Controller
         }
         else{
 
+            $usuarios = user::all();
             $grupos = Grupo::all();
 
-        return view("VentanaGruposNueva",compact("grupos"));
+        return view("VentanaGruposNueva",compact("grupos","usuarios"));
 
         }
 
