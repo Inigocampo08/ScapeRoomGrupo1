@@ -23,7 +23,7 @@ body{
 }
 #principal{
     background-color:#252525;
-     min-height:calc(100vh - 90px - 80px);
+     min-height:calc(100vh - 100px - 80px);
 
 
 

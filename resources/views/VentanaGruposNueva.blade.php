@@ -20,7 +20,7 @@
       }
 
 <<<<<<< HEAD
-    
+
 =======
       footer {
           background-color: #252525;
@@ -82,7 +82,7 @@
       }
 
       #contendorPrincipal {
-        
+
         min-height: calc(100vh -90px -80px);
         background-color: #252525;
 
@@ -101,18 +101,16 @@
 
     <main>
 
-    <div class="container-fluid" id="contendorPrincipal">
+    {{-- <div class="container-fluid" id="contendorPrincipal">
         <br>
         <br>
-        <div class="row" >
+        <div class="row" > --}}
 
-            @auth
-            @if (Auth::user()->rol == "Profesor")
 
 {{--
 
             @foreach ($grupos as $grupo )
-               
+
             <div class="col-xl-3 offset-sm-2 col-sm-3 offset-xl-2  offset-1 col-10  text-center" style="border: 2px solid #00ff00 ; border-radius:22px; heigth:70vh">
                 <br>
                 <h1 style="color: #00ff00">{{$grupo->Nombre}}</h1>
@@ -124,14 +122,14 @@
             <br>
             <br>
 <<<<<<< HEAD
-            @endforeach 
+            @endforeach
             @endif
             @endauth
-          
+
             @auth
             @if (Auth::user()->rol == "Alumno")
             @foreach ($grupos as $grupo )
-               
+
             <div class="col-xl-3 offset-sm-2 col-sm-3 offset-xl-2  offset-1 col-10  text-center" style="border: 2px solid #00ff00 ; border-radius:22px; heigth:70vh">
                 <br>
                 <h1 style="color: #00ff00">{{$grupo->Nombre}}</h1>
@@ -142,10 +140,10 @@
             </div>
             <br>
             <br>
-            @endforeach 
+            @endforeach
             @endif
             @endauth
-            
+
 
 
             @endforeach
@@ -191,7 +189,7 @@
                <br>
                <br>
                <br>
-               
+
 =======
 
 >>>>>>> fb7b39f064be13d3a774c40bb81aea3f72f6c638
@@ -237,15 +235,6 @@
             @endif
         @endauth
 
-
-
-
-
-
-
-
-
-    </div>
     </main>
 
 
