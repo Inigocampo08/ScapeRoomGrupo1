@@ -22,11 +22,32 @@ class RegisternController extends Controller
     public function index()
     {
         //
-        $grupos = Grupo::all();
+        if(Auth::user()->rol == "Alumno"){
+
+            $usuarios = user::all();
+        return view('VentanaGruposNueva', ['usuarios' => $usuarios]);
+
+        }
+        else{
+
+            $grupos = Grupo::all();
 
         return view("VentanaGruposNueva",compact("grupos"));
 
+        }
+
     }
+
+    public function indexGrupo()
+    {
+        //
+
+
+
+
+
+    }
+
 
     /**
      * Show the form for creating a new resource.
@@ -88,7 +109,8 @@ class RegisternController extends Controller
      */
     public function show($id)
     {
-        //
+
+
     }
 
     /**
