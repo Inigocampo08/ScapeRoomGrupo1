@@ -90,7 +90,7 @@ ul {
 }
 #principal{
     background-color:#252525;
-    min-height:calc(100vh - 90px - 80px) ;
+    min-height:calc(100vh - 100px - 80px) ;
 }
 </style>
 <body>
@@ -119,7 +119,7 @@ ul {
                         <h4 style="color: white;">{{Auth::user()->email}}</h4>
                         <br>
                        <!-- Button trigger modal -->
-                       <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#botonEditar">
+                       <button class="btn " data-bs-toggle="modal" data-bs-target="#botonEditar" style="background-color: #00ff00">
                        Editar
                     </button>
                     </div>
