@@ -35,7 +35,7 @@ body{
     <x-layouts.header />
     <div class="container-fluid" id="principal" >
         <br><br><br>
-
+        
         <div class="row" style="background-color:#252525">
                 <div class=" col-md-8 col-8 text-center offset-2" style="font-size:16px" >
                     <br>
@@ -48,6 +48,14 @@ body{
                         <button id="bot">
                             <a href="{{ route('juego2')}}" style="text-decoration:none;"><h1>JUGAR</h1></a>
                         </button>
+                        <br>
+                        <br>
+                       <audio controls src="/audio/musicaFondo.mp3" autoplay loop="infinite" ></audio>
+                        {{-- <script>
+                            window.onload = function() {
+                                document.getElementById("autoplay").play();
+                            }
+                        </script> --}}
                         <br>
                         <br>
                 </div>
