@@ -16,7 +16,7 @@ Route::view('/ventanaPrueba','ventanaPrueba')->name('ventanaPrueba');
 
 //Route::view('/ventanaGrupos','ventanaGrupos')->name('ventanaGrupos');
 Route::get('/VentanaGruposNueva', [RegisternController::class,'index'])->name('VentanaGruposNueva');
-
+Route::post('/RegistroGrupo', [RegisternController::class, 'create'])->name('register.create');
 
 Route::view('/ventanaFinal','ventanaFinal')->name('ventanaFinal');
 
