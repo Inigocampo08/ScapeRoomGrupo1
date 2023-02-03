@@ -144,9 +144,7 @@ ul {
                                         <label>Email:</label>
                                         <input type="text" class="form-control" name="email" value="{{Auth::user()->email}}" required>
                                         <br>
-                                        <label>FotoPerfil:</label>
-                                        <input accept="image/png,image/jpeg,image/jpg" type="file" name="foto" id="btn-foto" value="{{Auth::user()->imagen}}">
-                                        <br>
+                                       
 
 
 
