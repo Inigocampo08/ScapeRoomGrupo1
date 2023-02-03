@@ -103,16 +103,13 @@
       
 
 
-   
 
-    {{-- <div class="container-fluid" id="contendorPrincipal">
+     <div class="container-fluid" id="contendorPrincipal">
         <br>
         <br>
-        <div class="row" > --}}
-
-
-{{--
-
+        <div class="row" > 
+            @auth
+            @if(Auth::user()->rol == "Profesor")
             @foreach ($grupos as $grupo )
 
             <div class="col-xl-3 offset-sm-2 col-sm-3 offset-xl-2  offset-1 col-10  text-center" style="border: 2px solid #00ff00 ; border-radius:22px; heigth:70vh">
@@ -125,12 +122,13 @@
             </div>
             <br>
             <br>
-<<<<<<< HEAD
-            @endforeach
+
+            @endforeach 
             @endif
             @endauth
 
-            @auth
+        </div>
+            {{-- @auth
             @if (Auth::user()->rol == "Alumno")
             @foreach ($grupos as $grupo )
 
@@ -146,26 +144,26 @@
             <br>
             @endforeach
             @endif
-            @endauth
+            @endauth --}}
 
 
-
-            @endforeach
-
-638
-        </div>
+        
        <br>
         <div class="row">
-
             @auth
             @if(Auth::user()->rol == "Profesor")
             <div class=" col-xl-12   col-sm-12   col-12 text-center" > <article id="article">
+             
                 <button class="btn" data-bs-toggle="modal" data-bs-target="#botonEditar" style="background-color: #00ff00">
                     AgregarGrupo
                  </button>
                 <br>
             </div>
-<<<<<<< HEAD
+            
+            @endif
+            @endauth
+
+           
             <div class="modal" id="botonEditar">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -189,19 +187,14 @@
                         </div>
                     </div>
                 </div>
+            
+                <br>
+                   <br>
+             
             </div>
-               <br>
-               <br>
-               <br>
-
-=======
-
->>>>>>> fb7b39f064be13d3a774c40bb81aea3f72f6c638
-            @endif
-            @endauth
-        </div> --}}
-        
-        @auth
+            <br>
+            <br>
+        {{-- @auth
             @if (Auth::user()->rol == "Profesor")
 
             <div class="row">
@@ -210,9 +203,9 @@
             </div>
 
             @endif
-        @endauth
+        @endauth --}}
 
-
+        {{-- 
 
             @auth
             @if (Auth::user()->rol == 'alumno')
@@ -238,8 +231,8 @@
             @endif
         @endauth
     
-    
-</div>
+        --}}
+
 
 
 
