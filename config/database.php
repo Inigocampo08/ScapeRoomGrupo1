@@ -17,6 +17,14 @@ return [
 
     'default' => env('DB_CONNECTION', 'mysql'),
 
+    'enlighten' => [
+        'driver' => 'mysql',
+        'host' => env('DB_HOST', '127.0.0.1'),
+        'port' => env('DB_PORT', '3306'),
+        'database' => 'scape_enlighten',
+        // ...
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Database Connections
@@ -145,6 +153,8 @@ return [
             'port' => env('REDIS_PORT', '6379'),
             'database' => env('REDIS_CACHE_DB', '1'),
         ],
+
+        
 
     ],
 

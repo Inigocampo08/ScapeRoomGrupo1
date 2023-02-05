@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ebe8f05527a1d2ca93702dc86b50c9f",
+    "content-hash": "083fe9919aac6231e51494c590a568c5",
     "packages": [
         {
             "name": "brick/math",
@@ -8035,6 +8035,78 @@
                 }
             ],
             "time": "2022-12-08T15:31:38+00:00"
+        },
+        {
+            "name": "styde/enlighten",
+            "version": "0.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StydeNet/enlighten.git",
+                "reference": "ee4c4dc678dea85b4b37dd83ce51ec07a192d749"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StydeNet/enlighten/zipball/ee4c4dc678dea85b4b37dd83ce51ec07a192d749",
+                "reference": "ee4c4dc678dea85b4b37dd83ce51ec07a192d749",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^7.2",
+                "laravel/framework": "^7.28|^8.0|^9.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16|^3.1",
+                "orchestra/testbench": "^5.0|^6.0|^7.0",
+                "phpunit/phpunit": "^9.3|^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Styde\\Enlighten\\Providers\\EnlightenServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Styde\\Enlighten\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Duilio Palacios",
+                    "email": "duilio@styde.net"
+                },
+                {
+                    "name": "Jeffer Ochoa",
+                    "email": "jeffer.8a@gmail.com"
+                }
+            ],
+            "description": "Enlighten your APIs with auto-generated documentation",
+            "support": {
+                "issues": "https://github.com/StydeNet/enlighten/issues",
+                "source": "https://github.com/StydeNet/enlighten/tree/0.7.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sileence",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/duiliopalacios",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-03-30T18:05:30+00:00"
         },
         {
             "name": "theseer/tokenizer",
